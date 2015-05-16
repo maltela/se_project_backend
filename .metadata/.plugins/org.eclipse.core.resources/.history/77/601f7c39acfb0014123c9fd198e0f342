@@ -1,0 +1,32 @@
+package de.management.dao;
+
+import java.util.List;
+
+import javax.ejb.Local;
+
+
+
+
+public interface EventManagementDAOLocal {
+	
+	
+	// Anmeldung User ?
+	
+	// Ausgabe Veranstaltungen 
+	public List<String> getEvents();
+	
+	
+	//USE_CASE XBANK
+	/*
+	public Customer findCustomerByName(String userName);
+	
+	public Account findAccountById(int id);
+	
+	public XbankSession findSessionById(int id);
+	
+	public int createSession(Customer user);
+
+	public void closeSession(int id);
+		*/
+
+}

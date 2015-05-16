@@ -1,46 +1,31 @@
 package de.management.entities;
-import javax.persistence.*;
-
-import java.io.Serializable;
-import java.security.Timestamp;
 import java.sql.Date;
 
-@Entity 
-public class Event implements Serializable {
-	
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
+
+import javax.persistence.*;
+@Entity
+public class Event {
 	
 	@Id @GeneratedValue
 	private Integer Nr;
 	private String Name;
-	private Date Datum;
-	private Timestamp UhrzeitStart;
-	private Timestamp UhrzeitEnde;
-	@OneToOne
-	private Ort Ort;
 	private String Beschreibung;
+	private Date DatumVon;
+	private Date DatumBis;
 	
 	
 	
+
 // Konstruktor 
-	
-	public Event(String Name,Date Datum,Timestamp UhrzeitStart,Timestamp UhrzeitEnde,String Ort,String Beschreibung )
+	 
+	public Event (String Name,String Beschreibung,Date Anfang,Date Ende)
 	{
 		this.Name=Name;
-		this.Datum=Datum;
-		this.UhrzeitStart=UhrzeitStart;
-		this.UhrzeitEnde=UhrzeitEnde;
-//TODO		this.Ort=cast(Ort); - Beziehung zwischen Ort und Event herstellen 
 		this.Beschreibung=Beschreibung;
+		this.DatumVon=Anfang;
+		this.DatumBis=Ende;
 	}
-	
-	
-	
-	
-//	Getter / Setter Methoden 
+// Getter / Setter Methoden	
 	public Integer getNr() {
 		return Nr;
 	}
@@ -53,36 +38,23 @@ public class Event implements Serializable {
 	public void setName(String name) {
 		Name = name;
 	}
-	public Date getDatum() {
-		return Datum;
-	}
-	public void setDatum(Date datum) {
-		Datum = datum;
-	}
-	public Timestamp getUhrzeitStart() {
-		return UhrzeitStart;
-	}
-	public void setUhrzeit_Start(Timestamp uhrzeitStart) {
-		UhrzeitStart = uhrzeitStart;
-	}
-	public Timestamp getUhrzeitEnde() {
-		return UhrzeitEnde;
-	}
-	public void setUhrzeitEnde(Timestamp uhrzeitEnde) {
-		UhrzeitEnde = uhrzeitEnde;
-	}
-	public Ort getOrt() {
-		return Ort;
-	}
-	public void setOrt(Ort ort) {
-		Ort = ort;
-	}
 	public String getBeschreibung() {
 		return Beschreibung;
 	}
 	public void setBeschreibung(String beschreibung) {
 		Beschreibung = beschreibung;
 	}
-	
+	public Date getDatumVon() {
+		return DatumVon;
+	}
+	public void setDatumVon(Date datumVon) {
+		DatumVon = datumVon;
+	}
+	public Date getDatumBis() {
+		return DatumBis;
+	}
+	public void setDatumBis(Date datumBis) {
+		DatumBis = datumBis;
+	}
 
 }

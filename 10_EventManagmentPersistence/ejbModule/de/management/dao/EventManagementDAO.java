@@ -1,8 +1,12 @@
 package de.management.dao;
 
+import java.util.List;
+
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.persistence.Query;
+
 import de.management.entities.*;
 
 @Stateless
@@ -12,6 +16,34 @@ public class EventManagementDAO implements EventManagementDAOLocal {
 	private EntityManager em;
 	
 	//TODO USE-CASES DEFINIEREN 
+	
+	// Connection Test
+	public boolean hasConnection()
+	{
+		return(true);
+	}
+	// Ausgabe aller Events 
+	public List<String> getEvents()
+	{
+		Query query = em.createQuery("Select name from Event");
+		return  (List<String>) query.getResultList();
+	}
+	
+	// Ausgabe Sessions eines Events 
+	public List<String> getSessions(Event event)
+	{
+		return (List<String>) em.find(Session.class,event);
+	}
+	
+	@Override
+	public User createUser(String username, Event event, String rolle) {
+		User user = new User();
+		user.setName(username);
+		user.setEvent(event);
+		user.setRolle(rolle);
+		em.persist(user);
+		return user;
+	}
 	
 	/*
 	public Veranstaltung findCustomerByName(String userName){

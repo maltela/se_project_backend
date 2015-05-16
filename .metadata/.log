@@ -53,3 +53,83 @@ Binding(COMMAND+SHIFT+F10,
 
 !ENTRY org.eclipse.mylyn.discovery.core 4 0 2015-05-16 10:26:36.593
 !MESSAGE Duplicate category id 'com.jboss.jbds.central.discovery.integration-stack.bundle': declaring sources: com.jboss.jbds.central.discovery.integration_stack.earlyaccess_8.0.1.GA_v20150408_1203_B104.jar_5478014459980796394.jar, com.jboss.jbds.central.discovery.integration_stack_8.0.1.GA_v20150408_1203_B104.jar_1634135334851814744.jar
+
+!ENTRY org.eclipse.jst.jee.ejb 4 0 2015-05-16 11:15:28.692
+!MESSAGE java.lang.NullPointerException
+!STACK 0
+org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointerException
+	at org.eclipse.jst.jee.model.internal.mergers.EjbJarMerger.process(EjbJarMerger.java:79)
+	at org.eclipse.jst.jee.model.internal.EJB3MergedModelProvider.mergeWithModel(EJB3MergedModelProvider.java:214)
+	at org.eclipse.jst.jee.model.internal.EJB3MergedModelProvider.merge(EJB3MergedModelProvider.java:204)
+	at org.eclipse.jst.jee.model.internal.EJB3MergedModelProvider.internalModelChanged(EJB3MergedModelProvider.java:174)
+	at org.eclipse.jst.jee.model.internal.EJB3MergedModelProvider.annotationModelChanged(EJB3MergedModelProvider.java:151)
+	at org.eclipse.jst.jee.model.internal.common.AbstractMergedModelProvider$AnnotationModelListener.modelsChanged(AbstractMergedModelProvider.java:83)
+	at org.eclipse.jst.jee.model.internal.common.AbstractAnnotationModelProvider$1.run(AbstractAnnotationModelProvider.java:189)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jst.jee.model.internal.common.AbstractAnnotationModelProvider.notifyListeners(AbstractAnnotationModelProvider.java:184)
+	at org.eclipse.jst.jee.model.internal.common.AbstractAnnotationModelProvider.notifyListeners(AbstractAnnotationModelProvider.java:157)
+	at org.eclipse.jst.jee.model.internal.common.AbstractAnnotationModelProvider.internalPostReconcile(AbstractAnnotationModelProvider.java:467)
+	at org.eclipse.jst.jee.model.internal.common.AbstractAnnotationModelProvider.elementChanged(AbstractAnnotationModelProvider.java:446)
+	at org.eclipse.jdt.internal.core.DeltaProcessor$4.run(DeltaProcessor.java:1695)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.notifyListeners(DeltaProcessor.java:1685)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.fireReconcileDelta(DeltaProcessor.java:1537)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.fire(DeltaProcessor.java:1496)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:770)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:789)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1247)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1208)
+	at org.jboss.tools.cdi.internal.core.impl.CDIProjectAsYouType.findCompilationUnit(CDIProjectAsYouType.java:174)
+	at org.jboss.tools.cdi.internal.core.impl.CDIProjectAsYouType.build(CDIProjectAsYouType.java:121)
+	at org.jboss.tools.cdi.internal.core.impl.CDIProjectAsYouType.<init>(CDIProjectAsYouType.java:103)
+	at org.jboss.tools.cdi.internal.core.validation.CDICoreValidator.validate(CDICoreValidator.java:557)
+	at org.jboss.tools.common.validation.AsYouTypeValidatorManager.validate(AsYouTypeValidatorManager.java:183)
+	at org.jboss.tools.common.validation.AsYouTypeValidatorManager.validateString(AsYouTypeValidatorManager.java:205)
+	at org.jboss.tools.common.validation.AsYouTypeValidatorManager.validateString(AsYouTypeValidatorManager.java:200)
+	at org.jboss.tools.common.validation.java.JavaDirtyRegionProcessor.endProcessing(JavaDirtyRegionProcessor.java:498)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor$BackgroundThread.run(DirtyRegionProcessor.java:697)
+Caused by: java.lang.NullPointerException
+	at org.eclipse.jst.jee.model.internal.mergers.EjbJarMerger.isEnterpriseBeansTagPresent(EjbJarMerger.java:129)
+	at org.eclipse.jst.jee.model.internal.mergers.EjbJarMerger.mergeSessionBeans(EjbJarMerger.java:139)
+	at org.eclipse.jst.jee.model.internal.mergers.EjbJarMerger.process(EjbJarMerger.java:74)
+	... 29 more
+
+!ENTRY org.eclipse.jst.jee.ejb 4 0 2015-05-16 11:16:01.407
+!MESSAGE java.lang.NullPointerException
+!STACK 0
+org.eclipse.jst.jee.model.internal.mergers.ModelException: java.lang.NullPointerException
+	at org.eclipse.jst.jee.model.internal.mergers.EjbJarMerger.process(EjbJarMerger.java:79)
+	at org.eclipse.jst.jee.model.internal.EJB3MergedModelProvider.mergeWithModel(EJB3MergedModelProvider.java:214)
+	at org.eclipse.jst.jee.model.internal.EJB3MergedModelProvider.merge(EJB3MergedModelProvider.java:204)
+	at org.eclipse.jst.jee.model.internal.EJB3MergedModelProvider.internalModelChanged(EJB3MergedModelProvider.java:174)
+	at org.eclipse.jst.jee.model.internal.EJB3MergedModelProvider.annotationModelChanged(EJB3MergedModelProvider.java:151)
+	at org.eclipse.jst.jee.model.internal.common.AbstractMergedModelProvider$AnnotationModelListener.modelsChanged(AbstractMergedModelProvider.java:83)
+	at org.eclipse.jst.jee.model.internal.common.AbstractAnnotationModelProvider$1.run(AbstractAnnotationModelProvider.java:189)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jst.jee.model.internal.common.AbstractAnnotationModelProvider.notifyListeners(AbstractAnnotationModelProvider.java:184)
+	at org.eclipse.jst.jee.model.internal.common.AbstractAnnotationModelProvider.notifyListeners(AbstractAnnotationModelProvider.java:157)
+	at org.eclipse.jst.jee.model.internal.common.AbstractAnnotationModelProvider.internalPostReconcile(AbstractAnnotationModelProvider.java:467)
+	at org.eclipse.jst.jee.model.internal.common.AbstractAnnotationModelProvider.elementChanged(AbstractAnnotationModelProvider.java:446)
+	at org.eclipse.jdt.internal.core.DeltaProcessor$4.run(DeltaProcessor.java:1695)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.notifyListeners(DeltaProcessor.java:1685)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.fireReconcileDelta(DeltaProcessor.java:1537)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.fire(DeltaProcessor.java:1496)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:770)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:789)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1247)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1208)
+	at org.jboss.tools.cdi.internal.core.impl.CDIProjectAsYouType.findCompilationUnit(CDIProjectAsYouType.java:174)
+	at org.jboss.tools.cdi.internal.core.impl.CDIProjectAsYouType.build(CDIProjectAsYouType.java:121)
+	at org.jboss.tools.cdi.internal.core.impl.CDIProjectAsYouType.<init>(CDIProjectAsYouType.java:103)
+	at org.jboss.tools.cdi.internal.core.validation.CDICoreValidator.validate(CDICoreValidator.java:557)
+	at org.jboss.tools.common.validation.AsYouTypeValidatorManager.validate(AsYouTypeValidatorManager.java:183)
+	at org.jboss.tools.common.validation.AsYouTypeValidatorManager.validateString(AsYouTypeValidatorManager.java:205)
+	at org.jboss.tools.common.validation.AsYouTypeValidatorManager.validateString(AsYouTypeValidatorManager.java:200)
+	at org.jboss.tools.common.validation.java.JavaDirtyRegionProcessor.endProcessing(JavaDirtyRegionProcessor.java:498)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor$BackgroundThread.run(DirtyRegionProcessor.java:697)
+Caused by: java.lang.NullPointerException
+	at org.eclipse.jst.jee.model.internal.mergers.EjbJarMerger.isEnterpriseBeansTagPresent(EjbJarMerger.java:127)
+	at org.eclipse.jst.jee.model.internal.mergers.EjbJarMerger.mergeMdbs(EjbJarMerger.java:168)
+	at org.eclipse.jst.jee.model.internal.mergers.EjbJarMerger.process(EjbJarMerger.java:75)
+	... 29 more

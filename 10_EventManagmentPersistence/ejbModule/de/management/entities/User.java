@@ -7,15 +7,15 @@ public class User {
 	@Id @GeneratedValue 
 	private Integer Nr;
 	private String Name;
+	@OneToMany
+	private Event  event;
 	private String Rolle;
 	
-	public User(String Name,String Rolle)
+	public User()
 	
 	
 	{
-		this.Name=Name;
-		this.Rolle=Rolle;
-		
+		// DB generiert eindeutige Nr.
 	}
 
 	public Integer getNr() {
@@ -33,6 +33,8 @@ public class User {
 	public void setName(String name) {
 		Name = name;
 	}
+	
+	
 
 	public String getRolle() {
 		return Rolle;
@@ -40,6 +42,14 @@ public class User {
 
 	public void setRolle(String rolle) {
 		Rolle = rolle;
+	}
+
+	public Event getEvent() {
+		return event;
+	}
+
+	public void setEvent(Event event) {
+		this.event = event;
 	}
 
 }
