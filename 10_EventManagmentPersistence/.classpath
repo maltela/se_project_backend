@@ -13,5 +13,10 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
 	<classpathentry kind="lib" path="/usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/modules/system/layers/base/javax/ejb/api/main/jboss-ejb-api_3.2_spec-1.0.0.Final.jar"/>
+	<classpathentry kind="lib" path="/Applications/eclipse/plugins/com.google.appengine.eclipse.sdkbundle_1.9.20/appengine-java-sdk-1.9.20/lib/opt/user/datanucleus/v1/geronimo-jpa_3.0_spec-1.1.1.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/Applications/eclipse/plugins/com.google.appengine.eclipse.sdkbundle_1.9.20/appengine-java-sdk-1.9.20/docs/javadoc/"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

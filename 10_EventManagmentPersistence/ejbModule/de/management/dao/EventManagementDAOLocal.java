@@ -23,18 +23,24 @@ public interface EventManagementDAOLocal {
 	
 	
 	//User Registrierung @Backend 
-	public User createUser(String username,Event event,String Rolle);
+	public Integer createUser(String username,Event event,String Rolle);
 	
+	
+	// Übersicht StatusCodes 
+	// 100 - Ok 
+	// 500 - Error 
 	// Prüfung Geräte-ID = Username -> Eindeutige Identifizierung  
 	
 	//**** Admin-Funktionen ***
 	
+	
+	// MIT ARRAYLIST + HASHMAPS ARBEITEN !! 
 	// Veranstaltung erstellen
-	// Veranstaltung ändern
+	// Veranstaltung-Infos laden -> ändern -> Updaten 
 	// Veranstaltung löschen
 		
 	// Termin erstellen
-	// Termin ändern
+	// Termin  laden -> ändern -> Updaten
 	// Termin löschen
 	
 	//******************************

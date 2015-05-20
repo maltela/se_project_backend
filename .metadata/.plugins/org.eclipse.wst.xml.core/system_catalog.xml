@@ -563,4 +563,6 @@
   <uri name="http://jboss.com/products/seam/wicket-2.3.xsd" uri="jar:file:/Applications/eclipse/plugins/org.jboss.tools.seam.xml_3.6.2.Final-v20150325-0431-B95.jar!/schemas/wicket-2.3.xsd"/>
   <uri name="http://jboss.org/schema/seam/wicket-2.3.xsd" uri="jar:file:/Applications/eclipse/plugins/org.jboss.tools.seam.xml_3.6.2.Final-v20150325-0431-B95.jar!/schemas2/wicket-2.3.xsd"/>
   <public publicId="-//OASIS//DTD DocBook XML V4.1.2//EN" uri="file:/Applications/eclipse/plugins/org.jboss.tools.vpe.docbook_3.6.2.Final-v20150325-0347-B93/dtds/docbookx-4.1.2.dtd"/>
+  <uri name="urn:ui:com.google.gwt.uibinder" uri="http://dl.google.com/gwt/dtd/uibinder.xsd"/>
+  <uri name="urn:import:com.google.gwt.user.client.ui" uri="http://dl.google.com/gwt/dtd/com.google.gwt.user.client.ui.xsd"/>
 </catalog>

@@ -36,13 +36,13 @@ public class EventManagementDAO implements EventManagementDAOLocal {
 	}
 	
 	@Override
-	public User createUser(String username, Event event, String rolle) {
+	public Integer createUser(String username, Event event, String rolle) {
 		User user = new User();
 		user.setName(username);
 		user.setEvent(event);
 		user.setRolle(rolle);
 		em.persist(user);
-		return user;
+		return 100;
 	}
 	
 	/*

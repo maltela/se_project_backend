@@ -12,5 +12,9 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="/Users/MalteL/Downloads/jackson-databind-2.5.3.jar" sourcepath="/Users/MalteL/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.2.2/jackson-databind-2.2.2-sources.jar"/>
+	<classpathentry kind="lib" path="/Users/MalteL/Downloads/jackson-databind-2.5.3-javadoc.jar"/>
+	<classpathentry kind="lib" path="/Users/MalteL/Downloads/jackson-annotations-2.5.0.jar"/>
+	<classpathentry kind="lib" path="/Users/MalteL/Downloads/jackson-core-2.5.0.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
