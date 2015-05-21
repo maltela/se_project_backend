@@ -23,6 +23,7 @@ public class EventManagementDAO implements EventManagementDAOLocal {
 		return(true);
 	}
 	// Ausgabe aller Events 
+	@SuppressWarnings("unchecked")
 	public List<String> getEvents()
 	{
 		Query query = em.createQuery("Select name from Event");
@@ -30,13 +31,14 @@ public class EventManagementDAO implements EventManagementDAOLocal {
 	}
 	
 	// Ausgabe Sessions eines Events 
+	@SuppressWarnings("unchecked")
 	public List<String> getSessions(Event event)
 	{
 		return (List<String>) em.find(Session.class,event);
 	}
 	
 	@Override
-	public Integer createUser(String username, Event event, String rolle) {
+	public Integer createUser(String username, Event event, String rolle, String DeviseID) {
 		User user = new User();
 		user.setName(username);
 		user.setEvent(event);

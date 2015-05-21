@@ -7,9 +7,10 @@ public class User {
 	@Id @GeneratedValue 
 	private Integer Nr;
 	private String Name;
+	private String DeviseID;
 	@OneToMany
 	private Event  event;
-	private String Rolle;
+	private Rolle rolle;
 	
 	public User()
 	
@@ -34,22 +35,21 @@ public class User {
 		Name = name;
 	}
 	
-	
 
-	public String getRolle() {
-		return Rolle;
+	public String getDeviseID() {
+		return DeviseID;
 	}
 
-	public void setRolle(String rolle) {
-		Rolle = rolle;
+	public void setDeviseID(String deviseID) {
+		DeviseID = deviseID;
 	}
 
-	public Event getEvent() {
-		return event;
+	public Rolle getRolle() {
+		return rolle;
 	}
 
-	public void setEvent(Event event) {
-		this.event = event;
+	public void setRolle(Rolle rolle) {
+		this.rolle = rolle;
 	}
 
 }

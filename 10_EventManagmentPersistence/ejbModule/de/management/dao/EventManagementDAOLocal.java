@@ -1,8 +1,10 @@
 package de.management.dao;
 
+import java.util.HashMap;
 import java.util.List;
 
-import javax.ejb.Local;
+//import javax.ejb.Local;
+
 
 import de.management.entities.*;
 
@@ -13,38 +15,38 @@ public interface EventManagementDAOLocal {
 	
 	
 	// Connection Test
-	public boolean hasConnection();
+	public Integer hasConnection();
 		
-	// Ausgabe Veranstaltungen 
-	public List<String> getEvents();
-	
+	// Ausgabe Veranstaltungsübersicht  -> Wunschzettel : HashMap (ID+Name) 
+	public HashMap<Integer,String> getEvents();
+	// Ausgabe Veranstaltungsinformation 
+	public Event getEvent();
 	// Ausgabe Sessions anhand Event 
-	public List<String> getSessions(Event event);
-	
-	
+	public List<Session> getSessions(Event event);
 	//User Registrierung @Backend 
-	public Integer createUser(String username,Event event,String Rolle);
+	public Integer createUser(String username,Event event,Rolle Rolle,String DeviseID);
+	;
+	// Veranstaltung beitreten 
+	public Integer joinEvent();
+	// Admin 
 	
-	
-	// Übersicht StatusCodes 
-	// 100 - Ok 
-	// 500 - Error 
-	// Prüfung Geräte-ID = Username -> Eindeutige Identifizierung  
-	
-	//**** Admin-Funktionen ***
-	
-	
-	// MIT ARRAYLIST + HASHMAPS ARBEITEN !! 
+	// Push-Nachricht erstellen  
+	public boolean createPush();
 	// Veranstaltung erstellen
-	// Veranstaltung-Infos laden -> ändern -> Updaten 
-	// Veranstaltung löschen
-		
+	public Integer createEvent();
 	// Termin erstellen
-	// Termin  laden -> ändern -> Updaten
+	public Integer createSession();
+	// Veranstatlung ändern
+	public Integer updateEvent();
+	// Termin ändern 
+	public Integer updateSession();
+	// Veranstaltung löschen
+	public Integer dropEvent();
 	// Termin löschen
-	
+	public Integer dropSession();
 	//******************************
 	// Push-Nachricht erstellen
+	
 	
 	
 	//USE_CASE XBANK

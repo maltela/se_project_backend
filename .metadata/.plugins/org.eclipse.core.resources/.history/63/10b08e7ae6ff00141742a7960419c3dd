@@ -1,0 +1,73 @@
+package de.management.dao;
+
+import java.util.HashMap;
+import java.util.List;
+
+//import javax.ejb.Local;
+
+
+import de.management.entities.*;
+
+
+
+
+public interface EventManagementDAOLocal {
+	
+	
+	// Connection Test
+	public Integer hasConnection();
+		
+	// Ausgabe Veranstaltungsübersicht  -> Wunschzettel : HashMap (ID+Name) 
+	public HashMap<Integer,String> getEvents();
+	
+	// Ausgabe Veranstaltungsinformation 
+	public Event getEvent();
+	
+	// Ausgabe Sessions anhand Event 
+	public List<Session> getSessions(Event event);
+	
+	
+	//User Registrierung @Backend 
+	public Integer createUser(String username,Event event,Rolle Rolle,String DeviseID);
+	
+	// Push-Nachricht erstellen  
+	public boolean createPush();
+	
+	// Übersicht StatusCodes 
+	// 100 - Ok 
+	// 500 - Error 
+	// Prüfung Geräte-ID = Username -> Eindeutige Identifizierung  
+	
+	//**** Admin-Funktionen ***
+	
+	
+	// MIT ARRAYLIST + HASHMAPS ARBEITEN !! 
+	// Veranstaltung erstellen
+	// Veranstaltung-Infos laden -> ändern -> Updaten 
+	// Veranstaltung löschen
+		
+	public Integer createEvent();
+	public Integer createSession();
+	// Termin erstellen
+	// Termin  laden -> ändern -> Updaten
+	// Termin löschen
+	
+	//******************************
+	// Push-Nachricht erstellen
+	
+	
+	
+	//USE_CASE XBANK
+	/*
+	public Customer findCustomerByName(String userName);
+	
+	public Account findAccountById(int id);
+	
+	public XbankSession findSessionById(int id);
+	
+	public int createSession(Customer user);
+
+	public void closeSession(int id);
+		*/
+
+}

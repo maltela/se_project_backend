@@ -13,6 +13,9 @@ public class Event {
 	private Date DatumVon;
 	private Date DatumBis;
 	
+	@OneToMany 
+	private Session Sessions;
+	
 	
 	
 

@@ -1,13 +1,13 @@
 {
   "files": [
     {
-      "downloadUrl": "/downloads/deviceinfoendpoint/v1/20150520104637/java/1.18.0-rc/de.com-deviceinfoendpoint-v1-20150520104637-java-1.18.0-rc-sources.jar", 
-      "path": "de.com-deviceinfoendpoint-v1-20150520104637-java-1.18.0-rc-sources.jar", 
+      "downloadUrl": "/downloads/deviceinfoendpoint/v1/20150521101843/java/1.18.0-rc/de.com-deviceinfoendpoint-v1-20150521101843-java-1.18.0-rc-sources.jar", 
+      "path": "de.com-deviceinfoendpoint-v1-20150521101843-java-1.18.0-rc-sources.jar", 
       "type": "source", 
-      "timestamp": "2015-05-20 10:46"
+      "timestamp": "2015-05-21 10:18"
     }, 
     {
-      "path": "de.com-deviceinfoendpoint-v1-20150520104637-java-1.18.0-rc.jar.properties", 
+      "path": "de.com-deviceinfoendpoint-v1-20150521101843-java-1.18.0-rc.jar.properties", 
       "type": "android.properties"
     }
   ], 
@@ -675,5 +675,5 @@
   "packagePath": "management.push", 
   "language_version": "1.18.0-rc", 
   "id": "deviceinfoendpoint:v1", 
-  "revision": 20150520104637
+  "revision": 20150521101843
 }

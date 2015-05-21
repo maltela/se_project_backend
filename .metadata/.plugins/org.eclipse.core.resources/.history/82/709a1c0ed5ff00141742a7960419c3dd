@@ -1,0 +1,27 @@
+package de.management.entities;
+
+public class Rolle {
+	
+	private Integer ID;
+	private String  Name;
+	
+	private User User;
+	private Event Event;
+	
+	public Integer getID() {
+		return ID;
+	}
+	public void setID(Integer iD) {
+		ID = iD;
+	}
+	public String getName() {
+		return Name;
+	}
+	public void setName(String name) {
+		Name = name;
+	}
+	
+	
+	
+
+}
