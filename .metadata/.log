@@ -1800,3 +1800,12 @@ Java Model Exception: Java Model Status [ProcessInjectionTarget [in ProcessInjec
 
 !ENTRY com.android.ide.eclipse.adt 2 0 2015-05-22 23:00:13.453
 !MESSAGE No projects found for [/Users/MalteL/Documents/se_workspace/10_EventManagmentPersistence/ejbModule/META-INF/persistence.xml]
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2015-05-22 23:51:00.542
+!MESSAGE No valid Android XML Editor Delegate found for file /10_EventManagmentPersistence/ejbModule/META-INF/persistence.xml [Res null, type null]
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2015-05-22 23:54:38.281
+!MESSAGE No projects found for [/Users/MalteL/Documents/se_workspace/10_EventManagmentPersistence/ejbModule/META-INF/persistence.xml]
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2015-05-22 23:58:47.541
+!MESSAGE No projects found for [/Users/MalteL/Documents/se_workspace/10_EventManagmentPersistence/ejbModule/META-INF/persistence.xml]
