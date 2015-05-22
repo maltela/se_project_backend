@@ -1,0 +1,31 @@
+package de.management.eventmanagement;
+
+
+import javax.ejb.EJB;
+import javax.ejb.Stateless;
+import javax.jws.WebService;
+
+import org.jboss.logging.Logger;
+import org.jboss.ws.api.annotation.WebContext;
+
+import de.management.dao.EventManagementDAOLocal;
+
+
+
+@Webservice
+@Stateless
+public class WebService {
+	
+	private static final Logger logger = Logger.getLogger(WebService.class);
+	
+	// Datenverarbeitung Bereitstellung 
+	@EJB(beanName = "EventManagementDAO", beanInterface = de.management.dao.EventManagementDAOLocal.class)
+	private EventManagementDAOLocal dao;
+	
+	
+	// DataTransferObject 
+	@EJB
+	private DtoAssembler dtoAssembler;
+	
+
+}

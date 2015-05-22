@@ -8,9 +8,9 @@ public class User {
 	private Integer Nr;
 	private String Name;
 	private String DeviseID;
-	@OneToMany
-	private Event  event;
-	private Rolle rolle;
+	//@OneToMany
+	//private Event  event;
+	//private Rolle rolle;
 	
 	public User()
 	
@@ -50,6 +50,14 @@ public class User {
 
 	public void setRolle(Rolle rolle) {
 		this.rolle = rolle;
+	}
+
+	public Event getEvent() {
+		return event;
+	}
+
+	public void setEvent(Event event) {
+		this.event = event;
 	}
 
 }

@@ -1,0 +1,12 @@
+package de.management.eventmanagement;
+
+
+import javax.jws.WebService;
+
+@Webservice
+@Stateless
+public class WebService {
+	
+	
+
+}

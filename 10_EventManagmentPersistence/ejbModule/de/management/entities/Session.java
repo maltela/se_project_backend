@@ -2,7 +2,6 @@ package de.management.entities;
 import javax.persistence.*;
 
 import java.io.Serializable;
-import java.security.Timestamp;
 import java.sql.Date;
 
 @Entity 

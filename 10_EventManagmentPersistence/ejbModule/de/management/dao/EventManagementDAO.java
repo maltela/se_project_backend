@@ -1,5 +1,6 @@
 package de.management.dao;
 
+import java.util.HashMap;
 import java.util.List;
 
 import javax.ejb.Stateless;
@@ -15,19 +16,14 @@ public class EventManagementDAO implements EventManagementDAOLocal {
 	@PersistenceContext
 	private EntityManager em;
 	
-	//TODO USE-CASES DEFINIEREN 
 	
-	// Connection Test
-	public boolean hasConnection()
-	{
-		return(true);
-	}
+	
 	// Ausgabe aller Events 
 	@SuppressWarnings("unchecked")
-	public List<String> getEvents()
+	public HashMap<Integer, String> getEvents()
 	{
 		Query query = em.createQuery("Select name from Event");
-		return  (List<String>) query.getResultList();
+		return (HashMap<Integer, String>) query.getResultList();
 	}
 	
 	// Ausgabe Sessions eines Events 
@@ -38,38 +34,67 @@ public class EventManagementDAO implements EventManagementDAOLocal {
 	}
 	
 	@Override
-	public Integer createUser(String username, Event event, String rolle, String DeviseID) {
+	public Integer createUser(String username, String DeviseID) {
 		User user = new User();
 		user.setName(username);
-		user.setEvent(event);
-		user.setRolle(rolle);
+		user.setDeviseID(DeviseID);
 		em.persist(user);
 		return 100;
 	}
-	
-	/*
-	public Veranstaltung findCustomerByName(String userName){
-		return em.find(Customer.class, userName);
+	@Override
+	public HashMap<Integer, String> getEvents(Integer userID) {
+		// TODO Auto-generated method stub
+		return null;
 	}
-	
-	public Account findAccountById(int id) {
-		return em.find(Account.class, id);
+	@Override
+	public Event getEvent(Integer id) {
+		// TODO Auto-generated method stub
+		return null;
 	}
-	
-	public XbankSession findSessionById(int id) {
-		return em.find(XbankSession.class, id);
+	@Override
+	public List<Session> getSessions(Integer eventID) {
+		// TODO Auto-generated method stub
+		return null;
 	}
-	
-	public int createSession(Customer user) {
-		XbankSession newSession = new XbankSession(user);
-		em.persist(newSession);
-		return newSession.getId();
+	@Override
+	public Event joinEvent(Integer eventID, Integer userID) {
+		// TODO Auto-generated method stub
+		return null;
 	}
-
-	public void closeSession(int id) {
-		XbankSession session = em.find(XbankSession.class, id);
-		em.remove(session);
+	@Override
+	public Integer createPush() {
+		// TODO Auto-generated method stub
+		return null;
 	}
-	*/
-	
+	@Override
+	public Integer createEvent(Event event, Integer UserID) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	@Override
+	public Integer createSession(Session session, Integer UserID) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	@Override
+	public Integer updateEvent(Event event, Integer userID) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	@Override
+	public Integer updateSession(Session session, Integer userID) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	@Override
+	public Integer dropEvent(Integer eventID, Integer userID) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	@Override
+	public Integer dropSession(Integer sessionID, Integer userID) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+		
 }
