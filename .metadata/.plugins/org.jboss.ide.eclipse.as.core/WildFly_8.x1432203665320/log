@@ -36,3 +36,24 @@
 
 !ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2015-05-21 23:06:19.909
 !MESSAGE Server processes have been terminated.
+!SESSION 
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298246 2015-05-23 11:18:59.846
+!MESSAGE Unable to delete module
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-05-23 11:18:59.846
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementEAR. May be locked by another process.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2015-05-23 11:19:00.297
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2015-05-23 11:19:04.758
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2015-05-23 12:11:03.606
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2015-05-23 12:11:07.576
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2015-05-23 12:11:11.292
+!MESSAGE Server Startup Succeeded

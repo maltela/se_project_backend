@@ -3,4 +3,5 @@
 <fullyQualifiedTypeName name="com.fasterxml.jackson.annotation.JsonAutoDetect"/>
 <fullyQualifiedTypeName name="java.util.HashMap"/>
 <fullyQualifiedTypeName name="javax.ejb.Stateless"/>
+<fullyQualifiedTypeName name="javax.ejb.Local"/>
 </qualifiedTypeNameHistroy>

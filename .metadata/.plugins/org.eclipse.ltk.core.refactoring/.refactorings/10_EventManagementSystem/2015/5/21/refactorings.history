@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;de.management.eventmanagement&apos; to &apos;java&apos;&#x0A;- Original project: &apos;10_EventManagementSystem&apos;&#x0A;- Destination element: &apos;java&apos;&#x0A;- Original element: &apos;10_EventManagementSystem/ejbModule/de.management.eventmanagement&apos;" description="Copy package" element1="/ejbModule&lt;de.management.eventmanagement" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1432375494547" target="/eventmanagement/src/main/java" version="1.0"/>
+</session>

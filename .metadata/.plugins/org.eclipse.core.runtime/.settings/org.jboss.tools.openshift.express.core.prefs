@@ -1,3 +1,5 @@
 eclipse.preferences.version=1
 org.jboss.tools.openshift.express.CONNECTION_NAMES=
+org.jboss.tools.openshift.express.LAST_USERNAME=internet1000@freenet.de
+org.jboss.tools.openshift.express.TAILFILEOPTIONS=555fb17b500446e21700000b|-f -n 100 */logs/*
 org.jboss.tools.openshift.express.internal.ui.wizard.CredentialsWizardModel_RHLOGIN_LIST=
