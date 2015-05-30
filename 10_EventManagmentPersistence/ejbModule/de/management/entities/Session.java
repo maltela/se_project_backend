@@ -22,6 +22,7 @@ public class Session implements Serializable {
 	
 	
 	
+	
 // Konstruktor 
 	
 	public Session(String Name,Date UhrzeitStart,Date UhrzeitEnde,String Ort,String Beschreibung )

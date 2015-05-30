@@ -1,6 +1,8 @@
 package de.management.entities;
 import java.sql.Date;
-
+import java.util.Collection;
+import java.util.HashSet;
+import java.util.Set;
 
 import javax.persistence.*;
 @Entity
@@ -13,9 +15,11 @@ public class Event {
 	private Date DatumVon;
 	private Date DatumBis;
 	
-	//@OneToMany 
-	//private Session Sessions;
+	@OneToMany
+	private Set<Session> sessions = new HashSet<Session>();
 	
+	@ManyToMany(mappedBy="events")
+	private Collection<User> users;
 	
 	
 

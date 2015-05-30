@@ -34,12 +34,19 @@ public class EventManagementDAO implements EventManagementDAOLocal {
 	}
 	
 	@Override
-	public Integer createUser(String username, String DeviseID) {
+	public Integer createUser(String username, String deviceID) {
 		User user = new User();
 		user.setName(username);
-		user.setDeviseID(DeviseID);
+		user.setDeviceID(deviceID);
 		em.persist(user);
-		return 100;
+		if (em.contains(user))
+		{
+			return 200;
+		}	
+		else 
+		{
+			return 501;
+		}
 	}
 	@Override
 	public HashMap<Integer, String> getEvents(Integer userID) {

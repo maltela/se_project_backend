@@ -1,6 +1,8 @@
 package de.management.eventmanagement;
 
 
+import java.util.HashMap;
+
 import javax.ejb.EJB;
 import javax.ejb.Stateless;
 import javax.jws.*;
@@ -11,7 +13,7 @@ import de.management.dao.EventManagementDAOLocal;
 
 
 
-@WebService
+@WebService(serviceName= "EventManagement")
 @Stateless
 public class ManagementWebService {
 	
@@ -28,9 +30,28 @@ public class ManagementWebService {
 	
 	
 	// Connection Test
+	@WebMethod(operationName = "ConnectionTest")
 	public Integer hasConnection() {
 		logger.info ("Client-Connection");
 		return 200;
 	}
+	
+	// Benutzer einrichten 
+	@WebMethod( operationName = "addUser")
+	public Integer createUser(@WebParam(name = "username")String username,@WebParam(name = "deviceID")String deviceID) {
+		Integer ReturnCode = dao.createUser(username, deviceID);
+		
+		return ReturnCode;
+	}
+	
+	// Veranstaltungs-Übersicht 
+	@WebMethod(operationName = "getEvents")
+	public HashMap<Integer,String> getEvents() {
+		
+		return null;
+	}
 
 }
+
+
+

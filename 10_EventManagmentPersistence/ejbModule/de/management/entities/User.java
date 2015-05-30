@@ -1,4 +1,7 @@
 package de.management.entities;
+import java.util.HashSet;
+import java.util.Set;
+
 import javax.persistence.*;
 
 @Entity 
@@ -7,10 +10,12 @@ public class User {
 	@Id @GeneratedValue 
 	private Integer Nr;
 	private String Name;
-	private String DeviseID;
-	//@OneToMany
-	//private Event  event;
-	//private Rolle rolle;
+	private String DeviceID;
+	
+	@ManyToMany
+	private Set<Event> events = new HashSet<Event>();
+	@OneToMany
+	private Set<Rolle> rollen = new HashSet<Rolle>();
 	
 	public User()
 	
@@ -36,12 +41,12 @@ public class User {
 	}
 	
 
-	public String getDeviseID() {
-		return DeviseID;
+	public String getDeviceID() {
+		return DeviceID;
 	}
 
-	public void setDeviseID(String deviseID) {
-		DeviseID = deviseID;
+	public void setDeviceID(String deviceID) {
+		DeviceID = deviceID;
 	}
 
 	
