@@ -2,7 +2,6 @@ package de.management.entities;
 import java.sql.Date;
 import java.util.Collection;
 import java.util.HashSet;
-import java.util.Set;
 
 import javax.persistence.*;
 @Entity
@@ -16,11 +15,10 @@ public class Event {
 	private Date DatumBis;
 	
 	@OneToMany
-	private Set<Session> sessions = new HashSet<Session>();
-	
-	@ManyToMany(mappedBy="events")
-	private Collection<User> users;
-	
+	private Collection<Session> sessions = new HashSet<Session>();
+	@ManyToMany
+	private Collection<User> users = new HashSet<User>();
+		
 	
 
 // Konstruktor 

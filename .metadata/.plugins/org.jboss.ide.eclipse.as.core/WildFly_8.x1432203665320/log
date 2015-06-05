@@ -201,3 +201,125 @@
 
 !ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2015-05-23 16:22:29.061
 !MESSAGE Server Startup Succeeded
+!SESSION 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2015-05-30 11:51:39.096
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2015-05-30 11:51:43.684
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2015-05-31 12:18:11.301
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2015-05-31 12:18:18.181
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2015-05-31 12:18:22.764
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2015-05-31 12:19:12.026
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2015-05-31 12:19:24.519
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2015-05-31 12:19:29.239
+!MESSAGE Server Startup Succeeded
+!SESSION 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2015-06-01 12:08:09.891
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2015-06-01 12:08:13.865
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2015-06-01 12:11:26.385
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2015-06-01 12:11:50.934
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2015-06-01 12:11:55.032
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2015-06-01 12:42:54.369
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2015-06-01 12:42:57.874
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2015-06-01 12:43:02.186
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2015-06-01 12:45:27.131
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2015-06-01 12:45:49.290
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2015-06-01 12:45:53.386
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 0 2015-06-01 12:54:27.257
+!MESSAGE Error occurred while checking module state for 10_EventManagementEAR on server WildFly 8.x
+!STACK 0
+org.eclipse.core.runtime.AssertionFailedException: assertion failed: The application has not been initialized.
+	at org.eclipse.core.runtime.Assert.isTrue(Assert.java:110)
+	at org.eclipse.core.internal.runtime.InternalPlatform.assertInitialized(InternalPlatform.java:139)
+	at org.eclipse.core.internal.runtime.InternalPlatform.getAdapterManager(InternalPlatform.java:160)
+	at org.eclipse.core.runtime.Platform.getAdapterManager(Platform.java:601)
+	at org.eclipse.wst.server.core.internal.Server.loadAdapter(Server.java:1617)
+	at org.jboss.tools.as.core.server.controllable.systems.AbstractJBossDeploymentOptionsController.getExtendedProperties(AbstractJBossDeploymentOptionsController.java:181)
+	at org.jboss.tools.as.core.server.controllable.subsystems.internal.LocalDeploymentOptionsController.getDeployFolder(LocalDeploymentOptionsController.java:68)
+	at org.jboss.tools.as.core.server.controllable.systems.AbstractJBossDeploymentOptionsController.getDeploymentsRootFolder(AbstractJBossDeploymentOptionsController.java:78)
+	at org.jboss.tools.as.core.server.controllable.subsystems.internal.ModuleDeployPathController.getDefaultDeployFolder(ModuleDeployPathController.java:71)
+	at org.jboss.tools.as.core.server.controllable.subsystems.internal.ModuleDeployPathController.getDeployDirectory(ModuleDeployPathController.java:110)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.JBoss7FSModuleStateVerifier.getModuleDeployRoot(JBoss7FSModuleStateVerifier.java:69)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.JBoss7FSModuleStateVerifier.getRootModuleState(JBoss7FSModuleStateVerifier.java:99)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.AbstractJBoss7ModuleStateVerifier.getModuleState(AbstractJBoss7ModuleStateVerifier.java:66)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.AbstractJBoss7ModuleStateVerifier.getModuleState(AbstractJBoss7ModuleStateVerifier.java:172)
+	at org.jboss.ide.eclipse.as.core.server.internal.UpdateModuleStateJob.getModuleState(UpdateModuleStateJob.java:130)
+	at org.jboss.ide.eclipse.as.core.server.internal.UpdateModuleStateJob.runWait(UpdateModuleStateJob.java:94)
+	at org.jboss.ide.eclipse.as.core.server.internal.UpdateModuleStateJob.run(UpdateModuleStateJob.java:79)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SESSION 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2015-06-05 16:18:16.774
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2015-06-05 16:18:23.674
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2015-06-05 16:21:26.217
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2015-06-05 16:21:30.412
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2015-06-05 16:21:43.544
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2015-06-05 16:21:47.857
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2015-06-05 16:21:53.253
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2015-06-05 16:28:15.353
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2015-06-05 16:35:21.723
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2015-06-05 16:35:26.605
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2015-06-05 16:36:43.924
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2015-06-05 16:36:47.977
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2015-06-05 16:36:51.494
+!MESSAGE Server Startup Succeeded

@@ -1,5 +1,6 @@
 package de.management.dao;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
@@ -54,9 +55,12 @@ public class EventManagementDAO implements EventManagementDAOLocal {
 		return null;
 	}
 	@Override
-	public Event getEvent(Integer id) {
-		// TODO Auto-generated method stub
-		return null;
+	public List<Event> getEvent(Integer id) {
+		Query query = em.createQuery("Select a from Event where id like :param");
+		query.setParameter("param",id);
+		List<Event> list = query.getResultList();
+		
+		return list;
 	}
 	@Override
 	public List<Session> getSessions(Integer eventID) {

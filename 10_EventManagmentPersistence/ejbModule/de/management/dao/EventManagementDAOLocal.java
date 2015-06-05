@@ -22,7 +22,7 @@ public interface EventManagementDAOLocal {
 	public HashMap<Integer,String> getEvents();
 	public HashMap<Integer,String> getEvents(Integer userID);
 	// Ausgabe Veranstaltungsinformation 
-	public Event getEvent(Integer id);		 
+	public List<Event> getEvent(Integer id);		 
 	// Ausgabe Sessions anhand Event 
 	public List<Session> getSessions(Integer eventID);
 	//User Registrierung @Backend  Return User-ID 

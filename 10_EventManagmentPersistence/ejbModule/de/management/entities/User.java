@@ -1,7 +1,7 @@
 package de.management.entities;
-import java.util.HashSet;
-import java.util.Set;
 
+import java.util.Collection;
+import java.util.HashSet;
 import javax.persistence.*;
 
 @Entity 
@@ -13,9 +13,9 @@ public class User {
 	private String DeviceID;
 	
 	@ManyToMany
-	private Set<Event> events = new HashSet<Event>();
+	private	Collection<Event> events = new HashSet<Event>();
 	@OneToMany
-	private Set<Rolle> rollen = new HashSet<Rolle>();
+	private Collection<Rolle> rollen = new HashSet<Rolle>();
 	
 	public User()
 	

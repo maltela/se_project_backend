@@ -50,6 +50,17 @@ public class ManagementWebService {
 		
 		return null;
 	}
+	
+	// Veranstaltungsinformationen
+	
+	@WebMethod(operationName ="getEvent")
+	public HashMap<String,String> getEvent(@WebParam(name="eventID") Integer eventID){
+		
+		dao.getEvent(eventID);
+		
+		return null;
+		
+	}
 
 }
 
