@@ -1,15 +1,12 @@
 package de.management.dao;
 
-import java.util.HashMap;
-import java.util.List;
+import java.util.ArrayList;
 
 
 
 
 
 import de.management.entities.*;
-
-
 
 import javax.ejb.Local;
 
@@ -19,18 +16,14 @@ public interface EventManagementDAOLocal {
 	
 	
 	// Ausgabe Veranstaltungsübersicht  -> Wunschzettel : HashMap (ID+Name) 
-	public HashMap<Integer,String> getEvents();
-	public HashMap<Integer,String> getEvents(Integer userID);
+	public ArrayList<String> getEvents();
+	public ArrayList<Event> getEvents(Integer userID);
 	// Ausgabe Veranstaltungsinformation 
-	public List<Event> getEvent(Integer id);		 
-	// Ausgabe Sessions anhand Event 
-	public List<Session> getSessions(Integer eventID);
+	public Event getEvent(Integer id);		 
 	//User Registrierung @Backend  Return User-ID 
 	public Integer createUser(String username,String DeviseID);
 	
-	// Veranstaltung beitreten 
-	public Event joinEvent(Integer eventID,Integer userID);
-
+	
 	//
 	//*********** Admin-Anwedungsfälle***************** 
 	//

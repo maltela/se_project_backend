@@ -1,0 +1,10 @@
+package de.management.dao;
+
+import de.management.entities.*;
+
+public class DataBuilder {
+	
+	
+
+
+}

@@ -1,9 +1,6 @@
 package de.management.dao;
 
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -21,28 +18,28 @@ public class EventManagementDAO implements EventManagementDAOLocal {
 	
 	// Ausgabe aller Events 
 	@SuppressWarnings("unchecked")
-	public HashMap<Integer, String> getEvents()
+	public ArrayList<String> getEvents()
 	{
 		Query query = em.createQuery("Select name from Event");
-		return (HashMap<Integer, String>) query.getResultList();
+		return (ArrayList<String>) query.getResultList();
 	}
 	
 	// Ausgabe Sessions eines Events 
 	@SuppressWarnings("unchecked")
-	public List<String> getSessions(Event event)
+	public ArrayList<Session> getSessions(Event event)
 	{
-		return (List<String>) em.find(Session.class,event);
+		Query query = em.createQuery("select e from Session e ");
+		ArrayList<Session> list = (ArrayList<Session>) query.getResultList();
+		return (list);
 	}
 	
 	@Override
 	public Integer createUser(String username, String deviceID) {
-		User user = new User();
-		user.setName(username);
-		user.setDeviceID(deviceID);
+		User user = new User(username, deviceID);
 		em.persist(user);
 		if (em.contains(user))
 		{
-			return 200;
+			return user.getUserID();
 		}	
 		else 
 		{
@@ -50,28 +47,20 @@ public class EventManagementDAO implements EventManagementDAOLocal {
 		}
 	}
 	@Override
-	public HashMap<Integer, String> getEvents(Integer userID) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-	@Override
-	public List<Event> getEvent(Integer id) {
-		Query query = em.createQuery("Select a from Event where id like :param");
-		query.setParameter("param",id);
-		List<Event> list = query.getResultList();
+	public ArrayList<Event> getEvents(Integer userID) {
+		Query query = em.createQuery("select e from Event e join e.Users u where e.ID = :param ");
+		query.setParameter("param",userID);
 		
+		@SuppressWarnings("unchecked")
+		ArrayList<Event> list = (ArrayList<Event>) query.getResultList();
 		return list;
 	}
 	@Override
-	public List<Session> getSessions(Integer eventID) {
-		// TODO Auto-generated method stub
+	public Event getEvent(Integer id) {
+		
 		return null;
 	}
-	@Override
-	public Event joinEvent(Integer eventID, Integer userID) {
-		// TODO Auto-generated method stub
-		return null;
-	}
+	
 	@Override
 	public Integer createPush() {
 		// TODO Auto-generated method stub

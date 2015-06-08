@@ -1,11 +1,12 @@
 package de.management.entities;
+import java.io.Serializable;
 import java.sql.Date;
 import java.util.Collection;
 import java.util.HashSet;
 
 import javax.persistence.*;
 @Entity
-public class Event {
+public class Event implements Serializable {
 	
 	@Id @GeneratedValue
 	private Integer Nr;

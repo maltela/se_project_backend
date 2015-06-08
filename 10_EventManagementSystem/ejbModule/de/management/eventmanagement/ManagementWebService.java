@@ -1,6 +1,7 @@
 package de.management.eventmanagement;
 
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
 import javax.ejb.EJB;
@@ -39,14 +40,15 @@ public class ManagementWebService {
 	// Benutzer einrichten 
 	@WebMethod( operationName = "addUser")
 	public Integer createUser(@WebParam(name = "username")String username,@WebParam(name = "deviceID")String deviceID) {
-		Integer ReturnCode = dao.createUser(username, deviceID);
+		Integer userID = dao.createUser(username, deviceID);
 		
-		return ReturnCode;
+		return userID;
 	}
 	
 	// Veranstaltungs-Übersicht 
 	@WebMethod(operationName = "getEvents")
-	public HashMap<Integer,String> getEvents() {
+	public ArrayList<String> getEvents() {
+		
 		
 		return null;
 	}

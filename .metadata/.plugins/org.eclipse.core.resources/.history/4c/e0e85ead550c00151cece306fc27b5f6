@@ -1,0 +1,48 @@
+package de.management.dao;
+import javax.annotation.PostConstruct;
+import javax.annotation.Resource;
+import javax.ejb.EJB;
+import javax.ejb.Singleton;
+import javax.ejb.Startup;
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+
+import org.jboss.logging.Logger;
+
+import de.management.entities.User;
+
+@Startup
+@Singleton
+public class DataBuilder {
+	
+			
+		private static final Logger logger = Logger.getLogger(DataBuilder.class);
+		
+
+		
+		@PersistenceContext
+		EntityManager em;
+		
+		@Resource
+		private String Event;
+
+		@PostConstruct
+		private void init() {
+			User user1 = new User();
+			user1.setName("Test1");
+			user1.setUserID(1);
+			user1.setDeviceID("123432");
+			em.persist(user1);
+			logger.debug("User angelegt:");
+			User userdb = em.find(User.class,1);
+			logger.debug(userdb.getName());
+			
+		
+		}
+		
+	}
+
+
+
+
+

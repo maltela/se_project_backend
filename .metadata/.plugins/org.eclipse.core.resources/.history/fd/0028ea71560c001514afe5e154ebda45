@@ -1,0 +1,25 @@
+package de.management.dao;
+import javax.annotation.PostConstruct;
+import javax.annotation.Resource;
+import javax.ejb.EJB;
+import javax.ejb.Singleton;
+import javax.ejb.Startup;
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+
+import org.jboss.logging.Logger;
+
+import de.management.entities.User;
+
+
+public class DataBuilder {
+	
+			
+	
+		
+	}
+
+
+
+
+

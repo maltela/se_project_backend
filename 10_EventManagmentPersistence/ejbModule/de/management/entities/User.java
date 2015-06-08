@@ -1,52 +1,61 @@
 package de.management.entities;
 
+import java.io.Serializable;
 import java.util.Collection;
 import java.util.HashSet;
+import java.util.Random;
+
 import javax.persistence.*;
 
 @Entity 
-public class User {
+public class User implements Serializable {
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	@Id @GeneratedValue 
-	private Integer Nr;
-	private String Name;
-	private String DeviceID;
+	private Integer id;
+	private String name;
+	private String deviceID;
 	
-	@ManyToMany
+    @ManyToMany(cascade = {CascadeType.ALL},fetch= FetchType.EAGER)
 	private	Collection<Event> events = new HashSet<Event>();
-	@OneToMany
+	@OneToMany(cascade = {CascadeType.ALL},fetch= FetchType.EAGER)
 	private Collection<Rolle> rollen = new HashSet<Rolle>();
 	
+	
 	public User()
-	
-	
 	{
-		// DB generiert eindeutige Nr.
+		super();
+	}
+	public User(String Name,String DeviceID )
+	{
+		this.name=Name;
+		this.deviceID=DeviceID;
+		
 	}
 
-	public Integer getNr() {
-		return Nr;
+	public Integer getUserID() {
+		return id;
 	}
 
-	public void setNr(Integer nr) {
-		Nr = nr;
-	}
 
 	public String getName() {
-		return Name;
+		return name;
 	}
 
-	public void setName(String name) {
-		Name = name;
+	public void setName(String Name) {
+		name = Name;
 	}
 	
 
 	public String getDeviceID() {
-		return DeviceID;
+		return deviceID;
 	}
 
-	public void setDeviceID(String deviceID) {
-		DeviceID = deviceID;
+	public void setDeviceID(String DeviceID) {
+		deviceID = DeviceID;
 	}
 
 	
