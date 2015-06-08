@@ -4907,3 +4907,77 @@ Binding(COMMAND+SHIFT+F10,
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.contexts.window,,cocoa,system)
+
+!ENTRY org.jboss.tools.cdi.core 4 0 2015-06-08 22:05:45.202
+!MESSAGE WithAnnotations [in WithAnnotations.class [in javax.enterprise.inject.spi [in /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/modules/system/layers/base/javax/enterprise/api/main/cdi-api-1.1.jar]]] does not exist
+!STACK 1
+Java Model Exception: Java Model Status [WithAnnotations [in WithAnnotations.class [in javax.enterprise.inject.spi [in /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/modules/system/layers/base/javax/enterprise/api/main/cdi-api-1.1.jar]]] does not exist]
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:556)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:590)
+	at org.eclipse.jdt.internal.core.BinaryType.getElementInfo(BinaryType.java:287)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:302)
+	at org.eclipse.jdt.internal.core.BinaryType.getAnnotations(BinaryType.java:185)
+	at org.jboss.tools.cdi.internal.core.scanner.lib.BeanArchiveDetector.isAnnotatedBean(BeanArchiveDetector.java:243)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.buildJars(CDICoreBuilder.java:385)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.build(CDICoreBuilder.java:220)
+	at org.jboss.tools.cdi.core.CDICoreBuilder.<init>(CDICoreBuilder.java:96)
+	at org.jboss.tools.cdi.core.CDICoreNature.load(CDICoreNature.java:419)
+	at org.jboss.tools.cdi.core.CDICoreNature.resolveStorage(CDICoreNature.java:392)
+	at org.jboss.tools.cdi.core.CDICoreNature.resolve(CDICoreNature.java:405)
+	at org.jboss.tools.cdi.core.CDICorePlugin.getCDI(CDICorePlugin.java:165)
+	at org.jboss.tools.cdi.internal.core.validation.CDIProjectTree.addProject(CDIProjectTree.java:56)
+	at org.jboss.tools.cdi.internal.core.validation.CDIProjectTree.<init>(CDIProjectTree.java:44)
+	at org.jboss.tools.cdi.internal.core.validation.CDICoreValidator.getProjectTree(CDICoreValidator.java:243)
+	at org.jboss.tools.cdi.internal.core.validation.CDICoreValidator.getValidatingProjects(CDICoreValidator.java:238)
+	at org.jboss.tools.common.validation.ValidationContext.init(ValidationContext.java:127)
+	at org.jboss.tools.common.validation.ValidationContext.<init>(ValidationContext.java:43)
+	at org.jboss.tools.common.validation.EditorValidationContext.<init>(EditorValidationContext.java:30)
+	at org.jboss.tools.common.validation.AsYouTypeValidatorManager.init(AsYouTypeValidatorManager.java:158)
+	at org.jboss.tools.common.validation.AsYouTypeValidatorManager.shouldValidate(AsYouTypeValidatorManager.java:229)
+	at org.jboss.tools.common.validation.AsYouTypeValidatorManager.validateJavaElement(AsYouTypeValidatorManager.java:221)
+	at org.jboss.tools.common.validation.AsYouTypeValidatorManager.validateJavaElement(AsYouTypeValidatorManager.java:217)
+	at org.jboss.tools.common.validation.java.JavaDirtyRegionProcessor.endProcessing(JavaDirtyRegionProcessor.java:507)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor$BackgroundThread.run(DirtyRegionProcessor.java:697)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-06-08 22:05:45.205
+!MESSAGE WithAnnotations [in WithAnnotations.class [in javax.enterprise.inject.spi [in /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/modules/system/layers/base/javax/enterprise/api/main/cdi-api-1.1.jar]]] does not exist
+
+!ENTRY org.eclipse.jst.jee.ejb 4 0 2015-06-08 22:11:21.316
+!MESSAGE java.util.ConcurrentModificationException
+!STACK 0
+org.eclipse.jst.jee.model.internal.mergers.ModelException: java.util.ConcurrentModificationException
+	at org.eclipse.jst.jee.model.internal.mergers.EjbJarMerger.process(EjbJarMerger.java:79)
+	at org.eclipse.jst.jee.model.internal.EJB3MergedModelProvider.mergeWithModel(EJB3MergedModelProvider.java:214)
+	at org.eclipse.jst.jee.model.internal.EJB3MergedModelProvider.merge(EJB3MergedModelProvider.java:204)
+	at org.eclipse.jst.jee.model.internal.EJB3MergedModelProvider.internalModelChanged(EJB3MergedModelProvider.java:174)
+	at org.eclipse.jst.jee.model.internal.EJB3MergedModelProvider.annotationModelChanged(EJB3MergedModelProvider.java:151)
+	at org.eclipse.jst.jee.model.internal.common.AbstractMergedModelProvider$AnnotationModelListener.modelsChanged(AbstractMergedModelProvider.java:83)
+	at org.eclipse.jst.jee.model.internal.common.AbstractAnnotationModelProvider$1.run(AbstractAnnotationModelProvider.java:189)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jst.jee.model.internal.common.AbstractAnnotationModelProvider.notifyListeners(AbstractAnnotationModelProvider.java:184)
+	at org.eclipse.jst.jee.model.internal.common.AbstractAnnotationModelProvider.notifyListeners(AbstractAnnotationModelProvider.java:157)
+	at org.eclipse.jst.jee.model.internal.common.AbstractAnnotationModelProvider.internalPostReconcile(AbstractAnnotationModelProvider.java:467)
+	at org.eclipse.jst.jee.model.internal.common.AbstractAnnotationModelProvider.elementChanged(AbstractAnnotationModelProvider.java:446)
+	at org.eclipse.jdt.internal.core.DeltaProcessor$4.run(DeltaProcessor.java:1695)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.notifyListeners(DeltaProcessor.java:1685)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.fireReconcileDelta(DeltaProcessor.java:1537)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.fire(DeltaProcessor.java:1496)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:770)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:789)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1247)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1208)
+	at org.jboss.tools.cdi.internal.core.impl.CDIProjectAsYouType.findCompilationUnit(CDIProjectAsYouType.java:174)
+	at org.jboss.tools.cdi.internal.core.impl.CDIProjectAsYouType.build(CDIProjectAsYouType.java:121)
+	at org.jboss.tools.cdi.internal.core.impl.CDIProjectAsYouType.<init>(CDIProjectAsYouType.java:103)
+	at org.jboss.tools.cdi.internal.core.validation.CDICoreValidator.validate(CDICoreValidator.java:557)
+	at org.jboss.tools.common.validation.AsYouTypeValidatorManager.validate(AsYouTypeValidatorManager.java:183)
+	at org.jboss.tools.common.validation.AsYouTypeValidatorManager.validateString(AsYouTypeValidatorManager.java:205)
+	at org.jboss.tools.common.validation.AsYouTypeValidatorManager.validateString(AsYouTypeValidatorManager.java:200)
+	at org.jboss.tools.common.validation.java.JavaDirtyRegionProcessor.endProcessing(JavaDirtyRegionProcessor.java:498)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor$BackgroundThread.run(DirtyRegionProcessor.java:697)
+Caused by: java.util.ConcurrentModificationException
+	at org.eclipse.emf.ecore.util.FeatureMapUtil$BasicFeatureEIterator.checkModCount(FeatureMapUtil.java:555)
+	at org.eclipse.emf.ecore.util.FeatureMapUtil$BasicFeatureEIterator.next(FeatureMapUtil.java:373)
+	at org.eclipse.jst.jee.model.internal.mergers.EjbJarMerger.mergeSessionBeans(EjbJarMerger.java:145)
+	at org.eclipse.jst.jee.model.internal.mergers.EjbJarMerger.process(EjbJarMerger.java:74)
+	... 29 more

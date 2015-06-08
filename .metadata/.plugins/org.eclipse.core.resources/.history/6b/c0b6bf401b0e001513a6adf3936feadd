@@ -11,11 +11,6 @@ import de.management.entities.*;
 import javax.ejb.Local;
 
 @Local
-/**
- * Interface zur Persistierung 
- * @author Malte Lange 
- *
- */
 public interface EventManagementDAOLocal {
 	
 	

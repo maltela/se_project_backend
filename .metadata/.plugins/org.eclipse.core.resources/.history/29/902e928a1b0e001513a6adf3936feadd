@@ -11,7 +11,7 @@ import de.management.entities.*;
 @Stateless
 /** 
  * Persistierung-Methoden 
- * @author Malte Lange 
+ * @author Malte
  *
  */
 public class EventManagementDAO implements EventManagementDAOLocal {

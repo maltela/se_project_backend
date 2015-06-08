@@ -9,11 +9,6 @@ import javax.persistence.Query;
 import de.management.entities.*;
 
 @Stateless
-/** 
- * Persistierung-Methoden 
- * @author Malte Lange 
- *
- */
 public class EventManagementDAO implements EventManagementDAOLocal {
 	
 	@PersistenceContext

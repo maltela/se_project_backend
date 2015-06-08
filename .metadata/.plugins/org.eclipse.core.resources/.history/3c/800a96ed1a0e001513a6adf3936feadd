@@ -68,6 +68,7 @@ public class ManagementWebService {
 	
 	/** 4. Schnittestelle - Alle Informationen einer Veranstaltung bereitstellen
 	 *  @author Malte Lange
+	 * 
 	 */
 	
 	@WebMethod(operationName ="getEvent")

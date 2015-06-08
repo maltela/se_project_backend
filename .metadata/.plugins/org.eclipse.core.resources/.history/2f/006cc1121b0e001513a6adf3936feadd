@@ -13,9 +13,6 @@ import de.management.entities.User;
 
 @Startup
 @Singleton
-/** Beispieldaten Beladung / Objekte verfizieren 
- * 	@author Malte Lange 
- * */
 public class DataBuilder {
 	private static final Logger logger = Logger.getLogger(DataBuilder.class);
 	
