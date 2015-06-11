@@ -3,16 +3,14 @@
 package de.management.eventmanagement;
 
 
-import java.util.ArrayList;
-import java.util.HashMap;
+import java.util.List;
 
 import javax.ejb.EJB;
 import javax.ejb.Stateless;
 import javax.jws.*;
 
-import org.jboss.logging.Logger;
-
 import de.management.dao.EventManagementDAOLocal;
+import de.management.entities.Event;
 
 
 
@@ -25,7 +23,7 @@ import de.management.dao.EventManagementDAOLocal;
 @Stateless
 public class ManagementWebService {
 	
-	private static final Logger logger = Logger.getLogger(WebService.class);
+	
 	
 	/** DAO Datenverarbeitung Bereitstellung */ 
 	@EJB(beanName = "EventManagementDAO", beanInterface = de.management.dao.EventManagementDAOLocal.class)
@@ -37,12 +35,12 @@ public class ManagementWebService {
 	//private DtoAssembler dtoAssembler;
 	
 	
+	
 	/** 1. Schnittstelle - Connection Test -
 	 *  @author Malte Lange
 	 *  */
 	@WebMethod(operationName = "ConnectionTest")
 	public Integer hasConnection() {
-		logger.info ("Client-Connection");
 		return 200;
 	}
 	
@@ -52,7 +50,6 @@ public class ManagementWebService {
 	@WebMethod( operationName = "addUser")
 	public Integer createUser(@WebParam(name = "username")String username,@WebParam(name = "deviceID")String deviceID) {
 		Integer userID = dao.createUser(username, deviceID);
-		
 		return userID;
 	}
 	
@@ -60,10 +57,11 @@ public class ManagementWebService {
 	 * @author Malte Lange
 	 */ 
 	@WebMethod(operationName = "getEvents")
-	public ArrayList<String> getEvents() {
+	public List<Event> getEventOverview() {
+		List<Event> data = dao.getEventOverview();
 		
-		
-		return null;
+		return(data);	
+	
 	}
 	
 	/** 4. Schnittestelle - Alle Informationen einer Veranstaltung bereitstellen
@@ -71,15 +69,24 @@ public class ManagementWebService {
 	 */
 	
 	@WebMethod(operationName ="getEvent")
-	public HashMap<String,String> getEvent(@WebParam(name="eventID") Integer eventID){
+	public Event getEvent(@WebParam(name="eventID") Integer eventID){
 		
-		dao.getEvent(eventID);
-		
-		return null;
+		return (dao.getEvent(eventID));
 		
 	}
+	/**
+	 * 5. Schnittstelle - Push Nachrichten versenden
+	 * @author Malte Lange 
+	 * @param msg
+	 * @return
+	 */
+	@WebMethod(operationName="sendPush")
+	public Integer sendPush(@WebParam(name="msg")String msg)
+	{
+		return 200;
+	}
+	
+	
 
 }
-
-
 

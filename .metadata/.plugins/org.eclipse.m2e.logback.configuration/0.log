@@ -337,3 +337,6 @@
 2015-05-23 12:06:08,478 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2015-05-23 12:06:08,481 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2015-05-23 12:06:08,481 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/MalteL/git/eventmanagement/src/test/resources
+2015-06-11 15:22:56,554 [main] INFO  org.eclipse.jetty.server.Server - jetty-8.1.16.v20140903
+2015-06-11 15:22:56,593 [main] INFO  o.e.jetty.server.AbstractConnector - Started SelectChannelConnector@0.0.0.0:64964
+2015-06-11 15:36:19,853 [Framework stop] INFO  o.e.j.server.handler.ContextHandler - stopped o.e.j.s.ServletContextHandler{/wse,null}

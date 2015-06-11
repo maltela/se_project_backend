@@ -1,10 +1,14 @@
 package de.management.dao;
 
 import java.util.ArrayList;
+import java.util.List;
+
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
+
+import org.jboss.logging.Logger;
 
 import de.management.entities.*;
 
@@ -15,33 +19,21 @@ import de.management.entities.*;
  *
  */
 public class EventManagementDAO implements EventManagementDAOLocal {
+	private static final Logger logger = Logger.getLogger(EventManagementDAO.class);
 	
 	@PersistenceContext
 	private EntityManager em;
 	
-	
-	
-	// Ausgabe aller Events 
-	@SuppressWarnings("unchecked")
-	public ArrayList<String> getEvents()
-	{
-		Query query = em.createQuery("Select name from Event");
-		return (ArrayList<String>) query.getResultList();
-	}
-	
-	// Ausgabe Sessions eines Events 
-	@SuppressWarnings("unchecked")
-	public ArrayList<Session> getSessions(Event event)
-	{
-		Query query = em.createQuery("select e from Session e ");
-		ArrayList<Session> list = (ArrayList<Session>) query.getResultList();
-		return (list);
-	}
-	
+	/** 
+	 * 1. Benutzer anlegen 
+	 * @author Malte Lange 
+	 */
 	@Override
 	public Integer createUser(String username, String deviceID) {
 		User user = new User(username, deviceID);
 		em.persist(user);
+		logger.info("User"+username+" anlegen");
+		
 		if (em.contains(user))
 		{
 			return user.getUserID();
@@ -51,26 +43,50 @@ public class EventManagementDAO implements EventManagementDAOLocal {
 			return 501;
 		}
 	}
+	/**
+	 * 2. Übersicht aller verfügbaren Events 
+	 * @author  Malte Lange 
+	 */
 	@Override
-	public ArrayList<Event> getEvents(Integer userID) {
-		Query query = em.createQuery("select e from Event e join e.Users u where e.ID = :param ");
-		query.setParameter("param",userID);
-		
+	
+	public List<Event> getEventOverview() {
+		logger.info("Ausgabe der Event-Übersicht");
+		Query query = em.createQuery("select e from Event e ");
 		@SuppressWarnings("unchecked")
-		ArrayList<Event> list = (ArrayList<Event>) query.getResultList();
+		List<Event> list = (List<Event>) query.getResultList();
+		Event test = list.get(2);
+		test.getName();
+		logger.info(test.getName()+" "+test.getDescription());
+	//	Event[] dataArray = new Event[list.size()];
+	//	list.toArray(dataArray);
 		return list;
 	}
-	@Override
-	public Event getEvent(Integer id) {
-		
-		return null;
-	}
+	
+	/** 
+	 * 3. Informationen einer Veranstaltung 
+	 * @author Malte Lange 
+	 */
 	
 	@Override
-	public Integer createPush() {
+	public Event getEvent(Integer id) {
+		logger.info ("Get Event ");
+		return (em.find(Event.class,id));
+		
+	}
+	
+	/**
+	 *  4. Push-Nachricht erstellen
+	 *  @author Malte Lange 
+	 */
+	@Override
+	public Integer createPush(String msg) {
 		// TODO Auto-generated method stub
 		return null;
 	}
+	
+	/************************
+	 * Adminstration Funktionen
+	 */
 	@Override
 	public Integer createEvent(Event event, Integer UserID) {
 		// TODO Auto-generated method stub
@@ -101,5 +117,8 @@ public class EventManagementDAO implements EventManagementDAOLocal {
 		// TODO Auto-generated method stub
 		return null;
 	}
+
+
+	
 		
 }

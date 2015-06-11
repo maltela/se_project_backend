@@ -1,0 +1,77 @@
+package de.management.entities;
+import java.io.Serializable;
+import java.util.Collection;
+import java.util.HashSet;
+
+import javax.persistence.*;
+@Entity
+public class Event implements Serializable {
+	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	@Id @GeneratedValue
+	private Integer EventID;
+	private String Name;
+	private String Beschreibung;
+	private	String DatumVon;
+	private String DatumBis;
+	
+	@OneToMany
+	private Collection<Session> sessions = new HashSet<Session>();
+	@ManyToMany
+	private Collection<User> users = new HashSet<User>();
+		
+	
+
+// Konstruktor 
+	 
+	public Event () 
+	{
+		super();
+		
+	}
+	public Event (String Name,String Beschreibung,String Anfang,String Ende)
+	{
+		
+		this.Name=Name;
+		this.Beschreibung=Beschreibung;
+		this.DatumVon=Anfang;
+		this.DatumBis=Ende;
+		
+	}
+// Getter / Setter Methoden	
+	public Integer getEventID() {
+		return EventID;
+	}
+	public void setEventID(Integer id) {
+		EventID = id;
+	}
+	public String getName() {
+		return Name;
+	}
+	public void setName(String name) {
+		Name = name;
+	}
+	public String getBeschreibung() {
+		return Beschreibung;
+	}
+	public void setBeschreibung(String beschreibung) {
+		Beschreibung = beschreibung;
+	}
+	public String getDatumVon() {
+		return DatumVon;
+	}
+	public void setDatumVon(String datumVon) {
+		DatumVon = datumVon;
+	}
+	public String getDatumBis() {
+		return DatumBis;
+	}
+	public void setDatumBis(String datumBis) {
+		DatumBis = datumBis;
+	}
+
+
+}

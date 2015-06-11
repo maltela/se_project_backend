@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <modules>
   <module moduleId="org.eclipse.jst.jee.server:10_EventManagmentPersistence" serverId="WildFly 8.x1432203665320"/>
-  <module moduleId="org.eclipse.jst.jee.server:10_EventManagementSystem" serverId="WildFly 8.x1432203665320"/>
-  <module moduleId="org.eclipse.jst.jee.server:10_EventManagementEAR" serverId="WildFly 8.x1432203665320"/>
+  <module moduleId="org.eclipse.jst.jee.server:10_EventManagementSystem"/>
+  <module moduleId="org.eclipse.jst.jee.server:10_EventManagementEAR"/>
 </modules>

@@ -3,8 +3,6 @@ package de.management.entities;
 import java.io.Serializable;
 import java.util.Collection;
 import java.util.HashSet;
-import java.util.Random;
-
 import javax.persistence.*;
 
 @Entity 

@@ -1,0 +1,132 @@
+package de.management.entities;
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Date;
+import java.util.HashSet;
+
+import javax.persistence.*;
+
+import de.management.exceptions.ParamMissingException;
+import de.management.interfaces.InterEvent;
+@Entity
+public class Event implements Serializable,InterEvent {
+	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	@Id @GeneratedValue
+	private Integer EventID;
+	private String Name;
+	private String Beschreibung;
+	private	String DatumVon;
+	private String DatumBis;
+	
+	@OneToMany
+	private Collection<Session> sessions = new HashSet<Session>();
+	@ManyToMany
+	private Collection<User> users = new HashSet<User>();
+		
+	
+
+// Konstruktor 
+	 
+	public Event () 
+	{
+		super();
+		
+	}
+	public Event (String Name,String Beschreibung,String Anfang,String Ende)
+	{
+		
+		this.Name=Name;
+		this.Beschreibung=Beschreibung;
+		this.DatumVon=Anfang;
+		this.DatumBis=Ende;
+		
+	}
+// Getter / Setter Methoden	
+	public Integer getEventID() {
+		return EventID;
+	}
+	public void setEventID(Integer id) {
+		EventID = id;
+	}
+	public String getName() {
+		return Name;
+	}
+	public void setName(String name) {
+		Name = name;
+	}
+	public String getBeschreibung() {
+		return Beschreibung;
+	}
+	public void setBeschreibung(String beschreibung) {
+		Beschreibung = beschreibung;
+	}
+	public String getDatumVon() {
+		return DatumVon;
+	}
+	public void setDatumVon(String datumVon) {
+		DatumVon = datumVon;
+	}
+	public String getDatumBis() {
+		return DatumBis;
+	}
+	public void setDatumBis(String datumBis) {
+		DatumBis = datumBis;
+	}
+	@Override
+	public void setID(Integer id) throws ParamMissingException {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public Date getDateEnd() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	@Override
+	public void setDateEnd(Date endDate) throws ParamMissingException {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public Date getDateStart() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	@Override
+	public void setDateStart(Date startDate) throws ParamMissingException {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public String getDescription() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	@Override
+	public void setDescription(String description) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public ArrayList<Session> getSessions() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	@Override
+	public void setSessions(ArrayList<Session> sessions) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void addSessions(Session session) {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+}

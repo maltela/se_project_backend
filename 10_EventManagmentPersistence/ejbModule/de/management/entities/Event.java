@@ -1,66 +1,125 @@
 package de.management.entities;
 import java.io.Serializable;
-import java.sql.Date;
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Date;
 import java.util.HashSet;
 
 import javax.persistence.*;
+
+import de.management.exceptions.ParamMissingException;
+import de.management.interfaces.InterEvent;
 @Entity
-public class Event implements Serializable {
+public class Event implements Serializable,InterEvent {
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	@Id @GeneratedValue
-	private Integer Nr;
-	private String Name;
-	private String Beschreibung;
-	private Date DatumVon;
-	private Date DatumBis;
+    private Integer id;
+    private String name;
+    private Date dateEnd;
+    private Date dateStart;
+    private String description;
+ 
 	
-	@OneToMany
-	private Collection<Session> sessions = new HashSet<Session>();
-	@ManyToMany
+	@OneToMany(fetch = FetchType.EAGER)
+	private Collection<Session> sessions = new ArrayList<Session>();
+	@ManyToMany(fetch = FetchType.EAGER)
 	private Collection<User> users = new HashSet<User>();
 		
 	
 
 // Konstruktor 
 	 
+	public Event () 
+	{
+		super();
+		
+	}
 	public Event (String Name,String Beschreibung,Date Anfang,Date Ende)
 	{
-		this.Name=Name;
-		this.Beschreibung=Beschreibung;
-		this.DatumVon=Anfang;
-		this.DatumBis=Ende;
+		
+		this.name=Name;
+		this.description=Beschreibung;
+		this.dateStart=Anfang;
+		this.dateEnd=Ende;
+		
 	}
-// Getter / Setter Methoden	
-	public Integer getNr() {
-		return Nr;
+	public Integer getId() {
+		return id;
 	}
-	public void setNr(Integer nr) {
-		Nr = nr;
+	public void setId(Integer id) {
+		this.id = id;
 	}
 	public String getName() {
-		return Name;
+		return name;
 	}
 	public void setName(String name) {
-		Name = name;
+		this.name = name;
 	}
-	public String getBeschreibung() {
-		return Beschreibung;
+	public Date getDateEnd() {
+		
+		
+	    
+		return DateToDate(dateEnd);
 	}
-	public void setBeschreibung(String beschreibung) {
-		Beschreibung = beschreibung;
+	
+	public void setDateEnd(Date dateEnd) {
+		this.dateEnd = dateEnd;
 	}
-	public Date getDatumVon() {
-		return DatumVon;
+	public Date getDateStart() {
+		return DateToDate(dateStart);
 	}
-	public void setDatumVon(Date datumVon) {
-		DatumVon = datumVon;
+	public void setDateStart(Date dateStart) {
+		this.dateStart = dateStart;
 	}
-	public Date getDatumBis() {
-		return DatumBis;
+	public String getDescription() {
+		return description;
 	}
-	public void setDatumBis(Date datumBis) {
-		DatumBis = datumBis;
+	public void setDescription(String description) {
+		this.description = description;
 	}
+	@Override
+	public Integer getEventID() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	@Override
+	public void setID(Integer id) throws ParamMissingException {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public ArrayList<Session> getSessions() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	@Override
+	public void setSessions(ArrayList<Session> sessions) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void addSessions(Session session) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	public Date DateToDate(Date date){
+        try {
+            DateFormat df = new SimpleDateFormat("dd/MM/yyyy");
+            return df.parse(df.format(date));
+        }
+        catch(ParseException e){
+            return null;
+        }
+    }
+
+
 
 }

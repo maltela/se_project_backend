@@ -6,6 +6,9 @@ import java.util.ArrayList;
 
 
 
+
+import java.util.List;
+
 import de.management.entities.*;
 
 import javax.ejb.Local;
@@ -20,21 +23,19 @@ public interface EventManagementDAOLocal {
 	
 	
 	
-	// Ausgabe Veranstaltungsübersicht  -> Wunschzettel : HashMap (ID+Name) 
-	public ArrayList<String> getEvents();
-	public ArrayList<Event> getEvents(Integer userID);
+	// Ausgabe Veranstaltungsübersicht  
+	public List<Event> getEventOverview();
 	// Ausgabe Veranstaltungsinformation 
 	public Event getEvent(Integer id);		 
-	//User Registrierung @Backend  Return User-ID 
+	// Benutzer Registrierung @Backend  
 	public Integer createUser(String username,String DeviseID);
-	
+	// Push-Nachricht erstellen  
+	public Integer createPush(String msg);
 	
 	//
 	//*********** Admin-Anwedungsfälle***************** 
 	//
 	
-	// Push-Nachricht erstellen  
-	public Integer createPush();
 	// Veranstaltung erstellen
 	public Integer createEvent(Event event,Integer UserID);
 	// Termin erstellen
@@ -47,5 +48,5 @@ public interface EventManagementDAOLocal {
 	public Integer dropEvent(Integer eventID, Integer userID);
 	// Termin löschen
 	public Integer dropSession(Integer sessionID,Integer userID);
-
+	
 }
