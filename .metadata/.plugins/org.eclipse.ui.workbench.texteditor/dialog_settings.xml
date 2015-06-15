@@ -13,15 +13,21 @@
 		<item value="false" key="isRegEx"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="wsdl" key="selection"/>
+		<item value="send" key="selection"/>
 		<list key="findhistory">
+			<item value="send"/>
+			<item value="when"/>
+			<item value="assert"/>
+			<item value="http://aerogear.example.com"/>
+			<item value="org.jboss.aerogear.unifiedpush"/>
 			<item value="wsdl"/>
 			<item value="angelegt"/>
 			<item value="User angelegt"/>
-			<item value="XbankPersistenceUnit"/>
-			<item value="CONTENT"/>
 		</list>
 		<list key="replacehistory">
+			<item value="https://seprojektpush-fhmuenster.rhcloud.com"/>
+			<item value="http://aerogear.example.com"/>
+			<item value="de.management.push"/>
 		</list>
 	</section>
 </section>

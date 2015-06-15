@@ -1,0 +1,44 @@
+package de.management.push;
+
+import java.net.URLConnection;
+
+import org.jboss.aerogear.unifiedpush.DefaultPushSender;
+import org.jboss.aerogear.unifiedpush.PushSender;
+import org.jboss.aerogear.unifiedpush.message.UnifiedMessage;
+
+private PushSender defaultSenderClient;
+private PushSender secureSenderClient;
+
+private URLConnection connection;
+private URLConnection secureConnection;
+
+
+public class sendPushMessage {
+
+	sender = DefaultPushSender.withRootServerURL("http://seprojektpush-fhmuenster.rhcloud.com/ag-push").build();
+	
+	UnifiedMessage unifiedMessage = new UnifiedMessage.Builder()                 // [2]
+	                .pushApplicationId("c7fc6525-5506-4ca9-9cf1-55cc261ddb9c")
+	                .masterSecret("8b2f43a9-23c8-44fe-bee9-d6b0af9e316b")
+	                .alert("Hello from Java Sender API!")
+	                .sound("default")
+	                .badge("1")
+	                .timeToLive(3600)  // [3]
+	                .attribute("some_key", "with_value")  // [4]
+	                .attribute("title", "A Cool Title") // [5]
+	                .build();
+
+	sender.send(unifiedMessage, new MessageResponseCallback() {      // [6]
+
+	            @Override
+	            public void onComplete(int statusCode) {
+	              // check the 'statusCode' to determine whether the notification
+	              // was accepted for transmission by the server.
+	            }
+
+	            @Override
+	            public void onError(Throwable throwable) {
+	              // an error occured during send
+	            }
+	          });
+}

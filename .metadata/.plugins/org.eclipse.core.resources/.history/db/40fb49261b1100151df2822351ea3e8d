@@ -1,0 +1,48 @@
+package de.management.push;
+
+
+import java.net.HttpURLConnection;
+import java.net.URLConnection;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.atomic.AtomicBoolean;
+
+import org.jboss.aerogear.unifiedpush.DefaultPushSender;
+import org.jboss.aerogear.unifiedpush.PushSender;
+import org.jboss.aerogear.unifiedpush.exception.PushSenderHttpException;
+import org.jboss.aerogear.unifiedpush.message.MessageResponseCallback;
+import org.jboss.aerogear.unifiedpush.message.UnifiedMessage;
+
+
+
+public class sendPushMessage {
+
+	PushSender defaultPushSender = DefaultPushSender.withRootServerURL("http://localhost:8080/ag-push")
+            .pushApplicationId("c7fc6525-5506-4ca9-9cf1-55cc261ddb9c")
+            .masterSecret("8b2f43a9-23c8-44fe-bee9-d6b0af9e316b")
+            .build();
+	
+	 UnifiedMessage unifiedMessage = UnifiedMessage.withCriteria()
+             .aliases("john", "maria")
+             .message()
+               .alert("Hello from Java Sender API!")
+               .sound("default")
+               .badge("1") // iOS specific
+               .userData("some_key", "some_value") // optional attributes specific to your app
+               .userData("title", "Cool Title") // optional cordova Android specific attribute (default is appName)
+             .build();
+	 
+	 MessageResponseCallback callback = new MessageResponseCallback() {
+
+         @Override
+         public void onComplete(int statusCode) {
+           //do cool stuff
+         }
+         
+	 };
+         defaultPushSender.send(unifiedMessage);    
+     };
+	           
+

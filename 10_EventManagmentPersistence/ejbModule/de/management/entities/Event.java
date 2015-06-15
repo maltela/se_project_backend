@@ -8,6 +8,7 @@ import java.util.Collection;
 import java.util.Date;
 import java.util.HashSet;
 
+import javax.enterprise.inject.Typed;
 import javax.persistence.*;
 
 import de.management.exceptions.ParamMissingException;
@@ -22,7 +23,9 @@ public class Event implements Serializable,InterEvent {
 	@Id @GeneratedValue
     private Integer id;
     private String name;
+    
     private Date dateEnd;
+  
     private Date dateStart;
     private String description;
  
@@ -62,18 +65,18 @@ public class Event implements Serializable,InterEvent {
 	public void setName(String name) {
 		this.name = name;
 	}
+	
 	public Date getDateEnd() {
 		
-		
+	   return(dateEnd);
 	    
-		return DateToDate(dateEnd);
 	}
 	
 	public void setDateEnd(Date dateEnd) {
 		this.dateEnd = dateEnd;
 	}
 	public Date getDateStart() {
-		return DateToDate(dateStart);
+		return (dateStart);
 	}
 	public void setDateStart(Date dateStart) {
 		this.dateStart = dateStart;
@@ -90,7 +93,7 @@ public class Event implements Serializable,InterEvent {
 		return null;
 	}
 	@Override
-	public void setID(Integer id) throws ParamMissingException {
+	public void setID(Integer id) 	 {
 		// TODO Auto-generated method stub
 		
 	}
@@ -110,15 +113,6 @@ public class Event implements Serializable,InterEvent {
 		
 	}
 	
-	public Date DateToDate(Date date){
-        try {
-            DateFormat df = new SimpleDateFormat("dd/MM/yyyy");
-            return df.parse(df.format(date));
-        }
-        catch(ParseException e){
-            return null;
-        }
-    }
 
 
 

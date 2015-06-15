@@ -3,6 +3,8 @@
 	<name>10_EventManagementSystem</name>
 	<comment></comment>
 	<projects>
+		<project>10_EventManagementPush</project>
+		<project>10_EventManagmentPersistence</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

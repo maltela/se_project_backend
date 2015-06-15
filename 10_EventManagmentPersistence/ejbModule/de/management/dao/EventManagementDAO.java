@@ -74,51 +74,119 @@ public class EventManagementDAO implements EventManagementDAOLocal {
 		
 	}
 	
-	/**
-	 *  4. Push-Nachricht erstellen
-	 *  @author Malte Lange 
-	 */
-	@Override
-	public Integer createPush(String msg) {
-		// TODO Auto-generated method stub
-		return null;
-	}
 	
 	/************************
-	 * Adminstration Funktionen
+    * Administration Funktionen
+    * @author Jonathan Peters
+    */
+	
+	/** 
+	 * 4. Veranstaltung erstellen
+	 * @author Jonathan Peters
 	 */
-	@Override
-	public Integer createEvent(Event event, Integer UserID) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-	@Override
-	public Integer createSession(Session session, Integer UserID) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-	@Override
-	public Integer updateEvent(Event event, Integer userID) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-	@Override
-	public Integer updateSession(Session session, Integer userID) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-	@Override
-	public Integer dropEvent(Integer eventID, Integer userID) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-	@Override
-	public Integer dropSession(Integer sessionID, Integer userID) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-
+	
+	   @Override
+	   public Integer createEvent(Event event) { //UserID im Event
+	           logger.info ("Create Event");
+	           em.persist(event);
+	           return 200;
+	   }
+	
+	   /** 
+		 * 5. Veranstaltung ändern
+		 * @author Jonathan Peters
+		 */  
+	 
+	   @Override
+	   public Integer updateEvent(Event event) { //Nur Event
+	           logger.info ("Update Event");
+	           Event tempEvent = this.getEvent(event.getId());
+	           if(event.getId() == this.getEvent(event.getId()).getId()){
+	                   tempEvent.setId(event.getId());
+	                   tempEvent.setName(event.getName());
+	                   tempEvent.setDescription(event.getDescription());
+	                   tempEvent.setDateStart(event.getDateStart());
+	                   tempEvent.setDateEnd(event.getDateEnd());
+	                   em.remove(event);
+	                   em.persist(tempEvent);                 
+	                   return 200;
+	           }
+	           else{
+	                   return 000; //Falsche Rechte
+	           }
+	   }
+	   
+	   /** 
+		 * 6. Veranstaltung löschen
+		 * @author Jonathan Peters
+		 */
+	   @Override
+	   public Integer dropEvent(Integer eventId, Integer userId) { //EventID + UserID
+	           logger.info ("Drop Event");
+	           Event event = this.getEvent(eventId);
+	           if(event.getId() == userId){                       
+	                   em.remove(event);
+	                   return 200;
+	           }
+	           else{
+	                   return 000; //Falsche Rechte
+	           }
+	   }
+	   
+	   /** 
+		 * 7. Termin erstellen
+		 * @author Jonathan Peters
+		 */
+	   @Override
+	   public Integer createSession(Session session, Integer eventId, Integer userId) { //session + EventID + UserID
+	           logger.info ("Create Session");
+	           if(userId == this.getEvent(eventId).getId()){
+	                   Event tempEvent = this.getEvent(eventId);
+	                   tempEvent.addSessions(session);
+	                   em.remove(this.getEvent(eventId));
+	                   em.persist(tempEvent);
+	                   return 200;
+	           }
+	           else{
+	                   return 000; //Falsche Rechte
+	           }
+	   }
+	   
+	   /** 
+		 * 8. Termin ändern
+		 * @author Jonathan Peters
+		 */
+	   @Override
+		public Integer updateSession(Session session, Integer userID) {
+			// TODO Auto-generated method stub
+			return null;
+		}
+	   
+	   /** 
+		 * 9. Termin löschen
+		 * @author Jonathan Peters
+		 */
+	   @Override
+	   public Integer dropSession(Integer sessionId, Integer eventId, Integer userId) { //SessionID + EventID
+	           logger.info("Drop Session");
+	           if(userId == this.getEvent(eventId).getId()){
+	                   Event tempEvent = this.getEvent(eventId);
+	                   ArrayList<Session> sessions = tempEvent.getSessions();
+	                   for(Session s : sessions){
+	                           if(s.getSessionID() == sessionId){
+	                                   sessions.remove(sessions.indexOf(s));
+	                           }
+	                   }
+	                   em.remove(this.getEvent(eventId));
+	                   em.persist(tempEvent);
+	                   return 200;
+	           }
+	           else{
+	                   return 000; //Falsche Rechte
+	           }
+	   }
+	
+	
 	
 		
 }

@@ -17,8 +17,16 @@
 <fullyQualifiedTypeName name="de.management.exceptions.ParamMissingException"/>
 <fullyQualifiedTypeName name="de.management.interfaces.InterEvent"/>
 <fullyQualifiedTypeName name="de.management.interfaces.InterSession"/>
-<fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
 <fullyQualifiedTypeName name="java.util.Date"/>
 <fullyQualifiedTypeName name="org.hibernate.validator.internal.util.logging.Log_.logger"/>
 <fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.text.DateFormat"/>
+<fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+<fullyQualifiedTypeName name="java.text.ParseException"/>
+<fullyQualifiedTypeName name="org.jboss.aerogear.unifiedpush.utils.PushConfiguration"/>
+<fullyQualifiedTypeName name="de.management.push.message.UnifiedMessage"/>
+<fullyQualifiedTypeName name="org.jboss.aerogear.unifiedpush.DefaultPushSender.Builder"/>
+<fullyQualifiedTypeName name="org.jboss.aerogear.unifiedpush.PushSender"/>
+<fullyQualifiedTypeName name="org.jboss.aerogear.unifiedpush.DefaultPushSender"/>
+<fullyQualifiedTypeName name="org.jboss.aerogear.unifiedpush.message.UnifiedMessage"/>
 </qualifiedTypeNameHistroy>

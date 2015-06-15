@@ -1,0 +1,93 @@
+package de.management.push;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
+import static org.powermock.api.mockito.PowerMockito.when;
+
+import java.net.HttpURLConnection;
+import java.net.URLConnection;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.atomic.AtomicBoolean;
+
+import org.jboss.aerogear.unifiedpush.DefaultPushSender;
+import org.jboss.aerogear.unifiedpush.PushSender;
+import org.jboss.aerogear.unifiedpush.exception.PushSenderHttpException;
+import org.jboss.aerogear.unifiedpush.message.MessageResponseCallback;
+import org.jboss.aerogear.unifiedpush.message.UnifiedMessage;
+
+
+
+public class sendPushMessage {
+
+    private static final String PUSH_APPLICATION_ID = "c7fc6525-5506-4ca9-9cf1-55cc261ddb9c";
+    private static final String MASTER_SECRET = "8b2f43a9-23c8-44fe-bee9-d6b0af9e316b";
+    private static final String ALERT_MSG = "Hello from Java Sender API, via JUnit";
+    private static final String DEFAULT_SOUND = "default";
+    private static final List<String> IDENTIFIERS_LIST = new ArrayList<String>();
+	 private PushSender defaultSenderClient;
+//	 private PushSender secureSenderClient;
+//	 private URLConnection connection;
+//	 private URLConnection secureConnection;
+	 
+	 defaultSenderClient = DefaultPushSender.withRootServerURL("http://seprojektpush-fhmuenster.rhcloud.com/ag-push").build();
+	
+	   UnifiedMessage unifiedMessage = UnifiedMessage.withMessage()
+               .alert(ALERT_MSG)
+               .sound(DEFAULT_SOUND)
+               .criteria().aliases(IDENTIFIERS_LIST)
+               .build();
+
+	   MessageResponseCallback callback = new MessageResponseCallback() {
+           @Override
+           public void onComplete() {
+               onCompleteCalled.set(true);
+               latch.countDown();
+           }
+       };
+
+	  
+           defaultSenderClient.send(unifiedMessage,callback);
+
+           public void sendSendWithCallback404() throws Exception {
+
+               when(((HttpURLConnection) getConnnection()).getResponseCode()).thenReturn(STATUS_NOT_FOUND);
+
+               final CountDownLatch latch = new CountDownLatch(1);
+               final List<Integer> returnedStatusList = new ArrayList<Integer>(1);
+               final AtomicBoolean onCompleteCalled = new AtomicBoolean(false);
+               final AtomicBoolean pushSenderHttpExceptionThrown = new AtomicBoolean(false);
+
+               MessageResponseCallback callback = new MessageResponseCallback() {
+                   @Override
+                   public void onComplete() {
+                       onCompleteCalled.set(true);
+                       latch.countDown();
+                   }
+               };
+
+               UnifiedMessage unifiedMessage = UnifiedMessage.withMessage()
+                       .alert(ALERT_MSG)
+                       .sound(DEFAULT_SOUND)
+                       .criteria().aliases(IDENTIFIERS_LIST)
+                       .build();
+
+               try {
+                   defaultSenderClient.send(unifiedMessage, callback);
+               } catch (PushSenderHttpException pshe) {
+
+                   returnedStatusList.add(pshe.getStatusCode());
+                   pushSenderHttpExceptionThrown.set(true);
+                   latch.countDown();
+               }
+
+               latch.await(1000, TimeUnit.MILLISECONDS);
+
+               }
+
+           
+}
