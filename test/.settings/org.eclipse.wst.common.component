@@ -5,5 +5,14 @@
             <dependent-object/>
             <dependency-type>uses</dependency-type>
         </dependent-module>
+        <dependent-module archiveName="lib//10_EventManagementPush/unifiedpush-push-model-1.1.0-alpha.2.jar.ear" deploy-path="/" handle="module:/classpath/lib//10_EventManagementPush/unifiedpush-push-model-1.1.0-alpha.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="lib//10_EventManagementPush/unifiedpush-push-model-1.1.0-alpha.2.jar.ear" deploy-path="/" handle="module:/classpath/lib//10_EventManagementPush/unifiedpush-push-model-1.1.0-alpha.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="lib//10_EventManagementPush/unifiedpush-push-model-1.1.0-alpha.2.jar.ear" deploy-path="/" handle="module:/classpath/lib//10_EventManagementPush/unifiedpush-push-model-1.1.0-alpha.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
     </wb-module>
 </project-modules>
