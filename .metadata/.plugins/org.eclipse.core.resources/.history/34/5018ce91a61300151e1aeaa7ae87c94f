@@ -1,0 +1,56 @@
+package org.jboss.aerogear.unifiedpush;
+
+import javax.ejb.Stateless;
+import javax.jws.WebMethod;
+import javax.jws.WebParam;
+import javax.jws.WebService;
+
+import org.jboss.aerogear.unifiedpush.message.UnifiedMessage;
+import org.jboss.logging.Logger;
+
+import org.jboss.aerogear.unifiedpush.DefaultPushSender;
+import org.jboss.aerogear.unifiedpush.PushSender;
+
+
+@WebService(serviceName = "EventManagementPush")
+@Stateless
+public class WebServicePush {
+
+	private static final Logger logger = Logger.getLogger(WebServicePush.class);
+
+	/**
+	 * 5. Schnittstelle - Push Nachrichten versenden
+	 * 
+	 * @author Malte Lange
+	 * @param msg
+	 * @return
+	 */
+	@WebMethod(operationName = "sendPush")
+	public Integer sendPush(@WebParam(name = "msg") String msg) {
+
+		logger.debug("Push Aufruf");
+		PushSender defaultPushSender = DefaultPushSender
+				.withRootServerURL(
+						"https://seprojektpush-fhmuenster.rhcloud.com/ag-push")
+				.pushApplicationId("a5f8dc54-85db-4557-9df7-a0d5fbd1ffa0")
+				.masterSecret("79f2c3bf-edf9-43ff-a8d6-453fcc004c31").build();
+
+		logger.debug("Push Sender erstellt");
+
+		UnifiedMessage unifiedMessage = UnifiedMessage.withMessage()
+				.alert("Hello").sound("default").criteria()
+				.variants("c3f0a94f-48de-4b77-a08e-68114460857e")
+				// e.g. HR_Premium
+				.aliases("mike", "john").categories("sport", "world cup")
+				.build();
+
+		defaultPushSender.send(unifiedMessage);
+
+		logger.debug("Push Message erstellt");
+
+		// defaultPushSender.send(message);
+
+		return 200;
+	}
+
+}

@@ -42,8 +42,6 @@ public interface EventManagementDAOLocal {
 	public Integer dropEvent(Integer eventID, Integer userID);	
 	// Termin erstellen
 	public Integer createSession(Session session, Integer eventId, Integer userId);
-	// Termin ändern 
-	public Integer updateSession(Session session, Integer userID);
 	// Termin löschen
 	public Integer dropSession(Integer sessionId, Integer eventId, Integer userId);
 	

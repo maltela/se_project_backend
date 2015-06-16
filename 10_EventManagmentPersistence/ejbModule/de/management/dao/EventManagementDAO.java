@@ -152,18 +152,10 @@ public class EventManagementDAO implements EventManagementDAOLocal {
 	           }
 	   }
 	   
-	   /** 
-		 * 8. Termin ändern
-		 * @author Jonathan Peters
-		 */
-	   @Override
-		public Integer updateSession(Session session, Integer userID) {
-			// TODO Auto-generated method stub
-			return null;
-		}
+	  
 	   
 	   /** 
-		 * 9. Termin löschen
+		 * 8. Termin löschen
 		 * @author Jonathan Peters
 		 */
 	   @Override

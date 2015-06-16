@@ -7,6 +7,7 @@ import java.util.List;
 
 import javax.ejb.EJB;
 import javax.ejb.Stateless;
+import javax.enterprise.inject.Produces;
 import javax.jws.*;
 
 import org.jboss.aerogear.unifiedpush.DefaultPushSender;
@@ -33,6 +34,11 @@ public class ManagementWebService {
 	/** DAO Datenverarbeitung Bereitstellung */ 
 	@EJB(beanName = "EventManagementDAO", beanInterface = de.management.dao.EventManagementDAOLocal.class)
 	private EventManagementDAOLocal dao;
+	
+	/** Push Bereitstellen 
+	 * 
+	 */
+	
 	
 	
 	// DataTransferObject 

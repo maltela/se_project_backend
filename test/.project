@@ -3,8 +3,6 @@
 	<name>test</name>
 	<comment></comment>
 	<projects>
-		<project>10_EventManagementSystem</project>
-		<project>10_EventManagmentPersistence</project>
 		<project>10_EventManagementPush</project>
 	</projects>
 	<buildSpec>
