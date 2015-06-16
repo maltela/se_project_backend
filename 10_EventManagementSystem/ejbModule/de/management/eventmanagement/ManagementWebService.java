@@ -16,6 +16,7 @@ import org.jboss.aerogear.unifiedpush.message.UnifiedMessage;
 
 import de.management.dao.EventManagementDAOLocal;
 import de.management.entities.Event;
+import de.management.entities.Session;
 import de.management.push.*;
 
 
@@ -126,6 +127,50 @@ public class ManagementWebService {
 	public Integer createEvent(@WebParam(name="event") Event event){
 		
 		return (dao.createEvent(event));
+		
+	}
+	
+	/*
+	 * 8. Schnittstelle - Veranstaltung aktualisieren
+	 * @author Jonathan Peters
+	 */
+	@WebMethod(operationName ="updateEvent")
+	public Integer updateEvent(@WebParam(name="event") Event event){
+		
+		return (dao.updateEvent(event));
+		
+	}
+	
+	/*
+	 * 9. Schnittstelle - Veranstaltung loeschen
+	 * @author Jonathan Peters
+	 */
+	@WebMethod(operationName ="dropEvent")
+	public Integer dropEvent(@WebParam(name="eventId") Integer eventId, @WebParam(name="userId") Integer userId){
+		
+		return (dao.dropEvent(eventId, userId));
+		
+	}
+	
+	/*
+	 * 10. Schnittstelle - Termin erstellen
+	 * @author Jonathan Peters
+	 */
+	@WebMethod(operationName ="createSession")
+	public Integer createSession(@WebParam(name="session") Session session, @WebParam(name="eventId") Integer eventId, @WebParam(name="userId") Integer userId){ 
+		
+		return (dao.createSession(session, eventId, userId));
+		
+	}
+	
+	/*
+	 * 11. Schnittstelle - Termin loeschen
+	 * @author Jonathan Peters
+	 */
+	@WebMethod(operationName ="createSession")
+	public Integer createSession(@WebParam(name="sessionId") Integer sessionId, @WebParam(name="eventId") Integer eventId, @WebParam(name="userId") Integer userId){ 
+		
+		return (dao.dropSession(sessionId, eventId, userId));
 		
 	}
 }
