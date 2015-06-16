@@ -1,0 +1,5 @@
+package org.jboss.aerogear.unifiedpush.message.apns;
+
+public class APNs {
+
+}

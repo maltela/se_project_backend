@@ -101,7 +101,8 @@ public class ManagementWebService {
 	            .build();
 		
 		
-		
+       /*
+     
 		 UnifiedMessage message = UnifiedMessage.withCriteria()
 	             .aliases("john", "maria")
 	             .message()
@@ -115,7 +116,7 @@ public class ManagementWebService {
 		
 		 
 		 defaultPushSender.send(message);
-	
+      	*/
 		return 200;
 	}
 
@@ -167,7 +168,7 @@ public class ManagementWebService {
 	 * 11. Schnittstelle - Termin loeschen
 	 * @author Jonathan Peters
 	 */
-	@WebMethod(operationName ="createSession")
+	@WebMethod(operationName ="dropSession")
 	public Integer createSession(@WebParam(name="sessionId") Integer sessionId, @WebParam(name="eventId") Integer eventId, @WebParam(name="userId") Integer userId){ 
 		
 		return (dao.dropSession(sessionId, eventId, userId));

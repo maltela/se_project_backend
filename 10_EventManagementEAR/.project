@@ -3,9 +3,9 @@
 	<name>10_EventManagementEAR</name>
 	<comment></comment>
 	<projects>
+		<project>10_EventManagementPush</project>
 		<project>10_EventManagementSystem</project>
 		<project>10_EventManagmentPersistence</project>
-		<project>unifiedpush-java-client</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

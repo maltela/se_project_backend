@@ -25,12 +25,14 @@
 <fullyQualifiedTypeName name="org.jboss.aerogear.unifiedpush.utils.PushConfiguration"/>
 <fullyQualifiedTypeName name="de.management.push.message.UnifiedMessage"/>
 <fullyQualifiedTypeName name="org.jboss.aerogear.unifiedpush.DefaultPushSender.Builder"/>
-<fullyQualifiedTypeName name="org.jboss.aerogear.unifiedpush.DefaultPushSender"/>
 <fullyQualifiedTypeName name="org.jboss.aerogear.unifiedpush.PushSender"/>
 <fullyQualifiedTypeName name="javax.jws.WebService"/>
 <fullyQualifiedTypeName name="org.hibernate.validator.internal.util.logging.Log_.logger"/>
 <fullyQualifiedTypeName name="org.jboss.logging.Logger"/>
-<fullyQualifiedTypeName name="javax.enterprise.inject.Produces"/>
 <fullyQualifiedTypeName name="org.jboss.aerogear.unifiedpush.message.UnifiedMessage"/>
 <fullyQualifiedTypeName name="org.jboss.aerogear.unifiedpush.message.UnifiedMessage.Builder"/>
+<fullyQualifiedTypeName name="javax.enterprise.inject.Produces"/>
+<fullyQualifiedTypeName name="javax.enterprise.context.ApplicationScoped"/>
+<fullyQualifiedTypeName name="org.jboss.aerogear.unifiedpush.message.MessageResponseCallback"/>
+<fullyQualifiedTypeName name="org.jboss.aerogear.unifiedpush.DefaultPushSender"/>
 </qualifiedTypeNameHistroy>

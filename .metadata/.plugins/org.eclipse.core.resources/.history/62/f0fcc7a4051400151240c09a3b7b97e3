@@ -1,0 +1,26 @@
+import org.jboss.aerogear.unifiedpush.DefaultPushSender;
+import org.jboss.aerogear.unifiedpush.PushSender;
+import org.jboss.aerogear.unifiedpush.message.UnifiedMessage;
+import org.jboss.logging.Logger;
+
+
+public class Push {
+
+	private static final Logger logger = Logger.getLogger(Push.class);
+	
+	public static void send() {
+	
+	
+	PushSender defaultPushSender = DefaultPushSender
+			.withRootServerURL("https://seprojektpush-fhmuenster.rhcloud.com/ag-push")
+			.pushApplicationId("a5f8dc54-85db-4557-9df7-a0d5fbd1ffa0")
+			.masterSecret("79f2c3bf-edf9-43ff-a8d6-453fcc004c31").build();
+
+
+	logger.debug(defaultPushSender.getServerURL());
+	
+	
+	}
+
+
+}

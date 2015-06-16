@@ -1,0 +1,5 @@
+package org.codehaus.jackson.map.type;
+
+public class TypeBase {
+
+}

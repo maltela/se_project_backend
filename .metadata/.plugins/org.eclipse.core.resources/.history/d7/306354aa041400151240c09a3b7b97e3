@@ -1,0 +1,28 @@
+
+import javax.ejb.Stateless;
+import javax.jws.WebMethod;
+import javax.jws.WebParam;
+import javax.jws.WebService;
+
+import org.jboss.aerogear.unifiedpush.message.UnifiedMessage;
+import org.jboss.logging.Logger;
+
+import org.jboss.aerogear.unifiedpush.DefaultPushSender;
+import org.jboss.aerogear.unifiedpush.PushSender;
+
+
+
+@WebService(serviceName = "EventManagementPush")
+@Stateless
+public class WebServicePush {
+
+	@WebMethod(operationName = "sendPush")
+	public Integer sendPush(@WebParam(name = "msg") String msg) {
+
+		push.send();
+		// defaultPushSender.send(message);
+
+		return 200;
+	}
+
+}

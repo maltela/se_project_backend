@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Class-Path: "unifiedpush-push-model-1.1.0-alpha.2.jar" lib/unifiedpush
+ -push-model-1.1.0-alpha.2.jar
+

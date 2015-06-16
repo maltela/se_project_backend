@@ -1,0 +1,5 @@
+package org.codehaus.jackson.map.jsontype.impl;
+
+public class StdSubtypeResolver {
+
+}
