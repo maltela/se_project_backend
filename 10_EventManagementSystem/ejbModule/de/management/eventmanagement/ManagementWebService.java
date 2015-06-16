@@ -117,10 +117,20 @@ public class ManagementWebService {
 	
 		return 200;
 	}
-	
-	/** Webservices fehlen noch */
+
+	/*
+	 * 7. Schhnittstelle - Veranstaltung erstellen
+	 * @author Jonathan Peters 
+	 */
+	@WebMethod(operationName ="createEvent")
+	public Integer createEvent(@WebParam(name="event") Event event){
+		
+		return (dao.createEvent(event));
+		
+	}
+}
 	
 	
 
-}
+
 

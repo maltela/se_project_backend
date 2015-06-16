@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="10_EventManagementPush">
+        <wb-resource deploy-path="/" source-path="/lib"/>
+        <wb-resource deploy-path="/" source-path="/"/>
+        <property name="java-output-path" value="/10_EventManagementPush/build/classes"/>
+        <property name="ClientProject" value="test3Client"/>
+        <property name="ClientJARURI" value="test3Client.jar"/>
+    </wb-module>
+</project-modules>

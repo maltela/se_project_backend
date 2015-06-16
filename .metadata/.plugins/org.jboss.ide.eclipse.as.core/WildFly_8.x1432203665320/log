@@ -1580,3 +1580,562 @@ org.eclipse.core.runtime.AssertionFailedException: assertion failed: The applica
 
 !ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2015-06-15 23:48:47.804
 !MESSAGE Server Startup Succeeded
+!SESSION 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2015-06-16 09:21:16.295
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2015-06-16 09:21:20.304
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298244 2015-06-16 09:25:52.911
+!MESSAGE Incremental publish failed for module /10_EventManagementPush
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:25:52.911
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/Push/org/jboss/aerogear/unifiedpush/org/jboss/aerogear. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:25:52.911
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/Push/org/jboss/aerogear/unifiedpush/org/jboss. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:25:52.911
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/Push/org/jboss/aerogear/unifiedpush/org. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:25:52.911
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/.DS_Store. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:25:52.911
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/org/.DS_Store. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:25:52.911
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/org/jboss/.DS_Store. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:25:52.911
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/org/jboss/aerogear/unifiedpush/org/jboss/aerogear. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:25:52.911
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/org/jboss/aerogear/unifiedpush/org/jboss. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:25:52.911
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/org/jboss/aerogear/unifiedpush/org. May be locked by another process.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298244 2015-06-16 09:26:48.883
+!MESSAGE Incremental publish failed for module /10_EventManagementPush
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:26:48.883
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/Push/org/jboss/aerogear/unifiedpush/org/jboss/aerogear. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:26:48.883
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/Push/org/jboss/aerogear/unifiedpush/org/jboss. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:26:48.883
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/Push/org/jboss/aerogear/unifiedpush/org. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:26:48.883
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/base64-2.3.8.jar. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:26:48.883
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/gson-2.3.jar. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:26:48.883
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/jackson-databind-2.3.0.jar. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:26:48.883
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/org/.DS_Store. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:26:48.883
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/org/jboss/.DS_Store. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:26:48.883
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/org/jboss/aerogear/unifiedpush/DefaultPushSender$Builder.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:26:48.883
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/org/jboss/aerogear/unifiedpush/DefaultPushSender.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:26:48.883
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/org/jboss/aerogear/unifiedpush/PushSender.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:26:48.883
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/org/jboss/aerogear/unifiedpush/WebServicePush.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:26:48.883
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/org/jboss/aerogear/unifiedpush/ca/TrustStoreManager.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:26:48.883
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/org/jboss/aerogear/unifiedpush/ca/TrustStoreManagerImpl.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:26:48.883
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/org/jboss/aerogear/unifiedpush/ca/TrustStoreManagerService$SingletonHolder.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:26:48.883
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/org/jboss/aerogear/unifiedpush/ca/TrustStoreManagerService.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:26:48.883
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/org/jboss/aerogear/unifiedpush/ca. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:26:48.884
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/org/jboss/aerogear/unifiedpush/exception/PushSenderException.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:26:48.884
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/org/jboss/aerogear/unifiedpush/exception/PushSenderHttpException.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:26:48.884
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/org/jboss/aerogear/unifiedpush/exception. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:26:48.884
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/org/jboss/aerogear/unifiedpush/message/MessageResponseCallback.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:26:48.884
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/org/jboss/aerogear/unifiedpush/message/UnifiedMessage$Builder.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:26:48.884
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/org/jboss/aerogear/unifiedpush/message/UnifiedMessage$ConfigBuilder.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:26:48.884
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/org/jboss/aerogear/unifiedpush/message/UnifiedMessage$CriteriaBuilder.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:26:48.884
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/org/jboss/aerogear/unifiedpush/message/UnifiedMessage$MessageBuilder$ApnsBuilder.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:26:48.884
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/org/jboss/aerogear/unifiedpush/message/UnifiedMessage$MessageBuilder$WindowsBuilder.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:26:48.884
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/org/jboss/aerogear/unifiedpush/message/UnifiedMessage$MessageBuilder.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:26:48.884
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/org/jboss/aerogear/unifiedpush/message/UnifiedMessage.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:26:48.884
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/org/jboss/aerogear/unifiedpush/message. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:26:48.884
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/org/jboss/aerogear/unifiedpush/model/ProxyConfig.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:26:48.884
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/org/jboss/aerogear/unifiedpush/model/TrustStoreConfig.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:26:48.884
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/org/jboss/aerogear/unifiedpush/model. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:26:48.884
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/org/jboss/aerogear/unifiedpush/org/jboss/aerogear. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:26:48.884
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/org/jboss/aerogear/unifiedpush/org/jboss. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:26:48.884
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/org/jboss/aerogear/unifiedpush/org. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:26:48.885
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/org/jboss/aerogear/unifiedpush/utils/HttpRequestUtil$1.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:26:48.885
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/org/jboss/aerogear/unifiedpush/utils/HttpRequestUtil.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:26:48.885
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/org/jboss/aerogear/unifiedpush/utils/PushConfiguration.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:26:48.885
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/org/jboss/aerogear/unifiedpush/utils/ValidationUtils.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:26:48.885
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/org/jboss/aerogear/unifiedpush/utils. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:26:48.885
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/org/jboss/aerogear/unifiedpush. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:26:48.885
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/org/jboss/aerogear. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:26:48.885
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/org/jboss. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:26:48.885
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/org. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:26:48.885
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/unifiedpush-push-model-1.1.0-alpha.2.jar. May be locked by another process.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298244 2015-06-16 09:28:54.205
+!MESSAGE Incremental publish failed for module /10_EventManagementPush
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:28:54.205
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/Push/.DS_Store. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:28:54.206
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/Push/org/.DS_Store. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:28:54.206
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/Push/org/jboss/.DS_Store. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:28:54.206
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/Push/org/jboss/aerogear/unifiedpush/DefaultPushSender.java. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:28:54.206
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/Push/org/jboss/aerogear/unifiedpush/PushSender.java. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:28:54.206
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/Push/org/jboss/aerogear/unifiedpush/WebServicePush.java. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:28:54.206
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/Push/org/jboss/aerogear/unifiedpush/ca/TrustStoreManager.java. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:28:54.206
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/Push/org/jboss/aerogear/unifiedpush/ca/TrustStoreManagerImpl.java. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:28:54.206
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/Push/org/jboss/aerogear/unifiedpush/ca/TrustStoreManagerService.java. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:28:54.206
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/Push/org/jboss/aerogear/unifiedpush/ca. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:28:54.206
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/Push/org/jboss/aerogear/unifiedpush/exception/PushSenderException.java. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:28:54.206
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/Push/org/jboss/aerogear/unifiedpush/exception/PushSenderHttpException.java. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:28:54.206
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/Push/org/jboss/aerogear/unifiedpush/exception. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:28:54.206
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/Push/org/jboss/aerogear/unifiedpush/message/MessageResponseCallback.java. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:28:54.206
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/Push/org/jboss/aerogear/unifiedpush/message/UnifiedMessage.java. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:28:54.206
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/Push/org/jboss/aerogear/unifiedpush/message. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:28:54.206
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/Push/org/jboss/aerogear/unifiedpush/model/ProxyConfig.java. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:28:54.207
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/Push/org/jboss/aerogear/unifiedpush/model/TrustStoreConfig.java. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:28:54.207
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/Push/org/jboss/aerogear/unifiedpush/model. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:28:54.207
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/Push/org/jboss/aerogear/unifiedpush/org/jboss/aerogear. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:28:54.207
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/Push/org/jboss/aerogear/unifiedpush/org/jboss. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:28:54.207
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/Push/org/jboss/aerogear/unifiedpush/org. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:28:54.207
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/Push/org/jboss/aerogear/unifiedpush/utils/HttpRequestUtil.java. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:28:54.207
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/Push/org/jboss/aerogear/unifiedpush/utils/PushConfiguration.java. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:28:54.207
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/Push/org/jboss/aerogear/unifiedpush/utils/ValidationUtils.java. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:28:54.207
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/Push/org/jboss/aerogear/unifiedpush/utils. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:28:54.207
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/Push/org/jboss/aerogear/unifiedpush. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:28:54.207
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/Push/org/jboss/aerogear. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:28:54.207
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/Push/org/jboss. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:28:54.207
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/Push/org. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:28:54.207
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/Push. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:28:54.207
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/base64-2.3.8.jar. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:28:54.207
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/gson-2.3.jar. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:28:54.207
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/jackson-databind-2.3.0.jar. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:28:54.207
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/org/jboss/aerogear/unifiedpush/org/jboss/aerogear. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:28:54.208
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/org/jboss/aerogear/unifiedpush/org/jboss. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:28:54.208
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/org/jboss/aerogear/unifiedpush/org. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:28:54.208
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/unifiedpush-push-model-1.1.0-alpha.2.jar. May be locked by another process.
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2015-06-16 09:30:15.911
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2015-06-16 09:30:18.249
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2015-06-16 09:30:21.162
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2015-06-16 09:30:59.438
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2015-06-16 09:31:03.026
+!MESSAGE Server Startup Succeeded
+!SESSION 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2015-06-16 09:32:18.382
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2015-06-16 09:32:22.286
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298244 2015-06-16 09:38:54.959
+!MESSAGE Incremental publish failed for module /10_EventManagementPush
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:38:54.959
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/build/.DS_Store. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:38:54.959
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/.DS_Store. May be locked by another process.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298244 2015-06-16 09:39:40.964
+!MESSAGE Incremental publish failed for module /10_EventManagementPush
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:39:40.965
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/.DS_Store. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:39:40.965
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/.classpath. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:39:40.965
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/.gitignore. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:39:40.965
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/.project. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:39:40.965
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/.settings/org.eclipse.jdt.core.prefs. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:39:40.965
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/.settings/org.eclipse.wst.common.component. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:39:40.965
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/.settings/org.eclipse.wst.common.project.facet.core.xml. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:39:40.965
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/.settings/org.jboss.ide.eclipse.as.core.prefs. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:39:40.965
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/.settings. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:39:40.965
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/META-INF/MANIFEST.MF. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:39:40.965
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/META-INF. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:39:40.965
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/build/.DS_Store. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:39:40.965
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/build/classes/Push/org/jboss. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:39:40.965
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/build/classes/Push/org. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:39:40.965
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/build/classes/Push. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:39:40.965
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/build/classes/build. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:39:40.965
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/build/classes/lib. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:39:40.965
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/build/classes. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:39:40.965
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/build. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:39:40.966
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/lib/base64-2.3.8.jar. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:39:40.966
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/lib/gson-2.3.jar. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:39:40.966
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/lib/jackson-databind-2.3.0.jar. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:39:40.966
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/lib/unifiedpush-push-model-1.1.0-alpha.2.jar. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:39:40.966
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/lib. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:39:40.966
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/org/.DS_Store. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:39:40.966
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/org/jboss/.DS_Store. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:39:40.966
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/org/jboss/aerogear/unifiedpush/DefaultPushSender$Builder.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:39:40.966
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/org/jboss/aerogear/unifiedpush/DefaultPushSender.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:39:40.966
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/org/jboss/aerogear/unifiedpush/PushSender.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:39:40.966
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/org/jboss/aerogear/unifiedpush/WebServicePush.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:39:40.966
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/org/jboss/aerogear/unifiedpush/ca/TrustStoreManager.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:39:40.966
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/org/jboss/aerogear/unifiedpush/ca/TrustStoreManagerImpl.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:39:40.966
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/org/jboss/aerogear/unifiedpush/ca/TrustStoreManagerService$SingletonHolder.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:39:40.966
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/org/jboss/aerogear/unifiedpush/ca/TrustStoreManagerService.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:39:40.966
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/org/jboss/aerogear/unifiedpush/ca. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:39:40.966
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/org/jboss/aerogear/unifiedpush/exception/PushSenderException.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:39:40.967
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/org/jboss/aerogear/unifiedpush/exception/PushSenderHttpException.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:39:40.967
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/org/jboss/aerogear/unifiedpush/exception. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:39:40.967
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/org/jboss/aerogear/unifiedpush/message/MessageResponseCallback.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:39:40.967
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/org/jboss/aerogear/unifiedpush/message/UnifiedMessage$Builder.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:39:40.967
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/org/jboss/aerogear/unifiedpush/message/UnifiedMessage$ConfigBuilder.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:39:40.967
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/org/jboss/aerogear/unifiedpush/message/UnifiedMessage$CriteriaBuilder.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:39:40.967
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/org/jboss/aerogear/unifiedpush/message/UnifiedMessage$MessageBuilder$ApnsBuilder.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:39:40.967
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/org/jboss/aerogear/unifiedpush/message/UnifiedMessage$MessageBuilder$WindowsBuilder.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:39:40.967
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/org/jboss/aerogear/unifiedpush/message/UnifiedMessage$MessageBuilder.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:39:40.967
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/org/jboss/aerogear/unifiedpush/message/UnifiedMessage.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:39:40.967
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/org/jboss/aerogear/unifiedpush/message. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:39:40.967
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/org/jboss/aerogear/unifiedpush/model/ProxyConfig.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:39:40.967
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/org/jboss/aerogear/unifiedpush/model/TrustStoreConfig.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:39:40.967
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/org/jboss/aerogear/unifiedpush/model. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:39:40.967
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/org/jboss/aerogear/unifiedpush/utils/HttpRequestUtil$1.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:39:40.967
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/org/jboss/aerogear/unifiedpush/utils/HttpRequestUtil.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:39:40.967
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/org/jboss/aerogear/unifiedpush/utils/PushConfiguration.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:39:40.967
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/org/jboss/aerogear/unifiedpush/utils/ValidationUtils.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:39:40.967
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/org/jboss/aerogear/unifiedpush/utils. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:39:40.968
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/org/jboss/aerogear/unifiedpush. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:39:40.968
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/org/jboss/aerogear. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:39:40.968
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/org/jboss. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:39:40.968
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/org. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:39:40.968
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/.DS_Store. May be locked by another process.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298244 2015-06-16 09:40:06.818
+!MESSAGE Incremental publish failed for module /10_EventManagementPush
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:40:06.818
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/.DS_Store. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:40:06.818
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/.classpath. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:40:06.818
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/.gitignore. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:40:06.819
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/.project. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:40:06.819
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/.settings/org.eclipse.jdt.core.prefs. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:40:06.819
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/.settings/org.eclipse.wst.common.component. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:40:06.819
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/.settings/org.eclipse.wst.common.project.facet.core.xml. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:40:06.819
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/.settings/org.jboss.ide.eclipse.as.core.prefs. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:40:06.819
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/.settings. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:40:06.819
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/META-INF/MANIFEST.MF. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:40:06.819
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/META-INF. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:40:06.819
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/build/.DS_Store. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:40:06.819
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/build/classes/Push/org/jboss. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:40:06.819
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/build/classes/Push/org. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:40:06.819
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/build/classes/Push. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:40:06.819
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/build/classes/build. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:40:06.819
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/build/classes/lib. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:40:06.819
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/build/classes. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:40:06.819
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/build. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:40:06.819
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/lib/base64-2.3.8.jar. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:40:06.819
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/lib/gson-2.3.jar. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:40:06.820
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/lib/jackson-databind-2.3.0.jar. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:40:06.820
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/lib/unifiedpush-push-model-1.1.0-alpha.2.jar. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:40:06.820
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/classes/lib. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:40:06.820
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/build/.DS_Store. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:40:06.820
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/org/.DS_Store. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:40:06.820
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/org/jboss/.DS_Store. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:40:06.820
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/org/jboss/aerogear/unifiedpush/DefaultPushSender.java. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:40:06.820
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/org/jboss/aerogear/unifiedpush/PushSender.java. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:40:06.820
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/org/jboss/aerogear/unifiedpush/WebServicePush.java. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:40:06.820
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/org/jboss/aerogear/unifiedpush/ca/TrustStoreManager.java. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:40:06.820
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/org/jboss/aerogear/unifiedpush/ca/TrustStoreManagerImpl.java. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:40:06.820
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/org/jboss/aerogear/unifiedpush/ca/TrustStoreManagerService.java. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:40:06.820
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/org/jboss/aerogear/unifiedpush/ca. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:40:06.820
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/org/jboss/aerogear/unifiedpush/exception/PushSenderException.java. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:40:06.820
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/org/jboss/aerogear/unifiedpush/exception/PushSenderHttpException.java. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:40:06.820
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/org/jboss/aerogear/unifiedpush/exception. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:40:06.820
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/org/jboss/aerogear/unifiedpush/message/MessageResponseCallback.java. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:40:06.820
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/org/jboss/aerogear/unifiedpush/message/UnifiedMessage.java. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:40:06.821
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/org/jboss/aerogear/unifiedpush/message. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:40:06.821
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/org/jboss/aerogear/unifiedpush/model/ProxyConfig.java. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:40:06.821
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/org/jboss/aerogear/unifiedpush/model/TrustStoreConfig.java. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:40:06.821
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/org/jboss/aerogear/unifiedpush/model. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:40:06.821
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/org/jboss/aerogear/unifiedpush/utils/HttpRequestUtil.java. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:40:06.821
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/org/jboss/aerogear/unifiedpush/utils/PushConfiguration.java. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:40:06.821
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/org/jboss/aerogear/unifiedpush/utils/ValidationUtils.java. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:40:06.821
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/org/jboss/aerogear/unifiedpush/utils. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:40:06.821
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/org/jboss/aerogear/unifiedpush. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:40:06.821
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/org/jboss/aerogear. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:40:06.821
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/org/jboss. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2015-06-16 09:40:06.821
+!MESSAGE Could not delete /usr/local/Cellar/wildfly-as/8.2.0.Final/libexec/standalone/deployments/10_EventManagementPush/org. May be locked by another process.
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2015-06-16 09:40:11.243
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2015-06-16 09:40:28.246
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2015-06-16 09:40:31.807
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2015-06-16 09:41:32.531
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2015-06-16 09:41:36.848
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2015-06-16 09:41:40.739
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2015-06-16 09:47:50.092
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2015-06-16 09:47:50.311
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2015-06-16 09:47:50.344
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 16842768 2015-06-16 09:47:50.400
+!MESSAGE Poll Thread Aborted: null
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2015-06-16 09:47:54.344
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2015-06-16 09:49:01.455
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2015-06-16 09:49:04.743
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2015-06-16 09:49:08.117
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2015-06-16 09:49:13.927
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2015-06-16 09:49:15.798
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2015-06-16 09:49:19.487
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 0 2015-06-16 09:49:27.614
+!MESSAGE Error occurred while checking module state for test on server WildFly 8.x
+!STACK 0
+org.eclipse.core.runtime.AssertionFailedException: assertion failed: The application has not been initialized.
+	at org.eclipse.core.runtime.Assert.isTrue(Assert.java:110)
+	at org.eclipse.core.internal.runtime.InternalPlatform.assertInitialized(InternalPlatform.java:139)
+	at org.eclipse.core.internal.runtime.InternalPlatform.getAdapterManager(InternalPlatform.java:160)
+	at org.eclipse.core.runtime.Platform.getAdapterManager(Platform.java:601)
+	at org.eclipse.wst.server.core.internal.Server.loadAdapter(Server.java:1617)
+	at org.jboss.tools.as.core.server.controllable.systems.AbstractJBossDeploymentOptionsController.getExtendedProperties(AbstractJBossDeploymentOptionsController.java:181)
+	at org.jboss.tools.as.core.server.controllable.subsystems.internal.LocalDeploymentOptionsController.getDeployFolder(LocalDeploymentOptionsController.java:68)
+	at org.jboss.tools.as.core.server.controllable.systems.AbstractJBossDeploymentOptionsController.getDeploymentsRootFolder(AbstractJBossDeploymentOptionsController.java:78)
+	at org.jboss.tools.as.core.server.controllable.subsystems.internal.ModuleDeployPathController.getDefaultDeployFolder(ModuleDeployPathController.java:71)
+	at org.jboss.tools.as.core.server.controllable.subsystems.internal.ModuleDeployPathController.getDeployDirectory(ModuleDeployPathController.java:110)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.JBoss7FSModuleStateVerifier.getModuleDeployRoot(JBoss7FSModuleStateVerifier.java:69)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.JBoss7FSModuleStateVerifier.getRootModuleState(JBoss7FSModuleStateVerifier.java:99)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.AbstractJBoss7ModuleStateVerifier.getModuleState(AbstractJBoss7ModuleStateVerifier.java:66)
+	at org.jboss.ide.eclipse.as.core.server.internal.UpdateModuleStateJob.getModuleState(UpdateModuleStateJob.java:128)
+	at org.jboss.ide.eclipse.as.core.server.internal.UpdateModuleStateJob.runWait(UpdateModuleStateJob.java:94)
+	at org.jboss.ide.eclipse.as.core.server.internal.UpdateModuleStateJob.run(UpdateModuleStateJob.java:79)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 0 2015-06-16 09:49:27.616
+!MESSAGE Error occurred while checking module state for /10_EventManagementPush on server WildFly 8.x
+!STACK 0
+org.eclipse.core.runtime.AssertionFailedException: assertion failed: The application has not been initialized.
+	at org.eclipse.core.runtime.Assert.isTrue(Assert.java:110)
+	at org.eclipse.core.internal.runtime.InternalPlatform.assertInitialized(InternalPlatform.java:139)
+	at org.eclipse.core.internal.runtime.InternalPlatform.getAdapterManager(InternalPlatform.java:160)
+	at org.eclipse.core.runtime.Platform.getAdapterManager(Platform.java:601)
+	at org.eclipse.wst.server.core.internal.Server.loadAdapter(Server.java:1617)
+	at org.jboss.tools.as.core.server.controllable.systems.AbstractJBossDeploymentOptionsController.getExtendedProperties(AbstractJBossDeploymentOptionsController.java:181)
+	at org.jboss.tools.as.core.server.controllable.subsystems.internal.LocalDeploymentOptionsController.getDeployFolder(LocalDeploymentOptionsController.java:68)
+	at org.jboss.tools.as.core.server.controllable.systems.AbstractJBossDeploymentOptionsController.getDeploymentsRootFolder(AbstractJBossDeploymentOptionsController.java:78)
+	at org.jboss.tools.as.core.server.controllable.subsystems.internal.ModuleDeployPathController.getDefaultDeployFolder(ModuleDeployPathController.java:71)
+	at org.jboss.tools.as.core.server.controllable.subsystems.internal.ModuleDeployPathController.getDeployDirectory(ModuleDeployPathController.java:110)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.JBoss7FSModuleStateVerifier.getModuleDeployRoot(JBoss7FSModuleStateVerifier.java:69)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.JBoss7FSModuleStateVerifier.getRootModuleState(JBoss7FSModuleStateVerifier.java:99)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.AbstractJBoss7ModuleStateVerifier.getModuleState(AbstractJBoss7ModuleStateVerifier.java:66)
+	at org.jboss.ide.eclipse.as.core.server.internal.UpdateModuleStateJob.getModuleState(UpdateModuleStateJob.java:128)
+	at org.jboss.ide.eclipse.as.core.server.internal.UpdateModuleStateJob.runWait(UpdateModuleStateJob.java:94)
+	at org.jboss.ide.eclipse.as.core.server.internal.UpdateModuleStateJob.run(UpdateModuleStateJob.java:79)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SESSION 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2015-06-16 09:51:55.168
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2015-06-16 09:51:59.523
+!MESSAGE Server Startup Succeeded

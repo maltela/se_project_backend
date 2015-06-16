@@ -19,7 +19,7 @@ import org.jboss.aerogear.unifiedpush.message.UnifiedMessage;
 
 public class sendPushMessage {
 
-	/*PushSender defaultPushSender = DefaultPushSender.withRootServerURL("https://seprojektpush-fhmuenster.rhcloud.com/ag-push")
+	PushSender defaultPushSender = DefaultPushSender.withRootServerURL("https://seprojektpush-fhmuenster.rhcloud.com/ag-push")
             .pushApplicationId("a5f8dc54-85db-4557-9df7-a0d5fbd1ffa0")
             .masterSecret("79f2c3bf-edf9-43ff-a8d6-453fcc004c31")
             .build();
@@ -38,8 +38,8 @@ public class sendPushMessage {
 	 
 	
 	 
-	 defaultPushSender.send(message);
-	 */
+	 //defaultPushSender.send(message);
+	 
      };
 	           
 
