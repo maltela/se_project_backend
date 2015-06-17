@@ -1,4 +1,4 @@
-commit_dialog_history_messages=<?xml version\="1.0" encoding\="UTF-8"?>\n<messages>\n<message>Fix Webservice Dropsession</message>\n<message>Webservices Update / Push new Classes</message>\n<message>Tempor\u00E4r - Push invaild </message>\n<message>Merge DAO Funktion Jonthan</message>\n<message>Weitere Anpassungen Web-Service + Objekte </message>\n<message>Push Refresh + Comments  </message>\n<message>Status</message>\n<message>New Method </message>\n<message>test</message>\n<message>Changes Mysql DB + OpenSwift </message>\n</messages>
+commit_dialog_history_messages=<?xml version\="1.0" encoding\="UTF-8"?>\n<messages>\n<message>DTO added</message>\n<message>Fix Webservice Dropsession</message>\n<message>Webservices Update / Push new Classes</message>\n<message>Tempor\u00E4r - Push invaild </message>\n<message>Merge DAO Funktion Jonthan</message>\n<message>Weitere Anpassungen Web-Service + Objekte </message>\n<message>Push Refresh + Comments  </message>\n<message>Status</message>\n<message>New Method </message>\n<message>test</message>\n</messages>
 eclipse.preferences.version=1
 resourcehistory_graph_split=500,500
 resourcehistory_rev_split=700,300

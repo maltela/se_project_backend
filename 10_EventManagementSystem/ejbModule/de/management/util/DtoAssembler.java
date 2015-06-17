@@ -5,6 +5,12 @@ import java.util.List;
 
 import javax.ejb.Stateless;
 
+import de.management.dto.EventTO;
+import de.management.dto.SessionTO;
+import de.management.dto.SessionTOList;
+import de.management.entities.Event;
+import de.management.entities.Session;
+
 //import de.xbank.dto.AccountTO;
 //import de.xbank.dto.CustomerTO;
 //import de.xbank.entities.Account;
@@ -13,7 +19,60 @@ import javax.ejb.Stateless;
 @Stateless
 public class DtoAssembler {
 
- /* public AccountTO makeDTO(Account account) {
+	
+	public EventTO makeDTO(Event event) {
+		  EventTO dto = new EventTO();
+		  dto.setId(event.getId());
+		  dto.setName(event.getName());
+		  dto.setDateStart(event.getDateStart());
+		  dto.setDateEnd(event.getDateEnd());
+		  dto.setDescription(event.getDescription());
+		  List<SessionTO> dtoList = new ArrayList<>();
+			for (Session s : event.getSessions()) {
+				dtoList.add(this.makeDTO(s));
+			}
+		 dto.setSessions(dtoList);
+	  return dto;
+
+	}
+	
+	
+	public List<SessionTO> makeDTO(List<Session> sessions) {
+		
+	 List<SessionTO> dtoList = new ArrayList<>();
+		for (Session s : sessions) {
+			dtoList.add(this.makeDTO(s));
+		}
+		
+		return dtoList;
+	
+	}
+	
+	public SessionTO makeDTO(Session session)
+	{
+		 SessionTO dto = new SessionTO();
+		  dto.setId(session.getSessionID());
+		  dto.setName(session.getName());
+		  dto.setDateStart(session.getDateStart());
+		  dto.setDateEnd(session.getDateEnd());
+		  dto.setDescription(session.getDescription());
+		  dto.setLocation(session.getLocation());
+		  dto.setPlz(session.getPlz());
+		return dto;
+	
+	}
+
+
+}
+
+	/*	 public List<AccountTO> makeDTO(List<Account> accounts) {
+		  ArrayList<AccountTO> dtoList = new ArrayList<>();
+		  for (Account a : accounts) {
+			  dtoList.add(this.makeDTO(a));
+		  }
+		  return dtoList;
+	  }
+  public AccountTO makeDTO(Account account) {
 	  AccountTO dto = new AccountTO();
 	  dto.setId(account.getId());
 	  dto.setBalance(account.getBalance());
@@ -37,4 +96,4 @@ public class DtoAssembler {
   }
 */
 	
-}
+

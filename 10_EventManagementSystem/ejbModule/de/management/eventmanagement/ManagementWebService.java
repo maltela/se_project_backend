@@ -13,11 +13,16 @@ import javax.jws.*;
 import org.jboss.aerogear.unifiedpush.DefaultPushSender;
 import org.jboss.aerogear.unifiedpush.PushSender;
 import org.jboss.aerogear.unifiedpush.message.UnifiedMessage;
+import org.jboss.logging.Logger;
 
 import de.management.dao.EventManagementDAOLocal;
+import de.management.dto.EventTO;
+import de.management.dto.SessionTOList;
 import de.management.entities.Event;
 import de.management.entities.Session;
+import de.management.exceptions.ParamMissingException;
 import de.management.push.*;
+import de.management.util.DtoAssembler;
 
 
 
@@ -43,8 +48,8 @@ public class ManagementWebService {
 	
 	
 	// DataTransferObject 
-	//@EJB
-	//private DtoAssembler dtoAssembler;
+	@EJB
+	private DtoAssembler dtoAssembler;
 	
 	
 	
@@ -78,14 +83,29 @@ public class ManagementWebService {
 	
 	/** 4. Schnittestelle - Alle Informationen einer Veranstaltung bereitstellen
 	 *  @author Malte Lange
+	 * @throws ParamMissingException 
 	 */
 	
 	@WebMethod(operationName ="getEvent")
-	public Event getEvent(@WebParam(name="eventID") Integer eventID){
+	public EventTO getEvent(@WebParam(name="eventID") Integer eventID) throws ParamMissingException{
+		EventTO eventResponse = new EventTO();
 		
-		return (dao.getEvent(eventID));
+				
+				eventResponse.setName(dao.getEvent(eventID).getName());
+				eventResponse.setDateStart(dao.getEvent(eventID).getDateStart());
+				eventResponse.setDateEnd(dao.getEvent(eventID).getDateEnd());
+				eventResponse.setID(dao.getEvent(eventID).getId());
+				eventResponse.setDescription(dao.getEvent(eventID).getDescription());
+				List<Session> sessionList = dao.getEvent(eventID).getSessions();
+				eventResponse.setSessions(dtoAssembler.makeDTO(sessionList));
+			
 		
+		return (eventResponse);
+			
+			
+				// Methoden aufrufe 	
 	}
+	
 	/**
 	 * 5. Schnittstelle - Push Nachrichten versenden
 	 * @author Malte Lange 

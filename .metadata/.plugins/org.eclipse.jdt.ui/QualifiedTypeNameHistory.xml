@@ -6,18 +6,15 @@
 <fullyQualifiedTypeName name="javax.ejb.Local"/>
 <fullyQualifiedTypeName name="java.util.HashSet"/>
 <fullyQualifiedTypeName name="java.util.Collections"/>
-<fullyQualifiedTypeName name="de.management.entities.User"/>
 <fullyQualifiedTypeName name="java.io.Serializable"/>
 <fullyQualifiedTypeName name="java.util.Random"/>
 <fullyQualifiedTypeName name="javax.persistence.PersistenceUnit"/>
-<fullyQualifiedTypeName name="de.management.entities.Event"/>
 <fullyQualifiedTypeName name="javax.persistence.Query"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="de.management.exceptions.ParamMissingException"/>
 <fullyQualifiedTypeName name="de.management.interfaces.InterEvent"/>
 <fullyQualifiedTypeName name="de.management.interfaces.InterSession"/>
 <fullyQualifiedTypeName name="java.util.Date"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="java.text.DateFormat"/>
 <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
 <fullyQualifiedTypeName name="java.text.ParseException"/>
@@ -27,7 +24,6 @@
 <fullyQualifiedTypeName name="org.jboss.aerogear.unifiedpush.PushSender"/>
 <fullyQualifiedTypeName name="javax.jws.WebService"/>
 <fullyQualifiedTypeName name="org.hibernate.validator.internal.util.logging.Log_.logger"/>
-<fullyQualifiedTypeName name="org.jboss.logging.Logger"/>
 <fullyQualifiedTypeName name="org.jboss.aerogear.unifiedpush.message.UnifiedMessage"/>
 <fullyQualifiedTypeName name="org.jboss.aerogear.unifiedpush.message.UnifiedMessage.Builder"/>
 <fullyQualifiedTypeName name="javax.enterprise.inject.Produces"/>
@@ -37,4 +33,12 @@
 <fullyQualifiedTypeName name="com.fasterxml.jackson.databind.KeyDeserializer"/>
 <fullyQualifiedTypeName name="java.util.Collection"/>
 <fullyQualifiedTypeName name="com.fasterxml.jackson.annotation.JsonProperty"/>
+<fullyQualifiedTypeName name="de.management.entities.Session"/>
+<fullyQualifiedTypeName name="de.management.entities.User"/>
+<fullyQualifiedTypeName name="de.management.entities.Event"/>
+<fullyQualifiedTypeName name="de.management.dto.EventTO"/>
+<fullyQualifiedTypeName name="de.management.dto.SessionTO"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="de.management.dto.SessionTOList"/>
+<fullyQualifiedTypeName name="org.jboss.logging.Logger"/>
 </qualifiedTypeNameHistroy>
