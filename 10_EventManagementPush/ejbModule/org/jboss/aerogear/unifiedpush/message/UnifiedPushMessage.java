@@ -1,8 +1,8 @@
 package org.jboss.aerogear.unifiedpush.message;
 
 
-import org.codehaus.jackson.JsonProcessingException;
-import org.codehaus.jackson.map.ObjectMapper;
+import com.fasterxml.jackson.core.*;
+
 
 import java.io.IOException;
 import java.io.Serializable;
@@ -62,7 +62,7 @@ public class UnifiedPushMessage implements Serializable {
 
    private static final long serialVersionUID = -5978882928783277261L;
 
-   private static final ObjectMapper OBJECT_MAPPER = new ObjectMapper();
+   private static final com.fasterxml.jackson.databind.ObjectMapper OBJECT_MAPPER = new com.fasterxml.jackson.databind.ObjectMapper();
 
    private String ipAddress;
    private String clientIdentifier;
@@ -117,7 +117,7 @@ public class UnifiedPushMessage implements Serializable {
 
    public void setClientIdentifier(String clientIdentifier) { this.clientIdentifier = clientIdentifier; }
 
-   public String toStrippedJsonString() {
+   public String toStrippedJsonString() throws JsonProcessingException {
        try {
            final HashMap<String, Object> json = new LinkedHashMap<String, Object>();
            json.put("ipAddress", this.ipAddress);
@@ -126,18 +126,14 @@ public class UnifiedPushMessage implements Serializable {
            json.put("criteria", this.criteria);
            json.put("config", this.config);
            return OBJECT_MAPPER.writeValueAsString(json);
-       } catch (JsonProcessingException e) {
-           return "[\"invalid json\"]";
        } catch (IOException e) {
            return "[\"invalid json\"]";
        }
    }
 
-   public String toJsonString() {
+   public String toJsonString() throws JsonProcessingException {
        try {
            return OBJECT_MAPPER.writeValueAsString(this);
-       } catch (JsonProcessingException e) {
-           return "[\"invalid json\"]";
        } catch (IOException e) {
            return "[\"invalid json\"]";
        }

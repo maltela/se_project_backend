@@ -17,7 +17,9 @@ public class Rolle implements Serializable {
 	private String  Name;
 	
 	
-	
+	public Rolle (){
+		super();
+	}
 	public Integer getID() {
 		return ID;
 	}

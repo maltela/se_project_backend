@@ -18,13 +18,15 @@ package org.jboss.aerogear.unifiedpush.message.apns;
 
 import java.io.Serializable;
 
-import org.codehaus.jackson.annotate.JsonProperty;
-import org.codehaus.jackson.map.annotate.JsonRootName;
+
+
+import com.fasterxml.jackson.annotation.*;
+
 
 /**
  * iOS specific settings for Push Notifications
  */
-@JsonRootName("apns")
+@com.fasterxml.jackson.annotation.JsonRootName("apns")
 public class APNs implements Serializable {
 
     @JsonProperty("action-category")

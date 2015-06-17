@@ -6,7 +6,6 @@
 <fullyQualifiedTypeName name="javax.ejb.Local"/>
 <fullyQualifiedTypeName name="java.util.HashSet"/>
 <fullyQualifiedTypeName name="java.util.Collections"/>
-<fullyQualifiedTypeName name="java.util.Collection"/>
 <fullyQualifiedTypeName name="de.management.entities.User"/>
 <fullyQualifiedTypeName name="java.io.Serializable"/>
 <fullyQualifiedTypeName name="java.util.Random"/>
@@ -35,4 +34,7 @@
 <fullyQualifiedTypeName name="javax.enterprise.context.ApplicationScoped"/>
 <fullyQualifiedTypeName name="org.jboss.aerogear.unifiedpush.message.MessageResponseCallback"/>
 <fullyQualifiedTypeName name="org.jboss.aerogear.unifiedpush.DefaultPushSender"/>
+<fullyQualifiedTypeName name="com.fasterxml.jackson.databind.KeyDeserializer"/>
+<fullyQualifiedTypeName name="java.util.Collection"/>
+<fullyQualifiedTypeName name="com.fasterxml.jackson.annotation.JsonProperty"/>
 </qualifiedTypeNameHistroy>

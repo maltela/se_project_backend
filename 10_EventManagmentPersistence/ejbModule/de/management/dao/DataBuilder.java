@@ -53,10 +53,19 @@ public class DataBuilder {
 		de.management.entities.Event event1 = new de.management.entities.Event ("Majom-Event1","Intialisierungs-Veranstaltung",date,date);
 		de.management.entities.Event event2 = new de.management.entities.Event ("Majom-Event2","Intialisierungs-Veranstaltung",date,date);
 		de.management.entities.Event event3 = new de.management.entities.Event ("Majom-Event3","Intialisierungs-Veranstaltung",date,date);
-		logger.info(event1.getName());
 		em.persist(event1);
 		em.persist(event2);
 		em.persist(event3);
+		de.management.entities.Session session1 = new de.management.entities.Session("Session1",date,date,"FHZ","Test");
+		em.persist(session1);
+		logger.info(session1.getName());
+		logger.info("Ausgabe Event: "+event1.getName());
+		event1.addSessions(session1);
+		em.persist(event1);
+		logger.info(event1.getName());
+		logger.info(event1.getSessions().size());
+		logger.info(event1.getSessions().get(0).getName());
+		
 		Query querytest = em.createQuery("Select e from Event e where e.name ='Majom-Event1'");
 		de.management.entities.Event e = (de.management.entities.Event)querytest.getSingleResult();
 		logger.info(e.getName()+" "+ e.getEventID());
@@ -66,7 +75,8 @@ public class DataBuilder {
 		@SuppressWarnings("unchecked")
 		ArrayList<Event> list = (ArrayList<Event>) query3.getResultList();
 		logger.info(list.get(0)+","+list.get(1)+","+list.get(2));
-	
+		
+		
 	}
 			
 	

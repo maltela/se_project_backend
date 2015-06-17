@@ -239,7 +239,13 @@ public class DefaultPushSender implements PushSender {
 	@Override
 	public void send(UnifiedMessage unifiedMessage,
 			MessageResponseCallback callback) {
-		String jsonString = unifiedMessage.getObject().toJsonString();
+		String jsonString = null;
+		try {
+			jsonString = unifiedMessage.getObject().toJsonString();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		// fire!
 		submitPayload(buildUrl(), jsonString,
 				pushConfiguration.getPushApplicationId(),

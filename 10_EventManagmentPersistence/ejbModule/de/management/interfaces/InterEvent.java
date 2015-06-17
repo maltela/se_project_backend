@@ -1,6 +1,7 @@
 package de.management.interfaces;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Date;
 
 import de.management.entities.Session;
@@ -35,7 +36,7 @@ public interface InterEvent {
     public String getDescription();
 
     public void setDescription(String description);
-    public ArrayList<Session> getSessions();
+    public Collection<Session> getSessions();
     public void setSessions(ArrayList<Session> sessions);
     public void addSessions(Session session);
 }

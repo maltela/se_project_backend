@@ -1,4 +1,10 @@
 package de.management.entities;
+
+
+/*
+ * Veranstaltungs Objekt
+ * @author Malte Lange  
+ */
 import java.io.Serializable;
 import java.text.DateFormat;
 import java.text.ParseException;
@@ -7,10 +13,14 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Date;
 import java.util.HashSet;
+import java.util.List;
 
 import javax.enterprise.inject.Typed;
 import javax.persistence.*;
 
+import org.jboss.logging.Logger;
+
+import de.management.dao.EventManagementDAO;
 import de.management.exceptions.ParamMissingException;
 import de.management.interfaces.InterEvent;
 @Entity
@@ -20,25 +30,25 @@ public class Event implements Serializable,InterEvent {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
+	private static final Logger logger = Logger.getLogger(Event.class);
 	@Id @GeneratedValue
     private Integer id;
     private String name;
-    
     private Date dateEnd;
-  
     private Date dateStart;
     private String description;
- 
-	
-	@OneToMany(fetch = FetchType.EAGER)
-	private Collection<Session> sessions = new ArrayList<Session>();
+    @OneToMany(fetch = FetchType.EAGER)
+    
+	private List<Session> sessions = new ArrayList<Session>(); 
 	@ManyToMany(fetch = FetchType.EAGER)
-	private Collection<User> users = new HashSet<User>();
+	private List<User> users = new ArrayList<User>(); 
 		
+
 	
 
 // Konstruktor 
 	 
+	
 	public Event () 
 	{
 		super();
@@ -53,6 +63,10 @@ public class Event implements Serializable,InterEvent {
 		this.dateEnd=Ende;
 		
 	}
+
+	
+
+	
 	public Integer getId() {
 		return id;
 	}
@@ -87,28 +101,36 @@ public class Event implements Serializable,InterEvent {
 	public void setDescription(String description) {
 		this.description = description;
 	}
+
 	@Override
-	public Integer getEventID() {
-		// TODO Auto-generated method stub
-		return null;
+	public List<Session> getSessions() {					
+		logger.info("Return Sessions");
+		return sessions;
 	}
+	
 	@Override
-	public void setID(Integer id) 	 {
-		// TODO Auto-generated method stub
+	public void addSessions(Session session) {
+		logger.info("Add Session");
+		logger.info("Anzahl"+sessions.size());
+		
+		sessions.add(session);
+		logger.info("Anzahl"+sessions.size());
+		
 		
 	}
+	
 	@Override
-	public ArrayList<Session> getSessions() {
-		// TODO Auto-generated method stub
-		return null;
+	public Integer getEventID() {
+	
+		return id;
+	}
+	@Override
+	public void setID(Integer id) throws ParamMissingException {
+		this.id = id; 
+		
 	}
 	@Override
 	public void setSessions(ArrayList<Session> sessions) {
-		// TODO Auto-generated method stub
-		
-	}
-	@Override
-	public void addSessions(Session session) {
 		// TODO Auto-generated method stub
 		
 	}

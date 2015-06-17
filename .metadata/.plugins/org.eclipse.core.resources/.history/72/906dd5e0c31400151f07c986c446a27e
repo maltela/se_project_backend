@@ -1,0 +1,168 @@
+package de.management.entities;
+import javax.persistence.*;
+
+import de.management.exceptions.ParamMissingException;
+import de.management.interfaces.InterSession;
+
+import java.io.Serializable;
+import java.util.Date;
+
+@Entity 
+public class Session implements Serializable,InterSession {
+	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
+	@Id @GeneratedValue
+	private Integer sessionID;
+	private String name;
+	private Date dateStart;
+	private Date dateEnd;
+	private String plz;
+	private String description;
+	
+	
+	
+	
+// Konstruktor 
+	
+	public Session(String Name,Date UhrzeitStart,Date UhrzeitEnde,String Ort,String Beschreibung )
+	{
+		this.name=Name;
+		this.dateStart=UhrzeitStart;
+		this.dateEnd=UhrzeitEnde;
+		this.description=Beschreibung;
+	}
+
+
+
+
+	@Override
+	public Integer getSessionID() {
+		
+		return sessionID;
+	}
+
+
+
+
+	@Override
+	public void setId(Integer id) throws ParamMissingException {
+		sessionID=id;
+		
+	}
+
+
+
+
+	@Override
+	public String getName() {
+		
+		return name;
+	}
+
+
+
+
+	@Override
+	public void setName(String name) throws ParamMissingException {
+		this.name=name;
+		
+	}
+
+
+
+
+	@Override
+	public java.util.Date getDateStart() {
+		
+		return dateStart;
+	}
+
+
+
+
+	@Override
+	public void setDateStart(java.util.Date dateStart)
+			throws ParamMissingException {
+		this.dateStart=dateStart;
+		
+	}
+
+
+
+
+	@Override
+	public java.util.Date getDateEnd() {
+		
+		return dateEnd;
+	}
+
+
+
+
+	@Override
+	public void setDateEnd(java.util.Date dateEnd) throws ParamMissingException {
+	   this.dateEnd = dateEnd;
+		
+	}
+
+
+
+
+	@Override
+	public String getLocation() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+
+
+	@Override
+	public void setLocation(String location) throws ParamMissingException {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+
+
+	@Override
+	public String getDescription() {
+		// TODO Auto-generated method stub
+		return description;
+	}
+
+
+
+
+	@Override
+	public void setDescription(String description) {
+		this.description=description;
+		
+	}
+
+
+
+
+	@Override
+	public String getPlz() {
+		
+		return plz;
+	}
+
+
+
+
+	@Override
+	public void setPlz(String plz) {
+		this.plz=plz;
+		
+	}
+
+
+	
+}
