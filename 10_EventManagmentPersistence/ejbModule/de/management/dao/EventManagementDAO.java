@@ -117,7 +117,7 @@ public class EventManagementDAO implements EventManagementDAOLocal {
 	                   return 200;
 	           }
 	           else{
-	                   return 000; //Falsche Rechte
+	                   return 576; //Falsche Rechte
 	           }
 	   }
 	   
@@ -134,7 +134,7 @@ public class EventManagementDAO implements EventManagementDAOLocal {
 	                   return 200;
 	           }
 	           else{
-	                   return 000; //Falsche Rechte
+	                   return 576; //Falsche Rechte
 	           }
 	   }
 	   
@@ -153,7 +153,7 @@ public class EventManagementDAO implements EventManagementDAOLocal {
 	                   return 200;
 	           }
 	           else{
-	                   return 000; //Falsche Rechte
+	                   return 576; //Falsche Rechte
 	           }
 	   }
 	   
@@ -179,7 +179,7 @@ public class EventManagementDAO implements EventManagementDAOLocal {
 	                   return 200;
 	           }
 	           else{
-	                   return 000; //Falsche Rechte
+	                   return 576; //Falsche Rechte
 	           }
 	   }
 	   
