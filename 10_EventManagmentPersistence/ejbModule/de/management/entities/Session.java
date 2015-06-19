@@ -7,13 +7,21 @@ import de.management.interfaces.InterSession;
 import java.io.Serializable;
 import java.util.Date;
 
+
+
+
+/**
+ * ----------------
+ * Termin-Objekt
+ * ----------------
+* Zur Verwaltung von Terminen einer Veranstaltung 
+* @author Malte Lange 
+ */
+
 @Entity 
 public class Session implements Serializable,InterSession {
 	
-	/**
-	 * Termin-Objekt
-	 * @author Malte Lange 
-	 */
+
 	private static final long serialVersionUID = 1L;
 	
 	@Id @GeneratedValue
@@ -27,20 +35,24 @@ public class Session implements Serializable,InterSession {
 	
 	
 	
-	
-// Konstruktor 
+	/*
+	 *  Konstruktor 
+	 */
 	
 	public Session()
 	{
 		super();
 	}
 	
-	public Session(String Name,Date UhrzeitStart,Date UhrzeitEnde,String Ort,String Beschreibung )
+	public Session(String Name,Date UhrzeitStart,Date UhrzeitEnde,String Location,String PLZ,String Beschreibung )
 	{
 		this.name=Name;
 		this.dateStart=UhrzeitStart;
 		this.dateEnd=UhrzeitEnde;
+		this.location=Location;
+		this.plz=PLZ;
 		this.description=Beschreibung;
+				
 	}
 
 
@@ -52,124 +64,70 @@ public class Session implements Serializable,InterSession {
 		return id;
 	}
 
-
-
-
 	@Override
 	public void setId(Integer id) throws ParamMissingException {
 		this.id=id;
 		
 	}
-
-
-
-
 	@Override
 	public String getName() {
 		
 		return name;
 	}
-
-
-
-
 	@Override
 	public void setName(String name) throws ParamMissingException {
 		this.name=name;
 		
 	}
-
-
-
-
 	@Override
-	public java.util.Date getDateStart() {
+	public Date getDateStart() {
 		
 		return dateStart;
 	}
-
-
-
-
 	@Override
-	public void setDateStart(java.util.Date dateStart)
-			throws ParamMissingException {
+	public void setDateStart(Date dateStart) throws ParamMissingException {
 		this.dateStart=dateStart;
 		
 	}
-
-
-
-
 	@Override
-	public java.util.Date getDateEnd() {
+	public Date getDateEnd() {
 		
 		return dateEnd;
 	}
-
-
-
-
 	@Override
-	public void setDateEnd(java.util.Date dateEnd) throws ParamMissingException {
+	public void setDateEnd(Date dateEnd) throws ParamMissingException {
 	   this.dateEnd = dateEnd;
 		
 	}
-
-
-
-
 	@Override
 	public String getLocation() {
 		// TODO Auto-generated method stub
 		return location;
 	}
-
-
-
-
 	@Override
 	public void setLocation(String location) throws ParamMissingException {
 		this.location = location;
 		
 	}
-
-
-
-
 	@Override
 	public String getDescription() {
 		
 		return description;
 	}
-
-
-
-
 	@Override
-	public void setDescription(String description) {
+	public void setDescription(String description) throws ParamMissingException{
 		this.description=description;
 		
 	}
-
-
-
-
 	@Override
 	public String getPlz() {
 		
 		return plz;
 	}
-
-
-
-
 	@Override
-	public void setPlz(String plz) {
+	public void setPlz(String plz) throws ParamMissingException {
 		this.plz=plz;
 		
 	}
-
-
 	
 }

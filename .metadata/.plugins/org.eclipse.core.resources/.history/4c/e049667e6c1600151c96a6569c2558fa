@@ -1,0 +1,32 @@
+package org.jboss.aerogear.unifiedpush;
+
+//import javax.annotation.PostConstruct;
+//import javax.ejb.Singleton;
+//import javax.ejb.Startup;
+import javax.enterprise.inject.Produces;
+
+//import org.jboss.aerogear.unifiedpush.message.UnifiedMessage;
+import org.jboss.logging.Logger;
+
+
+
+//@Startup
+//@Singleton
+
+public class StartupPush {
+
+	private static final Logger logger = Logger.getLogger(StartupPush.class);
+	
+	//@PostConstruct
+	@Produces
+	public static void init()
+	{
+
+		logger.info("Push test");
+	  PushSender defaultPushSender = DefaultPushSender.withRootServerURL("https://seprojektpush-fhmuenster.rhcloud.com/ag-push/")
+			    .pushApplicationId("a5f8dc54-85db-4557-9df7-a0d5fbd1ffa0")
+			    .masterSecret("79f2c3bf-edf9-43ff-a8d6-453fcc004c31")
+			    .build();
+	}
+
+}

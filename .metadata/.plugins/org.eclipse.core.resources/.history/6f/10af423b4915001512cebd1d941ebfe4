@@ -1,0 +1,40 @@
+
+package org.jboss.aerogear.unifiedpush.message;
+
+import java.io.Serializable;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+
+
+/**
+ * Configuration options of the UnifiedPush Message.
+ *
+ * <p>
+ * For details have a look at the <a href="http://aerogear.org/docs/specs/aerogear-push-messages/">Message Format Specification</a>.
+ */
+public class Config implements Serializable {
+    @JsonProperty("ttl")
+    private int timeToLive = -1;
+
+    /**
+     * Returns the value of the 'ttl' key from the submitted payload.
+     * This key is recognized for the Android and iOS Push Notification Service.
+     *
+     * If the 'ttl' key has not been specified on the submitted payload, this method will return -1.
+     */
+    public int getTimeToLive() {
+        return timeToLive;
+    }
+
+    public void setTimeToLive(int timeToLive) {
+        this.timeToLive = timeToLive;
+    }
+
+    @Override
+    public String toString() {
+        return "Config{" +
+                "timeToLive=" + timeToLive +
+                '}';
+    }
+}

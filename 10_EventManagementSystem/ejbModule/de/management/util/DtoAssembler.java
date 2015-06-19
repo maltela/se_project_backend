@@ -7,14 +7,9 @@ import javax.ejb.Stateless;
 
 import de.management.dto.EventTO;
 import de.management.dto.SessionTO;
-import de.management.dto.SessionTOList;
 import de.management.entities.Event;
 import de.management.entities.Session;
 
-//import de.xbank.dto.AccountTO;
-//import de.xbank.dto.CustomerTO;
-//import de.xbank.entities.Account;
-//import de.xbank.entities.Customer;
 
 @Stateless
 public class DtoAssembler {

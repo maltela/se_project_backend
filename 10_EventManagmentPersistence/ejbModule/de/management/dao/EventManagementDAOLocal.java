@@ -1,11 +1,5 @@
 package de.management.dao;
 
-import java.util.ArrayList;
-
-
-
-
-
 
 import java.util.List;
 
@@ -29,6 +23,7 @@ public interface EventManagementDAOLocal {
 	public Event getEvent(Integer id);		 
 	// Benutzer Registrierung @Backend  
 	public Integer createUser(String username,String DeviseID);
+	
 	
 	//
 	//*********** Admin-Anwedungsfälle***************** 

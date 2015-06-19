@@ -11,7 +11,7 @@
 		<item value="false" key="GenerateJavadoc"/>
 	</section>
 	<section name="BuildPathsPropertyPage">
-		<item value="2" key="pageIndex"/>
+		<item value="0" key="pageIndex"/>
 	</section>
 	<section name="RefactoringWizard.preview">
 		<item value="400" key="height"/>
@@ -29,20 +29,52 @@
 		<item value="false" key="nodeprecatedlist"/>
 		<item value="false" key="notree"/>
 		<item value="true" key="splitindex"/>
-		<item value=":/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/bin/javadoc" key="javadoc_command_history"/>
+		<item value="/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/bin/javadoc" key="javadoc_command_history"/>
 		<item value="true" key="use"/>
 		<item value="false" key="nonavbar"/>
 		<item value="public" key="access"/>
 		<item value="true" key="version"/>
 		<item value="false" key="nodeprecated"/>
+		<item value="/Users/MalteL/Documents/se_workspace/10_EventManagementSystem/doc" key="destdir"/>
 		<item value="true" key="author"/>
 		<item value="" key="docletname"/>
-		<item value="1.3" key="source"/>
+		<item value="1.7" key="source"/>
 		<item value="false" key="openinbrowser"/>
 		<item value="false" key="noindex"/>
 		<item value="" key="docletpath"/>
+		<item value="/Users/MalteL/Documents/se_workspace/10_EventManagementSystem/javadoc.xml" key="antpath"/>
 		<item value="true" key="fromStandard"/>
 		<section name="projects">
+			<section name="RemoteSystemsTempFiles">
+				<item value="/Users/MalteL/Documents/se_workspace/RemoteSystemsTempFiles/doc" key="destdir"/>
+				<item value="" key="href"/>
+				<item value="/Users/MalteL/Documents/se_workspace/RemoteSystemsTempFiles/javadoc.xml" key="antpath"/>
+			</section>
+			<section name="10_EventManagementPush">
+				<item value="/Users/MalteL/Documents/se_workspace/10_EventManagementPush/doc" key="destdir"/>
+				<item value="" key="href"/>
+				<item value="/Users/MalteL/Documents/se_workspace/10_EventManagementPush/javadoc.xml" key="antpath"/>
+			</section>
+			<section name="10_EventManagementSystem">
+				<item value="/Users/MalteL/Documents/se_workspace/10_EventManagementSystem/doc" key="destdir"/>
+				<item value="" key="href"/>
+				<item value="/Users/MalteL/Documents/se_workspace/10_EventManagementSystem/javadoc.xml" key="antpath"/>
+			</section>
+			<section name="10_EventManagmentPersistence">
+				<item value="/Users/MalteL/Documents/se_workspace/10_EventManagmentPersistence/doc" key="destdir"/>
+				<item value="" key="href"/>
+				<item value="/Users/MalteL/Documents/se_workspace/10_EventManagmentPersistence/javadoc.xml" key="antpath"/>
+			</section>
+			<section name="unifiedpush-java-client">
+				<item value="/Users/MalteL/Documents/se_workspace/unifiedpush-java-client/doc" key="destdir"/>
+				<item value="" key="href"/>
+				<item value="/Users/MalteL/Documents/se_workspace/unifiedpush-java-client/javadoc.xml" key="antpath"/>
+			</section>
+			<section name="10_EventManagementEAR">
+				<item value="/Users/MalteL/Documents/se_workspace/10_EventManagementEAR/doc" key="destdir"/>
+				<item value="" key="href"/>
+				<item value="/Users/MalteL/Documents/se_workspace/10_EventManagementEAR/javadoc.xml" key="antpath"/>
+			</section>
 		</section>
 	</section>
 	<section name="JarImportWizard">
@@ -97,8 +129,8 @@
 	</section>
 	<section name="JavadocWizardDialog">
 		<item value="600" key="DIALOG_WIDTH"/>
-		<item value="350" key="DIALOG_Y_ORIGIN"/>
-		<item value="980" key="DIALOG_X_ORIGIN"/>
+		<item value="339" key="DIALOG_Y_ORIGIN"/>
+		<item value="840" key="DIALOG_X_ORIGIN"/>
 		<item value="534" key="DIALOG_HEIGHT"/>
 		<item value="1|.Helvetica Neue DeskInterface|11.0|0|COCOA|1|.HelveticaNeueDeskInterface-Regular" key="DIALOG_FONT_NAME"/>
 	</section>

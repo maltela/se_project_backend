@@ -1,22 +1,21 @@
 package de.management.dao;
+
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
 import java.util.Date;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.Resource;
-import javax.ejb.EJB;
+//import javax.ejb.EJB;
 import javax.ejb.Singleton;
 import javax.ejb.Startup;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
-import javax.persistence.Query;
-
 import org.jboss.logging.Logger;
-
-import de.management.entities.Event;
 import de.management.entities.User;
+import de.management.entities.Event;
+import de.management.entities.Session;
+
 
 @Startup
 @Singleton
@@ -35,53 +34,50 @@ public class DataBuilder {
 	private String Event;
 
 	@PostConstruct
-	private void init() {
-		User user1 = new User("USer1","23432");	
+	private void init() throws ParseException {
+		
+		
+		
+		// Date bereitstellen für Objekt Erstellung
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd/MM/yyyy");
+        simpleDateFormat.setLenient(false);
+        Date date = null;
+		date = simpleDateFormat.parse("01/08/2015");
+		
+		
+		logger.info("Beispiel-Datenobjekte anlegen");
+		User user1 = new User("User1","23432");	
+		User user2 = new User("User2","23432");	
+		User user3 = new User("User3","23432");	
 		em.persist(user1);
-		logger.info("User angelegt:");
+		em.persist(user2);
+		em.persist(user3);
 		User userdb = em.find(User.class,1);
-		logger.info(userdb.getName()+ " "+userdb.getUserID());
-		 SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd/MM/yyyy");
-         simpleDateFormat.setLenient(false);
-         Date date = null;
-		try {
-			date = simpleDateFormat.parse("01/08/2015");
-		} catch (ParseException e1) {
-			// TODO Auto-generated catch block
-			e1.printStackTrace();
-		}
-		de.management.entities.Event event1 = new de.management.entities.Event ("Majom-Event1","Intialisierungs-Veranstaltung",date,date);
-		de.management.entities.Event event2 = new de.management.entities.Event ("Majom-Event2","Intialisierungs-Veranstaltung",date,date);
-		de.management.entities.Event event3 = new de.management.entities.Event ("Majom-Event3","Intialisierungs-Veranstaltung",date,date);
+		logger.info("User: "+userdb.getName()+ " ID: "+userdb.getUserID());
+		Event event1 = new Event ("Majom-Event1","Intialisierungs-Veranstaltung",date,date);
+		Event event2 = new Event ("Majom-Event2","Intialisierungs-Veranstaltung",date,date);
+		Event event3 = new Event ("Majom-Event3","Intialisierungs-Veranstaltung",date,date);
+		logger.info("Event-Objekte persistieren");
 		em.persist(event1);
 		em.persist(event2);
 		em.persist(event3);
-		de.management.entities.Session session1 = new de.management.entities.Session("Session1",date,date,"FHZ","Test");
+		Session session1 = new Session("Session1",date,date,"FHZ","Test","PLZ");
+		Session session2 = new Session("Session2",date,date,"FHZ","Test","PLZ");
+		Session session3 = new Session("Session3",date,date,"FHZ","Test","PLZ");
+		logger.info("Session-Objekte persistieren");
 		em.persist(session1);
-		logger.info(session1.getName());
-		logger.info("Ausgabe Event: "+event1.getName());
+		em.persist(session2);
+		em.persist(session3);
+		//Termine der Veranstaltung hinzufügen
 		event1.addSessions(session1);
+		event1.addSessions(session2);
+		event1.addSessions(session3);
 		em.persist(event1);
-		logger.info(event1.getName());
-		logger.info(event1.getSessions().size());
-		logger.info(event1.getSessions().get(0).getName());
-		
-		Query querytest = em.createQuery("Select e from Event e where e.name ='Majom-Event1'");
-		de.management.entities.Event e = (de.management.entities.Event)querytest.getSingleResult();
-		logger.info(e.getName()+" "+ e.getEventID());
-		
-		Query query3 = em.createQuery("select e from Event e ");
-		
-		@SuppressWarnings("unchecked")
-		ArrayList<Event> list = (ArrayList<Event>) query3.getResultList();
-		logger.info(list.get(0)+","+list.get(1)+","+list.get(2));
-		
+		logger.info("Veranstaltung"+event1.getName()+" mit "+ event1.getSessions().size()+" Termin angelegt");
 		
 	}
-			
-	
 		
-	}
+}
 
 
 

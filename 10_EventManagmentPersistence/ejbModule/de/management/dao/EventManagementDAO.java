@@ -1,6 +1,6 @@
 package de.management.dao;
 
-import java.util.ArrayList;
+
 import java.util.Collection;
 import java.util.List;
 
@@ -11,7 +11,9 @@ import javax.persistence.Query;
 
 import org.jboss.logging.Logger;
 
-import de.management.entities.*;
+import de.management.entities.Event;
+import de.management.entities.Session;
+import de.management.entities.User;
 
 @Stateless
 /** 
@@ -31,35 +33,42 @@ public class EventManagementDAO implements EventManagementDAOLocal {
 	 */
 	@Override
 	public Integer createUser(String username, String deviceID) {
-		User user = new User(username, deviceID);
-		em.persist(user);
-		logger.info("User"+username+" anlegen");
 		
-		if (em.contains(user))
+		Query query = em.createQuery("select u from user where u.deviceID= :param");
+		query.setParameter("param",deviceID);
+		
+		if(query.equals(0))
 		{
+			logger.info("User wird angelegt");		
+			User user = new User(username, deviceID);
+			//Prüfung der Persisierung
+			if (em.contains(user))
+			{
 			return user.getUserID();
-		}	
-		else 
-		{
+			}	
+			else 
+			{
 			return 501;
+			}
 		}
+		else
+		{
+			logger.info("Gerät wurde bereits registriert");
+			return 502;
+		}
+		
 	}
+	
 	/**
 	 * 2. Übersicht aller verfügbaren Events 
 	 * @author  Malte Lange 
 	 */
 	@Override
-	
 	public List<Event> getEventOverview() {
 		logger.info("Ausgabe der Event-Übersicht");
 		Query query = em.createQuery("select e from Event e ");
 		@SuppressWarnings("unchecked")
 		List<Event> list = (List<Event>) query.getResultList();
-		Event test = list.get(2);
-		test.getName();
-		logger.info(test.getName()+" "+test.getDescription());
-	//	Event[] dataArray = new Event[list.size()];
-	//	list.toArray(dataArray);
 		return list;
 	}
 	
@@ -75,9 +84,7 @@ public class EventManagementDAO implements EventManagementDAOLocal {
 		
 		return (em.find(Event.class,id));
 		
-	}
-	
-	
+	}	
 	
 	
 	/************************
@@ -184,8 +191,7 @@ public class EventManagementDAO implements EventManagementDAOLocal {
 	   }
 	   
 	   
-	
-	
+	 
 	
 		
 }

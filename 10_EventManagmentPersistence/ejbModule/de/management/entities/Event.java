@@ -1,34 +1,30 @@
 package de.management.entities;
 
 
-/*
- * Veranstaltungs Objekt
- * @author Malte Lange  
- */
+
 import java.io.Serializable;
-import java.text.DateFormat;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Date;
-import java.util.HashSet;
 import java.util.List;
-
-import javax.enterprise.inject.Typed;
 import javax.persistence.*;
-
 import org.jboss.logging.Logger;
-
-import de.management.dao.EventManagementDAO;
 import de.management.exceptions.ParamMissingException;
 import de.management.interfaces.InterEvent;
+
+
+
+/**
+ * ---------------------
+ * Veranstaltungs-Objekt
+ * ---------------------
+ * Verwaltung von Veranstaltungsinformationen mit Terminen und Teilnehmern 
+ * @author Malte Lange 
+ */
+
+
 @Entity
 public class Event implements Serializable,InterEvent {
 	
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 	private static final Logger logger = Logger.getLogger(Event.class);
 	@Id @GeneratedValue
@@ -37,36 +33,59 @@ public class Event implements Serializable,InterEvent {
     private Date dateEnd;
     private Date dateStart;
     private String description;
-    @OneToMany(fetch = FetchType.EAGER)
     
+    @OneToMany(fetch = FetchType.EAGER)
 	private List<Session> sessions = new ArrayList<Session>(); 
-	@ManyToMany(fetch = FetchType.EAGER)
+	
+    @ManyToMany(fetch = FetchType.EAGER)
 	private List<User> users = new ArrayList<User>(); 
 		
 
 	
-
-// Konstruktor 
-	 
-	
+ 
+    /*
+     * Konstruktoren
+     */
+    
 	public Event () 
 	{
 		super();
 		
 	}
+	
+	/*
+	 *  Veranstaltung erstellen ohne Termine 
+	 */
 	public Event (String Name,String Beschreibung,Date Anfang,Date Ende)
 	{
-		
+		logger.info("Veranstaltung:"+Name+" erstellen");
 		this.name=Name;
 		this.description=Beschreibung;
 		this.dateStart=Anfang;
 		this.dateEnd=Ende;
+
 		
 	}
-
 	
+	/*
+	 * Veranstaltung erstellen mit Termine 
+	 */
+	public Event (String Name,String Beschreibung,Date Anfang,Date Ende,List<Session> sessions)
+	{
 
+		logger.info("Veranstaltung:"+Name+" erstellen");
+		this.name=Name;
+		this.description=Beschreibung;
+		this.dateStart=Anfang;
+		this.dateEnd=Ende;
+		this.sessions=sessions;
+
+	}
 	
+	/*
+	 * Getter / Setter
+	 */
+
 	public Integer getId() {
 		return id;
 	}
@@ -104,24 +123,19 @@ public class Event implements Serializable,InterEvent {
 
 	@Override
 	public List<Session> getSessions() {					
-		logger.info("Return Sessions");
+		logger.info("Termine ausgeben");
 		return sessions;
 	}
 	
 	@Override
 	public void addSessions(Session session) {
-		logger.info("Add Session");
-		logger.info("Anzahl"+sessions.size());
-		
+		logger.info("Termin hinzufügen");
 		sessions.add(session);
-		logger.info("Anzahl"+sessions.size());
-		
-		
 	}
 	
 	@Override
 	public Integer getEventID() {
-	
+		
 		return id;
 	}
 	@Override
@@ -131,11 +145,8 @@ public class Event implements Serializable,InterEvent {
 	}
 	@Override
 	public void setSessions(ArrayList<Session> sessions) {
-		// TODO Auto-generated method stub
+	
 		
 	}
-	
-
-
 
 }

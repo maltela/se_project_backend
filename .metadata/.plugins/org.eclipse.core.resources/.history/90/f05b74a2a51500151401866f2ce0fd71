@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="10_EventManagementEAR">
+        <wb-resource deploy-path="/" source-path="/EarContent" tag="defaultRootSource"/>
+        <dependent-module archiveName="10_EventManagementSystem.jar" deploy-path="/" handle="module:/resource/10_EventManagementSystem/10_EventManagementSystem">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="10_EventManagmentPersistence.jar" deploy-path="/" handle="module:/resource/10_EventManagmentPersistence/10_EventManagmentPersistence">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="10_EventManagementPush.jar" deploy-path="/" handle="module:/resource/10_EventManagementPush/10_EventManagementPush">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jackson-databind-2.3.0.jar" deploy-path="/lib" handle="module:/classpath/lib/10_EventManagementPush/jackson-databind-2.3.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jackson-mapper-asl-1.9.9.jar" deploy-path="/lib" handle="module:/classpath/lib/10_EventManagementPush/jackson-mapper-asl-1.9.9.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="gson-2.3.jar" deploy-path="/lib" handle="module:/classpath/lib/10_EventManagementPush/gson-2.3.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="unifiedpush-push-model-1.1.0-alpha.2.jar" deploy-path="/lib" handle="module:/classpath/lib/10_EventManagementPush/unifiedpush-push-model-1.1.0-alpha.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+    </wb-module>
+</project-modules>

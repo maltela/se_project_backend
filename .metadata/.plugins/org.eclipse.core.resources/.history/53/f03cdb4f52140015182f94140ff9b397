@@ -1,5 +1,0 @@
-package org.codehaus.jackson.map.ser.impl;
-
-public class UnknownSerializer {
-
-}

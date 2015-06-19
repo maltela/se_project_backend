@@ -1,0 +1,41 @@
+package org.jboss.aerogear.unifiedpush;
+
+import java.io.Serializable;
+
+import javax.inject.Inject;
+
+import org.jboss.aerogear.unifiedpush.message.UnifiedMessage;
+
+public class sendMessage implements Serializable {
+	
+	@Inject
+	private static PushSender defaultPushSender;
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	public static void sendPushNotificationRequest() 
+	{
+
+		 PushSender defaultPushSender = DefaultPushSender.withRootServerURL("https://seprojektpush-fhmuenster.rhcloud.com/ag-push/")
+				    .pushApplicationId("a5f8dc54-85db-4557-9df7-a0d5fbd1ffa0")
+				    .masterSecret("79f2c3bf-edf9-43ff-a8d6-453fcc004c31")
+				    .build();
+
+	  	UnifiedMessage unifiedMessage = UnifiedMessage.withCriteria()
+	           .aliases("john", "maria")
+	           .message()
+	             .alert("Message:")
+	             .sound("default")
+	             .badge("1") // iOS specific
+	             .userData("some_key", "some_value") // optional attributes specific to your app
+	             .userData("title", "Cool Title") // optional cordova Android specific attribute (default is appName)
+	           .build();
+		 	defaultPushSender.send(unifiedMessage);	
+
+	 	defaultPushSender.send(unifiedMessage);	
+   
+	}
+
+}

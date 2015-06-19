@@ -7,21 +7,14 @@ import java.util.List;
 
 import javax.ejb.EJB;
 import javax.ejb.Stateless;
-import javax.enterprise.inject.Produces;
 import javax.jws.*;
-
-import org.jboss.aerogear.unifiedpush.DefaultPushSender;
-import org.jboss.aerogear.unifiedpush.PushSender;
-import org.jboss.aerogear.unifiedpush.message.UnifiedMessage;
-import org.jboss.logging.Logger;
 
 import de.management.dao.EventManagementDAOLocal;
 import de.management.dto.EventTO;
-import de.management.dto.SessionTOList;
 import de.management.entities.Event;
 import de.management.entities.Session;
 import de.management.exceptions.ParamMissingException;
-import de.management.push.*;
+import de.management.push.sendMessage;
 import de.management.util.DtoAssembler;
 
 
@@ -29,7 +22,7 @@ import de.management.util.DtoAssembler;
 
 /** Web-Service Schnittstellen
  * 	@author Malte Lange
- *  
+ *  @author Jonathan Peters 
  *  */
 @WebService(serviceName= "EventManagement")
 @Stateless
@@ -41,13 +34,9 @@ public class ManagementWebService {
 	@EJB(beanName = "EventManagementDAO", beanInterface = de.management.dao.EventManagementDAOLocal.class)
 	private EventManagementDAOLocal dao;
 	
-	/** Push Bereitstellen 
-	 * 
-	 */
+		
 	
-	
-	
-	// DataTransferObject 
+	/** DataTransferObject */ 
 	@EJB
 	private DtoAssembler dtoAssembler;
 	
@@ -63,15 +52,17 @@ public class ManagementWebService {
 	
 	/** 2. Schnittstelle - Benutzer einrichten 
 	 * @author Malte Lange
+	 * @param username,deviceID
 	 * */ 
 	@WebMethod( operationName = "addUser")
-	public Integer createUser(@WebParam(name = "username")String username,@WebParam(name = "deviceID")String deviceID) {
+	public Integer createUser(@WebParam(name = "username")String username,@WebParam(name = "deviceID")String deviceID) throws ParamMissingException{
 		Integer userID = dao.createUser(username, deviceID);
 		return userID;
 	}
 	
 	/** 3. Schnittstelle - Veranstaltungs-Übersicht bereitstellen
 	 * @author Malte Lange
+	 * @return List<Event>
 	 */ 
 	@WebMethod(operationName = "getEvents")
 	public List<Event> getEventOverview() {
@@ -81,14 +72,17 @@ public class ManagementWebService {
 	
 	}
 	
-	/** 4. Schnittestelle - Alle Informationen einer Veranstaltung bereitstellen
-	 *  @author Malte Lange
+	/** 
+	 * 4. Schnittestelle - Alle Informationen einer Veranstaltung bereitstellen
+	 * @author Malte Lange
 	 * @throws ParamMissingException 
+	 * @param eventID
 	 */
 	
 	@WebMethod(operationName ="getEvent")
 	public EventTO getEvent(@WebParam(name="eventID") Integer eventID) throws ParamMissingException{
-		EventTO eventResponse = new EventTO();
+		
+				EventTO eventResponse = new EventTO();
 		
 				
 				eventResponse.setName(dao.getEvent(eventID).getName());
@@ -98,12 +92,9 @@ public class ManagementWebService {
 				eventResponse.setDescription(dao.getEvent(eventID).getDescription());
 				List<Session> sessionList = dao.getEvent(eventID).getSessions();
 				eventResponse.setSessions(dtoAssembler.makeDTO(sessionList));
-			
-		
 		return (eventResponse);
 			
-			
-				// Methoden aufrufe 	
+				
 	}
 	
 	/**
@@ -112,13 +103,14 @@ public class ManagementWebService {
 	 * @param msg
 	 * @return
 	 */
-	@WebMethod(operationName="sendPush")
-	public Integer sendPush(@WebParam(name="msg")String msg)
+	
+	@WebMethod(operationName="sendPushMessage")
+	public Integer sendPush(@WebParam(name="msg")String msg) throws ParamMissingException
 	{
+
+		   sendMessage.action(msg);
 		
-		sendPushMessage.action(msg);
-		
-		return 200;
+	return 200;
 	}
 
 	/*

@@ -1,5 +1,0 @@
-package org.codehaus.jackson.map.deser;
-
-public class StdDeserializationContext {
-
-}

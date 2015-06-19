@@ -1,5 +1,0 @@
-package org.jboss.aerogear.unifiedpush.message;
-
-public class Message {
-
-}

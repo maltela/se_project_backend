@@ -22,6 +22,8 @@
 			<item value="[groupId].[artifactId]-[version]"/>
 		</list>
 	</section>
+	<section name="org.jboss.tools.project.examples.stacksrequirements">
+	</section>
 	<section name="org.eclipse.m2e.core.pom.overview">
 		<list key="issueManagementUrl">
 		</list>
@@ -34,7 +36,13 @@
 	</section>
 	<section name="org.eclipse.m2e.core.pom.dependencies">
 	</section>
-	<section name="MavenDependenciesWizardPage">
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+		</list>
+		<list key="projectNameCombo">
+		</list>
+		<list key="packageCombo">
+		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
 			<item value="[artifactId]-TRUNK"/>
@@ -43,9 +51,7 @@
 			<item value="[groupId].[artifactId]-[version]"/>
 		</list>
 	</section>
-	<section name="MavenProjectWizardLocationPage">
-		<list key="location">
-		</list>
+	<section name="MavenDependenciesWizardPage">
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
 			<item value="[artifactId]-TRUNK"/>
@@ -74,6 +80,7 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="https://github.com/aerogear/aerogear-unifiedpush-java-client"/>
 			<item value="/Users/MalteL/Documents/se_workspace/10_EventManagementSystem/ejbModule/de/management/push"/>
 		</list>
 		<list key="projectNameTemplate">

@@ -1,5 +1,0 @@
-package org.jboss.aerogear.unifiedpush.message.windows;
-
-public class ToastType {
-
-}

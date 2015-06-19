@@ -1,8 +1,6 @@
 package de.management.dto;
 
-import javax.persistence.*;
 
-import de.management.exceptions.ParamMissingException;
 import de.management.interfaces.InterSession;
 
 import java.io.Serializable;

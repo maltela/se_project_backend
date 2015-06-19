@@ -5,12 +5,19 @@ import java.util.Collection;
 import java.util.HashSet;
 import javax.persistence.*;
 
+
+/**
+ * ---------------------
+ * Benutzer-Objekt
+ * ---------------------
+ * Bereitstellung von Benutzer-Informationen 
+ * @author Malte Lange 
+ */
+
 @Entity 
 public class User implements Serializable {
 	
-	/**
-	 * 
-	 */
+	
 	private static final long serialVersionUID = 1L;
 	@Id @GeneratedValue 
 	private Integer id;
