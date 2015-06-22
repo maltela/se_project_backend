@@ -1,0 +1,21 @@
+package de.management.dto;
+
+import java.util.List;
+
+public class EventTOList {
+
+		private List<EventTO> eventList;
+		
+		public EventTOList() {
+			// TODO Auto-generated constructor stub
+		}
+
+		public List<EventTO> getEventList() {
+			return eventList;
+		}
+
+		public void setEventList(List<EventTO> eventList) {
+			this.eventList =eventList;
+		}
+
+}

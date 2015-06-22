@@ -34,13 +34,18 @@ public class EventManagementDAO implements EventManagementDAOLocal {
 	@Override
 	public Integer createUser(String username, String deviceID) {
 		
-		Query query = em.createQuery("select u from user where u.deviceID= :param");
+		long defaultVal = 0;
+		Query query = em.createQuery("select count(u.deviceID) from User u where deviceID= :param");
 		query.setParameter("param",deviceID);
+	
+		logger.info("Anzahl:"+query.getSingleResult()+" "+query.getSingleResult().getClass().toString());	
 		
-		if(query.equals(0))
+		
+		if(query.getSingleResult().equals(defaultVal))
 		{
-			logger.info("User wird angelegt");		
+			logger.info("Neues Gerät");
 			User user = new User(username, deviceID);
+			em.persist(user);
 			//Prüfung der Persisierung
 			if (em.contains(user))
 			{
@@ -57,6 +62,7 @@ public class EventManagementDAO implements EventManagementDAOLocal {
 			return 502;
 		}
 		
+		
 	}
 	
 	/**
@@ -68,7 +74,7 @@ public class EventManagementDAO implements EventManagementDAOLocal {
 		logger.info("Ausgabe der Event-Übersicht");
 		Query query = em.createQuery("select e from Event e ");
 		@SuppressWarnings("unchecked")
-		List<Event> list = (List<Event>) query.getResultList();
+		List<Event> list = query.getResultList();
 		return list;
 	}
 	
@@ -87,13 +93,15 @@ public class EventManagementDAO implements EventManagementDAOLocal {
 	}	
 	
 	
+	
+	
 	/************************
     * Administration Funktionen
     * @author Jonathan Peters
     */
 	
 	/** 
-	 * 4. Veranstaltung erstellen
+	 * 5. Veranstaltung erstellen
 	 * @author Jonathan Peters
 	 */
 	

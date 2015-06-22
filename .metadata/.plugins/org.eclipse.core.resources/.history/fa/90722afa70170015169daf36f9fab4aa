@@ -1,0 +1,36 @@
+package org.jboss.aerogear.unifiedpush;
+
+import java.io.Serializable;
+
+
+import org.jboss.aerogear.unifiedpush.message.UnifiedMessage;
+
+public class sendMessage implements Serializable {
+	
+	//@Inject
+	//private static PushSender defaultPushSender;
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	public static void action(String msg,Integer eventID) 
+	{
+
+		 PushSender defaultPushSender = DefaultPushSender.withRootServerURL("https://seprojektpush-fhmuenster.rhcloud.com/ag-push/")
+				    .pushApplicationId("a5f8dc54-85db-4557-9df7-a0d5fbd1ffa0")
+				    .masterSecret("79f2c3bf-edf9-43ff-a8d6-453fcc004c31")
+				    .build();
+
+	  	UnifiedMessage unifiedMessage = UnifiedMessage.withCriteria()
+	           .message()
+	           .userData("eventID",eventID.toString())  
+	           .alert(msg)
+	           .build();
+		 	defaultPushSender.send(unifiedMessage);	
+
+	 	
+   
+	}
+
+}

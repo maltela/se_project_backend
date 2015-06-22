@@ -21,17 +21,13 @@
 <fullyQualifiedTypeName name="de.management.push.message.UnifiedMessage"/>
 <fullyQualifiedTypeName name="javax.jws.WebService"/>
 <fullyQualifiedTypeName name="org.hibernate.validator.internal.util.logging.Log_.logger"/>
-<fullyQualifiedTypeName name="org.jboss.aerogear.unifiedpush.message.UnifiedMessage.Builder"/>
 <fullyQualifiedTypeName name="org.jboss.aerogear.unifiedpush.message.MessageResponseCallback"/>
 <fullyQualifiedTypeName name="com.fasterxml.jackson.databind.KeyDeserializer"/>
 <fullyQualifiedTypeName name="java.util.Collection"/>
 <fullyQualifiedTypeName name="de.management.entities.Session"/>
-<fullyQualifiedTypeName name="de.management.entities.User"/>
 <fullyQualifiedTypeName name="de.management.entities.Event"/>
 <fullyQualifiedTypeName name="de.management.dto.EventTO"/>
-<fullyQualifiedTypeName name="de.management.dto.SessionTO"/>
 <fullyQualifiedTypeName name="java.util.List"/>
-<fullyQualifiedTypeName name="de.management.dto.SessionTOList"/>
 <fullyQualifiedTypeName name="org.jboss.logging.Logger"/>
 <fullyQualifiedTypeName name="javax.enterprise.context.ApplicationScoped"/>
 <fullyQualifiedTypeName name="org.jboss.aerogear.unifiedpush.PushSender"/>
@@ -48,4 +44,14 @@
 <fullyQualifiedTypeName name="javax.inject.Inject"/>
 <fullyQualifiedTypeName name="de.management.push.sendMessage"/>
 <fullyQualifiedTypeName name="org.jboss.aerogear.unifiedpush.sendMessage"/>
+<fullyQualifiedTypeName name="de.management.entities.User"/>
+<fullyQualifiedTypeName name="de.management.dto.SessionTO"/>
+<fullyQualifiedTypeName name="de.management.dto.SessionTOList"/>
+<fullyQualifiedTypeName name="de.management.dto.EventTOList"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="org.jboss.aerogear.unifiedpush.message.UnifiedMessage.MessageBuilder"/>
+<fullyQualifiedTypeName name="org.jboss.aerogear.unifiedpush.message.UnifiedMessage.Builder"/>
+<fullyQualifiedTypeName name="java.util.Calendar"/>
+<fullyQualifiedTypeName name="com.sun.org.apache.xerces.internal.impl.dv.xs.DayDV"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
 </qualifiedTypeNameHistroy>

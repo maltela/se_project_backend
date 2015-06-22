@@ -1,0 +1,48 @@
+package de.management.dao;
+
+
+import java.util.List;
+
+import de.management.entities.*;
+
+import javax.ejb.Local;
+
+@Local
+/**
+ * Interface zur Persistierung 
+ * @author Malte Lange 
+ *
+ */
+public interface EventManagementDAOLocal {
+	
+	
+	
+	// Ausgabe Veranstaltungsübersicht  
+	public List<String> getEventOverview();
+	// Ausgabe Veranstaltungsinformation 
+	public Event getEvent(Integer id);		 
+	// Benutzer Registrierung @Backend  
+	public Integer createUser(String username,String DeviseID);
+	
+	
+	//
+	//*********** Admin-Anwedungsfälle***************** 
+	//
+	
+	// Veranstaltung erstellen
+	public Integer createEvent(Event event);
+	// Veranstatlung ändern
+	public Integer updateEvent(Event event);
+	// Veranstaltung löschen
+	public Integer dropEvent(Integer eventID, Integer userID);	
+	// Termin erstellen
+	public Integer createSession(Session session, Integer eventId, Integer userId);
+	// Termin löschen
+	public Integer dropSession(Integer sessionId, Integer eventId, Integer userId);
+
+	
+
+
+	
+	
+}

@@ -3,5 +3,5 @@
   <module moduleId="org.eclipse.jst.jee.server:10_EventManagmentPersistence" serverId="WildFly 8.x1432203665320"/>
   <module moduleId="org.eclipse.jst.jee.server:10_EventManagementSystem"/>
   <module moduleId="org.eclipse.jst.jee.server:test" serverId="WildFly 8.x1432203665320"/>
-  <module moduleId="org.eclipse.jst.jee.server:10_EventManagementEAR" serverId="WildFly 8.x1432203665320"/>
+  <module moduleId="org.eclipse.jst.jee.server:10_EventManagementEAR" serverId="WildFly 8.x1434657342095"/>
 </modules>

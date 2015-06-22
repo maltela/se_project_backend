@@ -43,6 +43,7 @@ public class DtoAssembler {
 	
 	}
 	
+	
 	public SessionTO makeDTO(Session session)
 	{
 		 SessionTO dto = new SessionTO();
@@ -56,6 +57,12 @@ public class DtoAssembler {
 		return dto;
 	
 	}
+
+
+	
+
+
+	
 
 
 }

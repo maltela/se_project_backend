@@ -20,8 +20,8 @@
 	<section name="quick_assist_proposal_size">
 	</section>
 	<section name="SourceActionDialog.methods">
-		<item value="false" key="Comments"/>
 		<item value="1" key="VisibilityModifier"/>
+		<item value="false" key="Comments"/>
 		<item value="false" key="SynchronizedModifier"/>
 		<item value="false" key="FinalModifier"/>
 	</section>
@@ -47,33 +47,33 @@
 		<section name="projects">
 			<section name="RemoteSystemsTempFiles">
 				<item value="/Users/MalteL/Documents/se_workspace/RemoteSystemsTempFiles/doc" key="destdir"/>
-				<item value="" key="href"/>
 				<item value="/Users/MalteL/Documents/se_workspace/RemoteSystemsTempFiles/javadoc.xml" key="antpath"/>
+				<item value="" key="href"/>
 			</section>
 			<section name="10_EventManagementPush">
 				<item value="/Users/MalteL/Documents/se_workspace/10_EventManagementPush/doc" key="destdir"/>
-				<item value="" key="href"/>
 				<item value="/Users/MalteL/Documents/se_workspace/10_EventManagementPush/javadoc.xml" key="antpath"/>
+				<item value="" key="href"/>
 			</section>
 			<section name="10_EventManagementSystem">
 				<item value="/Users/MalteL/Documents/se_workspace/10_EventManagementSystem/doc" key="destdir"/>
-				<item value="" key="href"/>
 				<item value="/Users/MalteL/Documents/se_workspace/10_EventManagementSystem/javadoc.xml" key="antpath"/>
+				<item value="" key="href"/>
 			</section>
 			<section name="10_EventManagmentPersistence">
 				<item value="/Users/MalteL/Documents/se_workspace/10_EventManagmentPersistence/doc" key="destdir"/>
-				<item value="" key="href"/>
 				<item value="/Users/MalteL/Documents/se_workspace/10_EventManagmentPersistence/javadoc.xml" key="antpath"/>
-			</section>
-			<section name="unifiedpush-java-client">
-				<item value="/Users/MalteL/Documents/se_workspace/unifiedpush-java-client/doc" key="destdir"/>
 				<item value="" key="href"/>
-				<item value="/Users/MalteL/Documents/se_workspace/unifiedpush-java-client/javadoc.xml" key="antpath"/>
 			</section>
 			<section name="10_EventManagementEAR">
 				<item value="/Users/MalteL/Documents/se_workspace/10_EventManagementEAR/doc" key="destdir"/>
-				<item value="" key="href"/>
 				<item value="/Users/MalteL/Documents/se_workspace/10_EventManagementEAR/javadoc.xml" key="antpath"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="unifiedpush-java-client">
+				<item value="/Users/MalteL/Documents/se_workspace/unifiedpush-java-client/doc" key="destdir"/>
+				<item value="/Users/MalteL/Documents/se_workspace/unifiedpush-java-client/javadoc.xml" key="antpath"/>
+				<item value="" key="href"/>
 			</section>
 		</section>
 	</section>
@@ -91,8 +91,8 @@
 	</section>
 	<section name="org.eclipse.jdt.internal.ui.typehierarchy.QuickHierarchy">
 		<item value="350" key="org.eclipse.jdt.internal.ui.typehierarchy.HierarchyInformationControlDIALOG_WIDTH"/>
-		<item value="false" key="org.eclipse.jdt.internal.ui.typehierarchy.HierarchyInformationControlDIALOG_USE_PERSISTED_LOCATION"/>
 		<item value="300" key="org.eclipse.jdt.internal.ui.typehierarchy.HierarchyInformationControlDIALOG_HEIGHT"/>
+		<item value="false" key="org.eclipse.jdt.internal.ui.typehierarchy.HierarchyInformationControlDIALOG_USE_PERSISTED_LOCATION"/>
 		<item value="true" key="org.eclipse.jdt.internal.ui.typehierarchy.HierarchyInformationControlDIALOG_USE_PERSISTED_SIZE"/>
 	</section>
 	<section name="org.eclipse.jdt.internal.ui.packageview.PackageExplorerPart">
@@ -109,19 +109,19 @@
 	<section name="DialogBounds_GetterSetterTreeSelectionDialog">
 		<item value="520" key="DIALOG_WIDTH"/>
 		<item value="187" key="DIALOG_Y_ORIGIN"/>
-		<item value="639" key="DIALOG_HEIGHT"/>
 		<item value="985" key="DIALOG_X_ORIGIN"/>
+		<item value="639" key="DIALOG_HEIGHT"/>
 		<item value="1|.Helvetica Neue DeskInterface|11.0|0|COCOA|1|.HelveticaNeueDeskInterface-Regular" key="DIALOG_FONT_NAME"/>
-	</section>
-	<section name="org.eclipse.ltk.ui.refactoring.settings">
-		<item value="*" key="patterns"/>
-		<item value="false" key="updateQualifiedNames"/>
-		<item value="false" key="renameSubpackages"/>
-		<item value="false" key="updateTextualMatches"/>
 	</section>
 	<section name="NewClassWizardPage">
 		<item value="false" key="create_constructor"/>
 		<item value="true" key="create_unimplemented"/>
+	</section>
+	<section name="org.eclipse.ltk.ui.refactoring.settings">
+		<item value="false" key="renameSubpackages"/>
+		<item value="false" key="updateQualifiedNames"/>
+		<item value="*" key="patterns"/>
+		<item value="false" key="updateTextualMatches"/>
 	</section>
 	<section name="AddGetterSetterDialog">
 		<item value="false" key="RemoveFinal"/>
@@ -130,8 +130,8 @@
 	<section name="JavadocWizardDialog">
 		<item value="600" key="DIALOG_WIDTH"/>
 		<item value="339" key="DIALOG_Y_ORIGIN"/>
-		<item value="840" key="DIALOG_X_ORIGIN"/>
 		<item value="534" key="DIALOG_HEIGHT"/>
+		<item value="840" key="DIALOG_X_ORIGIN"/>
 		<item value="1|.Helvetica Neue DeskInterface|11.0|0|COCOA|1|.HelveticaNeueDeskInterface-Regular" key="DIALOG_FONT_NAME"/>
 	</section>
 </section>

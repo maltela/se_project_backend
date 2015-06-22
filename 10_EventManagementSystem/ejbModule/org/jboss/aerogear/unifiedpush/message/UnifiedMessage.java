@@ -25,6 +25,7 @@ import java.util.Map;
 import java.util.Set;
 
 import org.jboss.aerogear.unifiedpush.message.Criteria;
+import org.jboss.aerogear.unifiedpush.message.UnifiedMessage.MessageBuilder;
 import org.jboss.aerogear.unifiedpush.message.UnifiedPushMessage;
 import org.jboss.aerogear.unifiedpush.message.apns.APNs;
 import org.jboss.aerogear.unifiedpush.message.windows.BadgeType;
@@ -337,6 +338,11 @@ public class UnifiedMessage {
 		public MessageBuilder userData(String key, String value) {
 			message.getUserData().put(key, value);
 			return this;
+		}
+		
+		public MessageBuilder userData(String key, Integer value) {
+			message.getUserData().put(key, value);
+			return null;
 		}
 
 		/**
@@ -665,6 +671,8 @@ public class UnifiedMessage {
 				return messageBuilder;
 			}
 		}
+
+		
 	}
 
 	public static class ConfigBuilder {

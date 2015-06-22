@@ -9,12 +9,15 @@ import javax.ejb.EJB;
 import javax.ejb.Stateless;
 import javax.jws.*;
 
+import org.jboss.aerogear.unifiedpush.sendMessage;
+
 import de.management.dao.EventManagementDAOLocal;
 import de.management.dto.EventTO;
+import de.management.dto.EventTOList;
+import de.management.dto.SessionTOList;
 import de.management.entities.Event;
 import de.management.entities.Session;
 import de.management.exceptions.ParamMissingException;
-import de.management.push.sendMessage;
 import de.management.util.DtoAssembler;
 
 
@@ -65,10 +68,10 @@ public class ManagementWebService {
 	 * @return List<Event>
 	 */ 
 	@WebMethod(operationName = "getEvents")
-	public List<Event> getEventOverview() {
-		List<Event> data = dao.getEventOverview();
-		
-		return(data);	
+	public EventTOList getEventOverview() {	
+		EventTOList response = new EventTOList();
+		response.setEventList(dao.getEventOverview());
+		return(response);	
 	
 	}
 	
@@ -82,33 +85,49 @@ public class ManagementWebService {
 	@WebMethod(operationName ="getEvent")
 	public EventTO getEvent(@WebParam(name="eventID") Integer eventID) throws ParamMissingException{
 		
-				EventTO eventResponse = new EventTO();
-		
-				
-				eventResponse.setName(dao.getEvent(eventID).getName());
-				eventResponse.setDateStart(dao.getEvent(eventID).getDateStart());
-				eventResponse.setDateEnd(dao.getEvent(eventID).getDateEnd());
-				eventResponse.setID(dao.getEvent(eventID).getId());
-				eventResponse.setDescription(dao.getEvent(eventID).getDescription());
-				List<Session> sessionList = dao.getEvent(eventID).getSessions();
-				eventResponse.setSessions(dtoAssembler.makeDTO(sessionList));
+		EventTO eventResponse = new EventTO();
+		eventResponse.setName(dao.getEvent(eventID).getName());
+		eventResponse.setDateStart(dao.getEvent(eventID).getDateStart());
+		eventResponse.setDateEnd(dao.getEvent(eventID).getDateEnd());
+		eventResponse.setID(dao.getEvent(eventID).getId());
+		eventResponse.setDescription(dao.getEvent(eventID).getDescription());
+		List<Session> sessionList = dao.getEvent(eventID).getSessions();
+		eventResponse.setSessions(dtoAssembler.makeDTO(sessionList));
 		return (eventResponse);
 			
 				
 	}
 	
 	/**
-	 * 5. Schnittstelle - Push Nachrichten versenden
+	 * 5. Schnittstelle - Termine einer Veranstaltung bereitstellen
+	 * @author Malte Lange 
+	 * @param msg
+	 * @return
+	 */
+	
+	@WebMethod(operationName="getSessions")
+	public SessionTOList getSessions(@WebParam(name="eventID") Integer eventID) throws ParamMissingException
+	{
+		SessionTOList response = new SessionTOList();
+		List<Session> sessionList = dao.getEvent(eventID).getSessions();
+		response.setSessionList(dtoAssembler.makeDTO(sessionList));
+		return response;
+	}
+	
+	
+	
+	/**
+	 * 6. Schnittstelle - Push Nachrichten versenden
 	 * @author Malte Lange 
 	 * @param msg
 	 * @return
 	 */
 	
 	@WebMethod(operationName="sendPushMessage")
-	public Integer sendPush(@WebParam(name="msg")String msg) throws ParamMissingException
+	public Integer sendPush(@WebParam(name="msg")String msg,@WebParam(name="eventID")Integer eventID) throws ParamMissingException
 	{
-
-		   sendMessage.action(msg);
+		   
+		   sendMessage.action(msg,eventID);
 		
 	return 200;
 	}
